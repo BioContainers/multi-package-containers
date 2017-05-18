@@ -19,10 +19,10 @@ before_install:
 - docker info
 
 script:
-- mulled-build-files build --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN ./combinations
+- mulled-build-files build --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN ./combinations
 
 after_success:
   - |
     if [ "$TRAVIS_PULL_REQUEST" == "false" -a "$TRAVIS_BRANCH" == "master" ]; then
-       mulled-build-files push --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN ./combinations
+       mulled-build-files push --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN ./combinations
     fi
