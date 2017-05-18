@@ -16,5 +16,9 @@ before_install:
 - sudo apt-get install sshpass --no-install-recommends -y
 - docker --version
 - docker info
+
 script:
 - mulled-build-files build --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN ./combinations
+
+after_success:
+- mulled-build-files push --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN ./combinations
