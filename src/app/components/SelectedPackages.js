@@ -1,7 +1,7 @@
 import React from 'react';
 import { observe } from 'mobx';
 import { inject, observer } from 'mobx-react';
-import sha1 from 'sha1';
+import crypto from 'crypto';
 
 import TableRow from './TableRow';
 
@@ -57,16 +57,27 @@ export default class SelectedPackages extends React.Component {
 
         if (store.packages.length === 1) {
             const target = store.packages[0];
-            const suffix = ':' + target.version;
-            text = target.name + suffix;
+            text = `${target.name}:${target.version}`;
         } else {
-            const prefix = 'quay.io/biocontainers/mulled-v1-';
-            const packages = store.packages.map((item) => {
-                return item.name + '=' + item.version;
-            });
-            const packagesString = packages.join('\n');
-            const hash = sha1(packagesString);
-            text = prefix + hash;
+            const packageNames = store.packages.map((item) => item.name);
+            const packageNamesString = packageNames.join('\n');
+            let packageHash = crypto.createHash('sha1');
+            packageHash.update(packageNamesString);
+            packageHash = packageHash.digest('hex');
+
+            const packageVersions = store.packages.map((item) => item.version || 'null');
+            let versionHash;
+
+            if (packageVersions.length > 0) {
+                const packageVerisonsString = packageVersions.join('\n');
+                versionHash = crypto.createHash('sha1');
+                versionHash.update(packageVerisonsString);
+                versionHash = versionHash.digest('hex');
+            } else {
+                versionHash = '';
+            }
+
+            text = `mulled-v2-${packageHash}:${versionHash}`;
         }
 
         return text;
