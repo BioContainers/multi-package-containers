@@ -31,14 +31,14 @@ export default class SelectedPackages extends React.Component {
     }
 
     update(packages) {
-        const { tsvOutput, imageName } = this.refs;
+        const { tsvOutput, containerName } = this.refs;
         const packagesCard = document.querySelector('#packages-card');
 
         if (packages.length !== 0) {
             const output = this.getContent();
-            const name = this.getImageName();
+            const name = this.getContainerName();
             tsvOutput.innerText = output;
-            imageName.innerText = name;
+            containerName.innerText = name;
         } else {
             packagesCard.className = 'col-md-8 col-md-offset-2';
             this.props.store.showCard = false;
@@ -51,7 +51,7 @@ export default class SelectedPackages extends React.Component {
         }).join();
     }
 
-    getImageName() {
+    getContainerName() {
         const { store } = this.props;
         let text = '';
 
@@ -93,7 +93,7 @@ export default class SelectedPackages extends React.Component {
 
     download() {
         const content = this.refs.tsvOutput.innerText + '\t \t ';
-        const filename = this.refs.imageName.innerText + '.tsv';
+        const filename = this.refs.containerName.innerText + '.tsv';
         const url = 'data:text/plain;charset=utf-8,' + encodeURIComponent(content);
 
         const elem = document.createElement('a');
@@ -132,8 +132,8 @@ export default class SelectedPackages extends React.Component {
                             <hr/>
                             <p>Output:</p>
                             <pre ref="tsvOutput"></pre>
-                            <p>Image name:</p>
-                            <pre ref="imageName"></pre>
+                            <p>Container name:</p>
+                            <pre ref="containerName"></pre>
                             <div className="text-center">
                                 <button ref="downloadButton" className="btn btn-sm btn-primary btn-success">
                                     Download
