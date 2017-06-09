@@ -1,0 +1,159 @@
+@charset 'utf-8';
+
+$orange: #ff9800;
+$orange-light: #ffecb3;
+$red: #d81b60;
+$grey: #757575;
+
+#main > .content {
+    // padding-top: 18vh;
+    padding-top: 7vh;
+}
+
+.full-page > .content {
+    min-height: calc(100vh - 80px);
+}
+
+#main > .content .title,
+#main > .content .description {
+    color: #fff;
+}
+
+#packages-card {
+    transition: width .3s ease, margin .3s ease;
+    z-index: 3;
+}
+
+/******************* DataTables fixes *******************/
+
+#datatables_filter i {
+    color: #aaa;
+    font-size: 18px;
+    position: absolute;
+    top: 7px;
+}
+
+.dataTables_filter .form-group {
+    margin: 0;
+    width: 100%;
+}
+
+.dataTables_filter .form-group input {
+    text-indent: 23px;
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+.dataTables_wrapper .dataTables_info {
+    white-space: normal;
+}
+
+@media screen and (max-width: 767px) {
+    table.dataTable > tbody > tr > td:first-child {
+        padding-left: 0!important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #datatables_paginate > ul.pagination > li > a {
+        font-size: 11px;
+    }
+}
+
+/********************************************************/
+
+table#datatables td.action {
+    text-align: right;
+}
+
+table#datatables td.action > a {
+    color: $grey;
+}
+
+table#datatables td.action > a:hover {
+    color: $orange;
+}
+
+.cards {
+    position: relative;
+}
+
+#selected-packages-card {
+    right: 0;
+}
+
+#selected-packages-card.slide-enter {
+    position: absolute;
+    opacity: 0;
+}
+
+#selected-packages-card.slide-enter-active {
+    animation: .6s slideInDown ease;
+    opacity: 1;
+}
+
+#selected-packages-card.slide-leave {
+    position: absolute;
+}
+
+#selected-packages-card.slide-leave-active {
+    animation: .3s slideOutUp ease;
+    opacity: 0;
+    transition: .3s ease-out opacity;
+}
+
+table#selected-packages tr {
+    animation-duration: .75s;
+}
+
+table#selected-packages td.action {
+    text-align: right;
+}
+
+table#selected-packages td.action > a {
+    color: $grey;
+}
+
+table#selected-packages td.action > a:hover {
+    color: $red;
+}
+
+#result hr {
+    width: 55%;
+}
+
+a#download-file {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: none;
+    z-index: 1000;
+}
+
+a#download-file:hover,
+a#download-file:focus {
+    text-decoration: none;
+}
+
+a#download-file i.fa {
+    margin-top: 15px;
+}
+
+#loader {
+    border: 3px solid $orange-light;
+    border-top: 3px solid $orange;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin1 1.5s linear infinite;
+    margin: 30px auto;
+}
+
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
