@@ -19,7 +19,7 @@ before_install:
 - docker info
 
 script:
-- mulled-build-files --check-published --namespace $MULLED_NAMESPACE build ./combinations
+- mulled-build-files --check-published --namespace $MULLED_NAMESPACE build-and-test ./combinations
 
 after_success:
   - |
