@@ -19,7 +19,7 @@ before_install:
 - docker --version
 - docker info
 script:
-- mulled-build-files --check-published --namespace $MULLED_NAMESPACE build-and-test ./combinations
+- mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations
 after_success:
 - |
   if [ "$TRAVIS_PULL_REQUEST" == "false" -a "$TRAVIS_BRANCH" == "master" ]; then
