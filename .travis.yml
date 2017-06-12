@@ -26,5 +26,6 @@ after_success:
      mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN push ./combinations;
      ls;
      ls singularity_import;
+     ssh-keyscan -t rsa 192.52.2.34 >> ~/.ssh/known_hosts;
      [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && sshpass -p "$SSH_PASSWORD" scp -v singularity_import/mull* ubuntu@192.52.2.34:/home/ubuntu/singularity/
   fi
