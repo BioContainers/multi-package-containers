@@ -23,6 +23,8 @@ script:
 after_success:
 - |
   if [ "$TRAVIS_PULL_REQUEST" == "false" -a "$TRAVIS_BRANCH" == "master" ]; then
-     mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN push ./combinations
+     mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN push ./combinations;
+     ls;
+     ls singularity_import;
      [ "$(ls -A singularity_import)" ] && sshpass -p "$SSH_PASSWORD" scp singularity_import/mull* ubuntu@192.52.2.34:/home/ubuntu/singularity/
   fi
