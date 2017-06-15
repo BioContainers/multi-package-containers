@@ -1,7 +1,0 @@
-Setting up such a repository.
-
- - Create repository and register with Travis.
- - Create quay.io oauth token in an organization.
- - Copy Travis file as an example, remove secure environment variables.
- - travis encrypt QUAY_OAUTH_TOKEN=<token> --add env.global
- - travis encrypt INVOLUCRO_AUTH="https://<username>:<password>@quay.io/v1/" --add env.global
