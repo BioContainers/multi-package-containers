@@ -1,7 +1,7 @@
 import React from 'react';
 import { observe } from 'mobx';
 import { inject, observer } from 'mobx-react';
-import crypto from 'crypto';
+import { createHash } from 'crypto';
 
 import TableRow from './TableRow';
 
@@ -61,7 +61,7 @@ export default class SelectedPackages extends React.Component {
         } else {
             const packageNames = store.packages.map((item) => item.name);
             const packageNamesString = packageNames.join('\n');
-            let packageHash = crypto.createHash('sha1');
+            let packageHash = createHash('sha1');
             packageHash.update(packageNamesString);
             packageHash = packageHash.digest('hex');
 
@@ -70,7 +70,7 @@ export default class SelectedPackages extends React.Component {
 
             if (packageVersions.length > 0) {
                 const packageVerisonsString = packageVersions.join('\n');
-                versionHash = crypto.createHash('sha1');
+                versionHash = createHash('sha1');
                 versionHash.update(packageVerisonsString);
                 versionHash = versionHash.digest('hex');
             } else {
