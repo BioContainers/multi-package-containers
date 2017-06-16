@@ -83,7 +83,7 @@ export default class Packages extends React.Component {
                     {
                         targets: 3,
                         className: 'action',
-                        data: () => '<a class="add"><i class="fa fa-plus" aria-hidden="true"></i></a>'
+                        data: () => '<a class="add" href="#"></a>'
                     }
                 ]
             });
@@ -139,6 +139,8 @@ export default class Packages extends React.Component {
     }
 
     addPackage(e) {
+        e.preventDefault();
+
         const tr = e.target.closest('tr');
         const record = this.table.row(tr).data();
         const { store } = this.props;

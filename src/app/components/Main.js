@@ -29,7 +29,12 @@ export default class Main extends React.Component {
                     <Grid>
                         <Row>
                             <Col md={6} mdOffset={3} className="text-center">
-                                <h2 className="title">Multi-requirement containers</h2>
+                                <h2 className="title">
+                                    Multi-package Containers
+                                    <div className="github-badge">
+                                        <a href="https://github.com/BioContainers/multi-package-containers" target="_blank">GitHub</a>
+                                    </div>
+                                </h2>
                                 <h5 className="description">
                                     Combine several conda packages into one Docker container.
                                 </h5>

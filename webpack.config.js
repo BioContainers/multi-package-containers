@@ -1,21 +1,15 @@
 const path = require('path');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
-// const cssnano = require('cssnano');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const debug = process.env.NODE_ENV !== 'production';
 const postCSSPlugins = [autoprefixer];
 
-// if (!debug) {
-//     postCSSPlugins.push(cssnano);
-// }
-
 const config = {
     context: __dirname,
     entry: './src/index',
-    // devtool: debug ? 'eval' : 'cheap-module-source-map',
-    devtool: debug ? 'eval-source-map' : 'cheap-module-source-map',
+    devtool: debug ? 'eval-source-map' : 'source-map',
 
     output: {
         path: path.resolve(__dirname, 'src/dist'),
@@ -109,14 +103,12 @@ if (!debug) {
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             beautify: false,
-            mangle: {
-                screw_ie8: true,
-                keep_fnames: true
-            },
             compress: {
-                screw_ie8: true
+                warnings: false
             },
-            comments: false,
+            output: {
+                comments: false
+            },
             sourceMap: true
         })
     ]);

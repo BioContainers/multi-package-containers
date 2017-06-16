@@ -1,7 +1,7 @@
 import React from 'react';
 import { observe } from 'mobx';
 import { inject, observer } from 'mobx-react';
-import crypto from 'crypto';
+import { createHash } from 'crypto';
 
 import TableRow from './TableRow';
 
@@ -61,7 +61,7 @@ export default class SelectedPackages extends React.Component {
         } else {
             const packageNames = store.packages.map((item) => item.name);
             const packageNamesString = packageNames.join('\n');
-            let packageHash = crypto.createHash('sha1');
+            let packageHash = createHash('sha1');
             packageHash.update(packageNamesString);
             packageHash = packageHash.digest('hex');
 
@@ -70,14 +70,14 @@ export default class SelectedPackages extends React.Component {
 
             if (packageVersions.length > 0) {
                 const packageVerisonsString = packageVersions.join('\n');
-                versionHash = crypto.createHash('sha1');
+                versionHash = createHash('sha1');
                 versionHash.update(packageVerisonsString);
                 versionHash = versionHash.digest('hex');
             } else {
                 versionHash = '';
             }
 
-            text = `mulled-v2-${packageHash}:${versionHash}`;
+            text = `quay.io/biocontainers/mulled-v2-${packageHash}:${versionHash}`;
         }
 
         return text;
@@ -87,12 +87,12 @@ export default class SelectedPackages extends React.Component {
         this.props.store.removeAll();
     }
 
-    removePackage(id) {
+    handleClick(id) {
         this.props.store.remove(id);
     }
 
     download() {
-        const content = this.refs.tsvOutput.innerText + '\t \t ';
+        const content = this.refs.tsvOutput.innerText;
         const filename = this.refs.containerName.innerText + '.tsv';
         const url = 'data:text/plain;charset=utf-8,' + encodeURIComponent(content);
 
@@ -107,9 +107,11 @@ export default class SelectedPackages extends React.Component {
     render() {
         const Rows = this.props.store.packages.map((item) => {
             return <TableRow
-                key={item.id} id={item.id} name={item.name}
+                key={item.id}
+                id={item.id}
+                name={item.name}
                 version={item.version}
-                onClick={this.removePackage.bind(this)}
+                onClick={() => this.handleClick(item.id)}
             />;
         });
 
@@ -124,13 +126,16 @@ export default class SelectedPackages extends React.Component {
                             <tbody>{Rows}</tbody>
                         </table>
                         <div className="text-center">
-                            <button onClick={this.clearList.bind(this)}
-                                id="clear-all" className="btn btn-success btn-xs">Clear
-                            </button>
+                            <button
+                                id="clear-all"
+                                className="btn btn-success btn-xs"
+                                onClick={() => this.clearList()}
+                            >Clear</button>
                         </div>
                         <div id="result">
                             <hr/>
-                            <p>Output:</p>
+                            <p>
+                                To create a container, please add the following string to <a href="https://github.com/BioContainers/multi-package-containers/blob/master/combinations/hash.tsv" target="_blank">this file</a> as a pull request:</p>
                             <pre ref="tsvOutput"></pre>
                             <p>Container name:</p>
                             <pre ref="containerName"></pre>
