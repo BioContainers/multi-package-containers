@@ -19,6 +19,26 @@ $grey: #757575;
     color: #fff;
 }
 
+#main > .content .title {
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.github-badge {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    right: -75px;
+    padding: 4px 8px;
+    top: -3px;
+    background: #FFF;
+    border-radius: 3px;
+    color: #444;
+    line-height: 22px;
+    box-shadow: 0 5px 5px -2px rgba(31,31,31,.4);
+}
+
 #packages-card {
     transition: width .3s ease, margin .3s ease;
     z-index: 3;
@@ -60,6 +80,10 @@ $grey: #757575;
     }
 }
 
+#packages-card.col-md-6 #datatables_wrapper > .row > .col-sm-5 > #datatables_info {
+    white-space: inherit;
+}
+
 /********************************************************/
 
 table#datatables td.action {
@@ -68,6 +92,14 @@ table#datatables td.action {
 
 table#datatables td.action > a {
     color: $grey;
+}
+
+table#datatables td.action > a:before {
+    font-family: FontAwesome;
+    content: "\F067";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
 }
 
 table#datatables td.action > a:hover {
@@ -112,6 +144,14 @@ table#selected-packages td.action {
 
 table#selected-packages td.action > a {
     color: $grey;
+}
+
+table#selected-packages td.action > a:before {
+    font-family: FontAwesome;
+    content: "\F068";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
 }
 
 table#selected-packages td.action > a:hover {

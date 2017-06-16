@@ -13,6 +13,7 @@ $.fn.extend({
 
 // Stylesheets
 require('bootstrap-sass/assets/stylesheets/_bootstrap.scss');
+require('font-awesome/scss/font-awesome.scss');
 require('./sass/libs/material-dashboard.scss');
 require('./sass/libs/animate.scss');
 require('./sass/base.scss');
