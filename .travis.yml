@@ -24,7 +24,7 @@ before_install:
   - docker info
 
 script:
-- travis_wait 45 mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations
+- mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations --verbose
 
 after_success:
 - |
