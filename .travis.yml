@@ -15,10 +15,10 @@ services:
 before_install:
   - df -h
   - ls -l /home/travis
-  - ls -l /home/travis/otp
+  - df -h /home/travis
   - ls -l /home/travis/build
   - ls -l /home/travis/builds
-  - rm -rf /home/travis/perl5/  /home/travis/.phpenv /home/travis/gopath
+  - rm -rf /home/travis/perl5/  /home/travis/.phpenv /home/travis/gopath /home/travis/otp
   
   - df -h
   - pip install requests
