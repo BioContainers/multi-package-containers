@@ -15,7 +15,7 @@ services:
 before_install:
   - rm -rf /home/travis/perl5/ /home/travis/.phpenv /home/travis/gopath /home/travis/otp /home/travis/.gimme/ /home/travis/.rvm /home/travis/.nvm
   - pip install requests
-  - pip install https://github.com/galaxyproject/galaxy-lib/archive/container_size.zip
+  - pip install galaxy-lib
   - sudo apt-get update -qq
   - sudo apt-get install docker-engine --no-install-recommends -y -o Dpkg::Options::="--force-confmiss"
     -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew"
