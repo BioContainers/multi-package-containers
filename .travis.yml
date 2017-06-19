@@ -13,8 +13,13 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_69030c032500_key -iv $encrypted_69030c032500_iv
   -in galaxy_depot_travis.enc -out ~/.ssh/galaxy_depot_travis -d
 - chmod 600 ~/.ssh/galaxy_depot_travis
-- eval $(ssh-agent)
+#- eval $(ssh-agent)
 #- ssh-add ~/.ssh/galaxy_depot_travis
+ - printf "%s\n" \
+       "Host github.com" \
+       "  IdentityFile ~/.ssh/galaxy_depot_travis" \
+       "  LogLevel ERROR" >> ~/.ssh/config
+
 - rm -rf /home/travis/perl5/ /home/travis/.phpenv /home/travis/gopath /home/travis/otp
   /home/travis/.gimme/ /home/travis/.rvm /home/travis/.nvm
 - pip install requests
@@ -33,5 +38,5 @@ after_success:
   if [ "$TRAVIS_PULL_REQUEST" == "false" -a "$TRAVIS_BRANCH" == "master" ]; then
      mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN push ./combinations;
      ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts;
-     [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && sshpass -p "$SSH_PASSWORD" scp -v -i ~/.ssh/galaxy_depot_travis singularity_import/mull* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
+     [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && sshpass -p "$SSH_PASSWORD" scp -v singularity_import/mull* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
   fi
