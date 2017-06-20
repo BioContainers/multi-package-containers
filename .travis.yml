@@ -13,8 +13,6 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_69030c032500_key -iv $encrypted_69030c032500_iv
   -in galaxy_depot_travis.enc -out ~/.ssh/galaxy_depot_travis -d
 - chmod 600 ~/.ssh/galaxy_depot_travis
-- eval $(ssh-agent)
-- sshpass -e "$SSH_PASSWORD" ssh-add ~/.ssh/galaxy_depot_travis
 - printf "%s\n" \
       "Host orval.galaxyproject.org" \
       "  IdentityFile ~/.ssh/galaxy_depot_travis" \
@@ -30,6 +28,9 @@ before_install:
 - sudo apt-get install sshpass --no-install-recommends -y
 - docker --version
 - docker info
+- eval $(ssh-agent)
+- sshpass -v -e -P 'Enter passphrase for' ssh-add ~/.ssh/galaxy_depot_travis
+
 script:
 - mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE
   build-and-test ./combinations --verbose
@@ -40,5 +41,5 @@ after_success:
   if [ "$TRAVIS_PULL_REQUEST" == "false" -a "$TRAVIS_BRANCH" == "master" ]; then
      mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN push ./combinations;
      ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts;
-     [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && sshpass -e "$SSH_PASSWORD" scp -vv singularity_import/mull* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
+     [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp -vv singularity_import/mull* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
   fi
