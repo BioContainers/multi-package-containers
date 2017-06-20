@@ -16,7 +16,7 @@ before_install:
 #- eval $(ssh-agent)
 #- ssh-add ~/.ssh/galaxy_depot_travis
 - printf "%s\n" \
-      "Host github.com" \
+      "Host orval.galaxyproject.org" \
       "  IdentityFile ~/.ssh/galaxy_depot_travis" \
       "  LogLevel ERROR" >> ~/.ssh/config
 
@@ -34,6 +34,8 @@ script:
 - mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE
   build-and-test ./combinations --verbose
 after_success:
+- cat ~/.ssh/config
+- ls -la ~/.ssh/
 - |
   if [ "$TRAVIS_PULL_REQUEST" == "false" -a "$TRAVIS_BRANCH" == "master" ]; then
      mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN push ./combinations;
