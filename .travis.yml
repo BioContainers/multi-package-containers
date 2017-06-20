@@ -14,7 +14,7 @@ before_install:
   -in galaxy_depot_travis.enc -out ~/.ssh/galaxy_depot_travis -d
 - chmod 600 ~/.ssh/galaxy_depot_travis
 - eval $(ssh-agent)
-#- ssh-add ~/.ssh/galaxy_depot_travis
+- ssh-add ~/.ssh/galaxy_depot_travis
 - printf "%s\n" \
       "Host orval.galaxyproject.org" \
       "  IdentityFile ~/.ssh/galaxy_depot_travis" \
