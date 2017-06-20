@@ -30,6 +30,7 @@ before_install:
 - docker --version
 - docker info
 - eval $(ssh-agent)
+- sshpass -V
 - sshpass -v -e -P 'Enter passphrase for' ssh-add ~/.ssh/galaxy_depot_travis
 
 script:
