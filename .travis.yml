@@ -13,6 +13,7 @@ services:
 - docker
 
 before_install:
+- set -e
 - rm -rf /home/travis/perl5/ /home/travis/.phpenv /home/travis/gopath /home/travis/otp
   /home/travis/.gimme/ /home/travis/.rvm /home/travis/.nvm
 - pip install requests
@@ -26,6 +27,7 @@ before_install:
 - docker info
 
 script:
+- set -e
 - mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE
   build-and-test ./combinations --verbose
 
