@@ -1,2 +1,1 @@
-bwa=0.7.15,samtools=1.3.1
-
+blast=2.6.0,diamond=0.8.9,megahit=1.1.1,pauda=1.0.1,spades=3.9.0,velvet=1.2.10
