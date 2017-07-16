@@ -10,26 +10,43 @@ env:
   - secure: YjpgNHxOzbLnDhWsH1IFelX21yjhSyUcl1KVw/5/0DwFn3HRW88iwe8rUSfYlENNKwrdXJSXEzXs52uqMUq1WMkSQxCMOew9V3HzSu+r6NJHR4ucok5V2O1KlIicHUQ/ckzd3gehS32fKTno2aIdC/aH5i1S8e1uf3YfNG/BA2RmsiSahm9p9qi0l8GgrBJYfPVLsDt5nIAQsRNJFjg/wI7r6D3tyA5BIcwRvWrmBJBofIdlsTB7kEOGOVCTvRrKsvCpWnD5UZ998wMb2yABKFjBrQ4253vBwdPARSQf0qRieF2UkFXPfBEQ5f9eBL8b0dBlHV71E3nYxA8rIc+LmJszNjxjcGuuheIVc78oNVR/x9pY6s89cxqBNwkhbdv3xNyfdMo//LMe016l8UNZb7LWy3mrnNZKZ8BZ+cUm5GRQfS9PLv1BVVvGkTYZEwTokzFthd5g/WevZN2aLozzf28hxVUaAj8tS+K05XUYFnzJJ3wDDV68Aj/MB52Ol12YifXPdv3r2yM83pzyLLBFW4t9eK52Kbj9Zf4+wf2cLwO7DbIvDSr1NKthmJ9TusfL/5hA/Bjp35vIJ2dTI1sJti2nk2s1Zvu1aw0Jq0ffB5bjJ3gfetj618POdUvB9lq+YSZUTeYCwC6NSj/c5IaYOFI5h010tRmniH/CPWr5p+8=
 
 services:
-  - docker
+- docker
 
 before_install:
-  - rm -rf /home/travis/perl5/ /home/travis/.phpenv /home/travis/gopath /home/travis/otp /home/travis/.gimme/ /home/travis/.rvm /home/travis/.nvm
-  - pip install requests
-  - pip install galaxy-lib
-  - sudo apt-get update -qq
-  - sudo apt-get install docker-engine --no-install-recommends -y -o Dpkg::Options::="--force-confmiss"
-    -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew"
-  - sudo apt-get install sshpass --no-install-recommends -y
-  - docker --version
-  - docker info
+- set -e
+- rm -rf /home/travis/perl5/ /home/travis/.phpenv /home/travis/gopath /home/travis/otp
+  /home/travis/.gimme/ /home/travis/.rvm /home/travis/.nvm
+- pip install requests
+- pip install galaxy-lib
+- wget http://mirrors.kernel.org/ubuntu/pool/universe/s/sshpass/sshpass_1.06-1_amd64.deb
+- sudo apt-get update -qq
+- sudo apt-get install docker-ce --no-install-recommends -y -o Dpkg::Options::="--force-confmiss"
+  -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew"
+- sudo dpkg -i sshpass_1.06-1_amd64.deb
+- docker --version
+- docker info
 
 script:
-- mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations --verbose
+- set -e
+- mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE
+  build-and-test ./combinations --verbose
 
 after_success:
 - |
   if [ "$TRAVIS_PULL_REQUEST" == "false" -a "$TRAVIS_BRANCH" == "master" ]; then
+
+    openssl aes-256-cbc -K $encrypted_69030c032500_key -iv $encrypted_69030c032500_iv -in galaxy_depot_travis.enc -out ~/.ssh/galaxy_depot_travis -d 
+    chmod 600 ~/.ssh/galaxy_depot_travis
+    printf "%s\n" \
+        "Host orval.galaxyproject.org" \
+        "  IdentityFile ~/.ssh/galaxy_depot_travis" \
+        "  LogLevel ERROR" >> ~/.ssh/config
+    eval $(ssh-agent)
+    sshpass -e -P 'Enter passphrase for' ssh-add ~/.ssh/galaxy_depot_travis
+    cat ~/.ssh/config
+    ls -la ~/.ssh/
+
      mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN push ./combinations;
-     ssh-keyscan -t rsa 192.52.2.34 >> ~/.ssh/known_hosts;
-     [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && sshpass -p "$SSH_PASSWORD" scp singularity_import/mull* ubuntu@192.52.2.34:/home/ubuntu/singularity/
+     ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts;
+     [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp singularity_import/mull* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
   fi
