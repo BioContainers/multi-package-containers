@@ -1,0 +1,1 @@
+pytables=3.2.2,pandas=0.18.1,numpy=1.11.1,sam=3.5,scipy=0.17.1,requests=2.10.0,theano=0.8.2
