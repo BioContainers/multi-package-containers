@@ -4,3 +4,4 @@ bwa=0.7.15,samtools=1.3.1,bedtools=2.26.0gx,boost=1.64.0,boost-cpp=1.64.0,bowtie
 canu=1.5,miniasm=0.2_r159,pacbio_falcon=052016,pilon=1.22
 tensorflow=1.4.0,tensorboard=0.4.0rc3,matplotlib==2.1.0,numpy=1.13.3,scipy=0.19.1,libgcc
 migmap=1.0.2,tophat=2.1.1,trinity=date.2011_11_26
+r-optparse=1.4.4,r-seurat=2.3.1   
