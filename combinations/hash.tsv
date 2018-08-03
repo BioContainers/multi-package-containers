@@ -6,3 +6,4 @@ canu=1.5,miniasm=0.2_r159,pacbio_falcon=052016,pilon=1.22
 tensorflow=1.4.0,tensorboard=0.4.0rc3,matplotlib==2.1.0,numpy=1.13.3,scipy=0.19.1,libgcc
 migmap=1.0.2,tophat=2.1.1,trinity=date.2011_11_26
 r-optparse=1.4.4,r-seurat=2.3.1
+nomkl,samtools=1.2,htslib=1.4,bedtools=2.26.0,picard=2.10.6,ucsc-fetchchromsizes,ucsc-wigtobigwig,ucsc-bedgraphtobigwig,ucsc-bigwiginfo,ucsc-bedclip,ucsc-bedtobigbed,ucsc-twobittofa,macs2=2.1.1.20160309,boost=1.57.0,openblas=0.2.19,numpy=1.11.3,matplotlib=1.5.1,six=1.11.0,python-dateutil=2.6.1,libgfortran=3.0,graphviz=2.38.0,libtool,ghostscript,pigz,zlib,sambamba=0.6.6,r=3.2.2,r-snow,r-snowfall,r-bitops,r-catools,bioconductor-rsamtools,r-spp=1.13,pyfaidx=0.4.7.1,cutadapt=1.9.1,preseq=2.0.3,trim-galore=0.4.1,python-levenshtein,bowtie2=2.2.6,ncurses,ucsc-bigWigAverageOverBed,gnuplot,scipy,pandas,metaseq,jinja2,gsl,pysam=0.8.4,pybedtools=0.6.9,cromwell,phantompeakqualtools=1.2
