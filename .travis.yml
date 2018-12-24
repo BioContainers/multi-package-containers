@@ -32,7 +32,7 @@ script:
 - set -e
 - mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE
   build-and-test ./combinations --verbose
-- ls -la ./singularity_import
+- [ "$(ls -A singularity_import)" ] && ls -la ./singularity_import
 
 after_success:
 - |
