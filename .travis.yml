@@ -32,7 +32,7 @@ script:
 - set -e
 - mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE
   build-and-test ./combinations --verbose
-- [ "$(ls -A singularity_import)" ] && ls -la ./singularity_import
+- [ "$(ls -A singularity_import)" ] && ls -l ./singularity_import
 
 after_success:
 - |
@@ -48,7 +48,7 @@ after_success:
     sshpass -e -P 'Enter passphrase for' ssh-add ~/.ssh/galaxy_depot_travis
 
      mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN push ./combinations;
-     ls -la singularity_import;
+     ls -l singularity_import;
      ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts;
      [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp singularity_import/mull* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
   fi
