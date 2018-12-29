@@ -52,5 +52,5 @@ after_success:
      mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN push ./combinations;
      ls -l singularity_import;
      ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts;
-     [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp singularity_import/mull* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
+     [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp singularity_import/*:* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
   fi
