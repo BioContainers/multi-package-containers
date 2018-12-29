@@ -17,3 +17,5 @@ numpy=1.13.3
 r-base=3.5.1
 r-base=3.4.1
 julia=1.0.3
+scikit-image=0.14.0
+scipy=1.1.0
