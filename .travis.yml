@@ -31,7 +31,10 @@ before_install:
 script:
 - set -e
 - mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations --verbose
-- [ "$(ls -A singularity_import)" ] && ls -l ./singularity_import
+- |
+  if [ -d "./singularity_import" ]; then
+    ls -l ./singularity_import
+  fi
 
 after_success:
 - |
