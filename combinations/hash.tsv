@@ -14,5 +14,5 @@ anndata=0.6.13,loompy=2.0.16,r-seurat=2.3.4,qt=5.6.2
 python=2.7.15
 python=3.6.7
 python=3.7.1
-scikit-learn=0.20.2
 scikit-learn=0.19.2
+scikit-learn=0.20.2
