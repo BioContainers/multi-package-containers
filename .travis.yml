@@ -30,8 +30,11 @@ before_install:
 
 script:
 - set -e
-- mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE
-  build-and-test ./combinations --verbose
+- mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations --verbose
+- |
+  if [ -d "./singularity_import" ]; then
+    ls -l ./singularity_import
+  fi
 
 after_success:
 - |
@@ -45,10 +48,9 @@ after_success:
         "  LogLevel ERROR" >> ~/.ssh/config
     eval $(ssh-agent)
     sshpass -e -P 'Enter passphrase for' ssh-add ~/.ssh/galaxy_depot_travis
-    cat ~/.ssh/config
-    ls -la ~/.ssh/
 
      mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token $QUAY_OAUTH_TOKEN push ./combinations;
+     ls -l singularity_import;
      ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts;
-     [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp singularity_import/mull* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
+     [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp singularity_import/*:* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
   fi

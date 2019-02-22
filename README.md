@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/BioContainers/multi-package-containers.svg?branch=master)](https://travis-ci.org/BioContainers/multi-package-containers)
+
 ## Building multiple package Containers
 
 Create a container is easy! All what you need to do is add a combination of packages to the
