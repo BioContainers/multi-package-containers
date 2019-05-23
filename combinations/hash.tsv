@@ -16,3 +16,4 @@ flashlfq=0.1.111--0
 moods=1.9.0,pybigwig=0.3.4,pysam=0.9.1.4
 bwa=0.7.17,picard=2.18.7
 bedtools=2.26.0,python=2.7.14,numpy=1.13.3,matplotlib=2.1.0
+bc=1.06,jq=1.6,sed=4.4,seqtk=1.2
