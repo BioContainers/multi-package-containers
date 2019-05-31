@@ -18,3 +18,5 @@ bwa=0.7.17,picard=2.18.7
 bedtools=2.26.0,python=2.7.14,numpy=1.13.3,matplotlib=2.1.0
 bc=1.06,jq=1.6,sed=4.4,seqtk=1.2
 gawk=4.2.0
+coreutils=8.30--h14c3975_1000
+coreutils=8.31--h14c3975_0
