@@ -20,3 +20,4 @@ bc=1.06,jq=1.6,sed=4.4,seqtk=1.2
 gawk=4.2.0
 coreutils=8.30--h14c3975_1000
 coreutils=8.31--h14c3975_0
+perl=5.22.0.1--0
