@@ -21,3 +21,4 @@ gawk=4.2.0
 coreutils=8.30--h14c3975_1000
 coreutils=8.31--h14c3975_0
 perl=5.22.0.1--0
+samtools=1.9,gnuplot=5.2.3,perl=5.26
