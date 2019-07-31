@@ -28,3 +28,4 @@ deeptools=3.1.2,samtools=1.7
 wget=1.20.1
 gawk=5.0.1
 pyiron=0.2.2
+pyiron=0.2.2,lammps=2019.06.05
