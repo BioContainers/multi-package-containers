@@ -30,3 +30,4 @@ gawk=5.0.1
 pyiron=0.2.2
 pyiron=0.2.2,lammps=2019.06.05
 seqtk=1.3,perl=5.22.0.1--0,perl-bioperl=1.6.924
+git-lfs=2.4.0,git=2.20.1
