@@ -34,3 +34,5 @@ git-lfs=2.4.0,git=2.20.1
 varscan=2.4.3,samtools=1.6,tabix=0.2.6
 git-lfs=2.4.0,git=2.20.1,coreutils=8.31,pypgatk=0.0.4
 click=7.0,pyvcf=0.6.8,python=3.5
+click=7.0,pyvcf=0.6.8,python=3.5,pybedtools=0.8
+
