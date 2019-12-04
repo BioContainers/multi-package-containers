@@ -38,3 +38,4 @@ click=7.0,pyvcf=0.6.8,python=3.5,pybedtools=0.8
 qualimap=2.2.2a,perl-bioperl=1.6.924
 aniso8601=8.0.0,requests=2.22
 jinja2=2.10,pathlib=1.0.1
+umi_tools=0.5.5
