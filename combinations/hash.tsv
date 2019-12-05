@@ -39,4 +39,4 @@ qualimap=2.2.2a,perl-bioperl=1.6.924
 aniso8601=8.0.0,requests=2.22
 jinja2=2.10,pathlib=1.0.1
 umi_tools=0.5.5
-array_as_vcf=1.0.0,tabix=0.2.6
+array-as-vcf=1.0.0,tabix=0.2.6
