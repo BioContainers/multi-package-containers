@@ -6,8 +6,8 @@ Create a container is easy! All what you need to do is add a combination of pack
 [hash.tsv file](https://github.com/BioContainers/multi-package-containers/blob/master/combinations/hash.tsv).
 
 To assemble the required string of package combinations you can use the little
-[helper service](http://biocontainers.pro/multi-package-containers
-) which we provide for you. This service will also tell you the name of the container that will be created.
+[helper service](https://biocontainers.pro/#/multipackage) 
+which we provide for you. This service will also tell you the name of the container that will be created.
 
 Currently, this will create you Docker and rkt containers hosted at https://quay.io/organization/biocontainers and 
 Singularity images hosted at https://depot.galaxyproject.org/singularity/ (Hosting sponsors and mirrors welcome!).
