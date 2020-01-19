@@ -1,6 +1,6 @@
 sudo: required
 language: python
-python: 2.7
+python: 3.8
 
 env:
   global:
@@ -18,7 +18,7 @@ before_install:
   /home/travis/.gimme/ /home/travis/.rvm /home/travis/.nvm
 - pip install requests
 ##- pip install git+https://github.com/galaxyproject/galaxy-lib@channel_cleanup
-- pip install galaxy-lib
+- pip install "galaxy-tool-util>=20.1.0.dev3"
 ##- pip install https://github.com/galaxyproject/galaxy-lib/archive/tripple.zip
 - wget http://mirrors.kernel.org/ubuntu/pool/universe/s/sshpass/sshpass_1.06-1_amd64.deb
 - sudo apt-get update -qq
