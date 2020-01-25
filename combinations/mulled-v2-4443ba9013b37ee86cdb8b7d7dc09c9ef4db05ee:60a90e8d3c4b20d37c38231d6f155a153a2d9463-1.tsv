@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+snap=2013_11_29,maker=2.31.10	bioconda/extended-base-image:latest	1
