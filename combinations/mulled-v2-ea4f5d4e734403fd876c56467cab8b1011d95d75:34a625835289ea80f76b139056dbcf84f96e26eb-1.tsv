@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-scran=1.6.2,r-raceid=0.1.1	bioconda/extended-base-image:latest	1
