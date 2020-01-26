@@ -1,2 +1,0 @@
-#targets	base_image	image_build
-transit=3.0.2=py_1,python=3.7	bgruening/busybox-bash:0.1	0
