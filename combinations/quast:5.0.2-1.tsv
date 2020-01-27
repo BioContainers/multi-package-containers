@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+quast=5.0.2	bioconda/extended-base-image:latest	1
