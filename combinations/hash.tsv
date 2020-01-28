@@ -43,3 +43,4 @@ array-as-vcf=1.0.0,tabix=0.2.6
 array-as-vcf=1.0.1,tabix=0.2.6
 cyvcf2=0.11.5,click=6.7
 vtools=1.0.0,jq=1.6
+pgx-variant-tools=0.0.2,locus_processing=0.0.4,snakemake-minimal=5.10.0,biopython=1.76,pyyaml=3.12
