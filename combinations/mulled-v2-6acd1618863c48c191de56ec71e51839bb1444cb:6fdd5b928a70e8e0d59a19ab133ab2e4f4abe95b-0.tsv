@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+ghostscript=9.10,graphicsmagick=1.3.18	bgruening/busybox-bash:0.1	0
