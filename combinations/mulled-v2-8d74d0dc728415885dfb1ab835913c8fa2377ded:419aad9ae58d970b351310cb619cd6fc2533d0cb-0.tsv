@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bowtie=0.12.7,numpy=1.9,pysam=0.7.7	bgruening/busybox-bash:0.1	0
