@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+samtools=0.1.18,picard=1.56.0	bgruening/busybox-bash:0.1	0
