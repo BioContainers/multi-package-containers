@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+graphicsmagick=1.3.31	bgruening/busybox-bash:0.1	0
