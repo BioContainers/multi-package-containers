@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+requests=2.9.1	bgruening/busybox-bash:0.1	0
