@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+python=2.7,meme=5.0.5	bioconda/extended-base-image:latest	0
