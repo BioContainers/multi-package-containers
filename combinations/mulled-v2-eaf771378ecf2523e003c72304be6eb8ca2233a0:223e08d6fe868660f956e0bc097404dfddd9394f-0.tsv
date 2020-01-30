@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-gwastools=1.30.0,r-optparse=1.6.4,r-base=3.6	bgruening/busybox-bash:0.1	0
