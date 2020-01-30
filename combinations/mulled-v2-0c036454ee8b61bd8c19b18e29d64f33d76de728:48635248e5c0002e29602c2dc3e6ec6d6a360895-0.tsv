@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-scran=1.12.1=r36he1b5a44_0,r-optparse=1.6.2	bgruening/busybox-bash:0.1	0
