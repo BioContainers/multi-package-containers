@@ -93,3 +93,4 @@ r-base=4.0,r-optparse=1.6.6,r-ggplot2=3.3.2,bioconductor-txdb.hsapiens.ucsc.hg19
 searchgui=4.0.4,zip=3.0	bioconda/extended-base-image:latest	0
 bowtie2=2.4.2,samtools=1.11,pigz=2.3.4
 r-base=4.0,bioconductor-edger=3.32.0,bioconductor-limma=3.46.0,r-rjson=0.2.20,r-getopt=1.20.3,r-statmod=1.4.35,r-scales=1.1.1	bgruening/busybox-bash:0.1	0
+qcat=1.1.0,pigz=2.3.4	bgruening/busybox-bash:0.1	0
