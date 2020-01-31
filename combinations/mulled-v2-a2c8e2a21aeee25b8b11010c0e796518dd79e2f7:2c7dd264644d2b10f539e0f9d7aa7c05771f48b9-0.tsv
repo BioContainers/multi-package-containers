@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+tophat=1.4.0,samtools=0.1.18,bowtie=0.12.7	bgruening/busybox-bash:0.1	0
