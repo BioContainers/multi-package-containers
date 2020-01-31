@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+openms=2.3,xtandem=15.12.15.2,r-gplots=3.0.1,r-base=3.4.1,msgf_plus=2017.07.21,fido=1.0	bgruening/busybox-bash:0.1	0
