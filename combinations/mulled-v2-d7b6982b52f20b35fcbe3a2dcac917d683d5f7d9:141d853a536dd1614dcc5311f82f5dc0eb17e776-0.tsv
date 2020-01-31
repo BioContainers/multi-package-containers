@@ -1,2 +1,0 @@
-#targets	base_image	image_build
-perl=5.26,emboss=5.0.0	bgruening/busybox-bash:0.1	0
