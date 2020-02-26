@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-gridextra=2.3,bioconductor-swath2stats=1.16.0,r-data.table=1.12.8,r-dplyr=0.8.4,pyprophet=2.1.4	bioconda/extended-base-image:latest	0
