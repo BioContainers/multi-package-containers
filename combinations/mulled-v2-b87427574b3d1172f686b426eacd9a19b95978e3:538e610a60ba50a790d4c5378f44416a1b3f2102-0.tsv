@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+perl-file-copy-recursive=0.45,perl-yaml=1.29	bgruening/busybox-bash:0.1	0
