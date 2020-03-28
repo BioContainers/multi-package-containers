@@ -1,2 +1,0 @@
-#targets	base_image	image_build
-tifffile=0.15.1,numpy=1.12,scikit-learn=0.18.1,pillow=4.0.0,scikit-image=0.14.2	bgruening/busybox-bash:0.1	0
