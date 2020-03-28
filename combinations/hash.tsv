@@ -54,3 +54,5 @@ bioconductor-rtracklayer=1.42.1,bioconductor-biostrings=2.50.2,r-optparse=1.6.4	
 bioconductor-dropletutils=1.6.1,openblas=0.3.9,r-matrix=1.2,r-ggplot2=3.2.1,r-optparse=1.6.4,r-gridextra=2.3,bioconductor-delayedarray=0.12.0	bgruening/busybox-bash:0.1	0
 scipy=1.4.1,pandas=1.0.1	bgruening/busybox-bash:0.1	0
 scipy=1.4.1,pandas=1.0.1,file=5.37	bgruening/busybox-bash:0.1	0
+biopython=1.76
+singularity=3.5.3
