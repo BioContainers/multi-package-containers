@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+cdsapi=0.1.4,cdo=1.9.6,python=3	bgruening/busybox-bash:0.1	0

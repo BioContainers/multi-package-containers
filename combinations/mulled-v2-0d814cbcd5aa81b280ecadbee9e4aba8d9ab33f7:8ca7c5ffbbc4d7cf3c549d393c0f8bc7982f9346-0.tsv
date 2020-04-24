@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+zip,mitos=1.0.5	bgruening/busybox-bash:0.1	0
