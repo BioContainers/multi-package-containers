@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+samblaster=0.1.22	bgruening/busybox-bash:0.1	0

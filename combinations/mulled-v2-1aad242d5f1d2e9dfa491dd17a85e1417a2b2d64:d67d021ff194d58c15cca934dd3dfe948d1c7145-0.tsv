@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+samtools=1.9,hicexplorer=3.4.1	bgruening/busybox-bash:0.1	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+chembl_webresource_client=0.9.31	bgruening/busybox-bash:0.1	0
