@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+python=3.7,kraken2=2.0.8_beta	bgruening/busybox-bash:0.1	0

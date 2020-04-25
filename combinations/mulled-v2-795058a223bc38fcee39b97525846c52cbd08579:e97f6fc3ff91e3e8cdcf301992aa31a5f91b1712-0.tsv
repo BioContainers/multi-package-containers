@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pyyaml=5.1.2,maxquant=1.6.10.43,python=3.7,tar=1.32,r-ptxqc=0.92.6	bgruening/busybox-bash:0.1	0
