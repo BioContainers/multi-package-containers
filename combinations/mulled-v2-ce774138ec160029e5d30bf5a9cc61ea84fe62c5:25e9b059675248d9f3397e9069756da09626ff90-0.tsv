@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-rodbc=1.3_15,r-reshape=0.8.8,r-rgdal=1.4_3,r-plyr=1.8.4,r-speedglm=0.3_2,r-ggplot2=3.1.0,r-lubridate=1.7.4,r-data.table=1.12.0,r-doby=4.6_2,r-scales=1.0.0,r-lmertest=3.1_0,r-arm=1.10_1,r-glmmtmb=0.2.3,r-mgcv=1.8_24	bgruening/busybox-bash:0.1	0

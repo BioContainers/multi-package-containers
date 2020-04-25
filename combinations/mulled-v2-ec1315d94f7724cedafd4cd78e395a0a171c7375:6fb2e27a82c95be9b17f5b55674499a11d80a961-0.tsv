@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pylibtiff=0.4.2,python-omero=5.6.0	bgruening/busybox-bash:0.1	0
