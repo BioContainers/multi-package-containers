@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+snpsift=4.3.1t,perl=5.26,coreutils=8.25	bgruening/busybox-bash:0.1	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-speedglm=0.3_2,r-ggplot2=3.0.0,r-data.table=1.12.0,r-arm=1.10_1,r-reshape2=1.4.3	bgruening/busybox-bash:0.1	0

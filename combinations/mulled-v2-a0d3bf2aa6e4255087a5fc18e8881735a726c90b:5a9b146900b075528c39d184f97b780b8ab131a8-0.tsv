@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+graphicsmagick=1.3.31,bioconductor-camera=1.42.0,r-snow=0.4_3,r-batch=1.1_5,bioconductor-multtest=2.42.0	bgruening/busybox-bash:0.1	0
