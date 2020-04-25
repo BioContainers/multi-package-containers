@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+python=3,psy-maps=1.2.0,psyplot=1.2.1,netcdf4=1.4.2,psy-reg=1.2.0	bgruening/busybox-bash:0.1	0

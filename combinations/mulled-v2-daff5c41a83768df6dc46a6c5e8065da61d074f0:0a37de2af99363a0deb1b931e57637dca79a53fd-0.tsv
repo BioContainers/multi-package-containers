@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+trinity=2.9.1,bioconductor-deseq2=1.18.1,bioconductor-limma=3.34.9,bioconductor-edger=3.20.7	bgruening/busybox-bash:0.1	0

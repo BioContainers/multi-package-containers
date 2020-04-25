@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-lattice=0.20_38,r-gridextra=2.3,r-base=3.6.1,bioconductor-cardinal=2.4.0,r-ggplot2=3.2.1	bgruening/busybox-bash:0.1	0
