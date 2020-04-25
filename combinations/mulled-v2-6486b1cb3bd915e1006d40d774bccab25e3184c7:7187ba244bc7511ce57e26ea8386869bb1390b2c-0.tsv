@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+kalign3=3.2.2,kcalign=0.5.8	bgruening/busybox-bash:0.1	0

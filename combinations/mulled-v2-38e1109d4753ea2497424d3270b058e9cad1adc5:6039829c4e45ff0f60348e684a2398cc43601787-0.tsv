@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pathwaymatcher=1.9.1,zip=3.0,coreutils=8.31	bgruening/busybox-bash:0.1	0
