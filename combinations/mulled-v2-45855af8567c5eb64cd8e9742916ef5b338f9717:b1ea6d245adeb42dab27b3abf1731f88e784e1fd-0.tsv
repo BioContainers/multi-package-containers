@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+fastx_toolkit=0.0.14,bzip2=1.0.8	bioconda/extended-base-image:latest	0

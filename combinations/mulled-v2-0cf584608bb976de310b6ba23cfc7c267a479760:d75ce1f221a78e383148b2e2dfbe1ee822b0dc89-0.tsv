@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+rasterstats=0.13.1,geopandas=0.4.1,xarray=0.11.3,netcdf4=1.5.1.2,python=3	bgruening/busybox-bash:0.1	0
