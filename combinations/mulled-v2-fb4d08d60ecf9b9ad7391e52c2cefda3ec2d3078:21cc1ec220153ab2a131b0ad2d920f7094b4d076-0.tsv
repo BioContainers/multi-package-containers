@@ -1,2 +1,2 @@
 #targets	base_image	image_build
-salmon=0.14.1,python=3.7	bgruening/busybox-bash:0.1	0
+python=3.7,salmon=0.14.1	bgruening/busybox-bash:0.1	0

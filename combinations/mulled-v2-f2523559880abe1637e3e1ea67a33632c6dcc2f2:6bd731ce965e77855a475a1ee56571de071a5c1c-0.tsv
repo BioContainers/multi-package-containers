@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+infernal,infernal=1.1.2,coreutils=8.25	bgruening/busybox-bash:0.1	0

@@ -18,7 +18,7 @@ before_install:
   /home/travis/.gimme/ /home/travis/.rvm /home/travis/.nvm
 - pip install requests
 ##- pip install git+https://github.com/galaxyproject/galaxy-lib@channel_cleanup
-- pip install "galaxy-tool-util>=20.1.0.dev5"
+- pip install "galaxy-tool-util>=20.1.0.dev5,<20.5.0.dev1"
 ##- pip install https://github.com/galaxyproject/galaxy-lib/archive/tripple.zip
 - wget http://mirrors.kernel.org/ubuntu/pool/universe/s/sshpass/sshpass_1.06-1_amd64.deb
 - sudo apt-get update -qq

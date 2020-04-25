@@ -1,2 +1,2 @@
 #targets	base_image	image_build
-star=2.7.2b,samtools=1.9,python=3.7	bgruening/busybox-bash:0.1	0
+samtools=1.9,python=3.7,star=2.7.2b	bgruening/busybox-bash:0.1	0
