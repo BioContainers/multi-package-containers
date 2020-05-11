@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+tabix=0.2.5,samtools=1.9,gatk4=4.1.7.0	bgruening/busybox-bash:0.1	0
