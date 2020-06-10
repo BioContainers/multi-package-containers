@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+tar=1.32,nanocompore=1.0.0rc3.post2	bgruening/busybox-bash:0.1	0
