@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bx-python=0.8.8,python=3.7	bioconda/extended-base-image:latest	0
