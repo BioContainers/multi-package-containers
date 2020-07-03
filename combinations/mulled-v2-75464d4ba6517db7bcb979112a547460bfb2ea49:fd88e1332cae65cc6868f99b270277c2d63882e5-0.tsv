@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-argparse=1.0.4,fonts-conda-ecosystem=1,r-base=3.4.1,bioconductor-cummerbund=2.16.0	bgruening/busybox-bash:0.1	0
