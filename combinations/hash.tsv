@@ -1,4 +1,5 @@
 #targets	base_image	image_build
+bwa-mem2=2.0-1,bwakit=0.7.17.dev1,samtools=1.10	bgruening/busybox-bash:0.1	0
 hisat2=2.2.0,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwakit=0.7.17.dev1,samtools=1.10	bgruening/busybox-bash:0.1	0
