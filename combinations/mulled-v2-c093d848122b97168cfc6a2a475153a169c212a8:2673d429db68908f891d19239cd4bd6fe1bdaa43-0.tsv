@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+openmg=0.1,java-jdk=8.0.112	bgruening/busybox-bash:0.1	0
