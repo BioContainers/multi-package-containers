@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+rust-ncbitaxonomy=1.0.7,spaln=2.4.03,python=3.8	bgruening/busybox-bash:0.1	0
