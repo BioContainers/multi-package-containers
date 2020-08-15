@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+trinotate=3.2.1,gnu-wget=1.18	bgruening/busybox-bash:0.1	0
