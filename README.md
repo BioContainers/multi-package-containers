@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/BioContainers/multi-package-containers.svg?branch=master)](https://travis-ci.org/BioContainers/multi-package-containers)
+[![Build Status](https://travis-ci.com/BioContainers/multi-package-containers.svg?branch=master)](https://travis-ci.com/BioContainers/multi-package-containers)
 
 ## Building multiple package Containers
 
