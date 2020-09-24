@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+xlsxwriter=1.2.8,biopython=1.76,pandas=0.25.3	bgruening/busybox-bash:0.1	0

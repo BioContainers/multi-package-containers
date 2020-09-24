@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-biobase=2.44.0,r-cluster=2.0.8,trinity=2.9.1,r-fastcluster=1.1.25	bgruening/busybox-bash:0.1	0

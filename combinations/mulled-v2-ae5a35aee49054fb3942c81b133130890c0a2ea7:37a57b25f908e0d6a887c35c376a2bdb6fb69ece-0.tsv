@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+busco=4.1.2,tar=1.32	bgruening/busybox-bash:0.1	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+vardict-java=1.7.0,samtools=1.10,gawk=5.0.1	bgruening/busybox-bash:0.1	0
