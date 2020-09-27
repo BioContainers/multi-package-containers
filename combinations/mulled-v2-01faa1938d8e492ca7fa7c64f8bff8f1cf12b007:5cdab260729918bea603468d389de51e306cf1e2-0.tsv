@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-gridextra=2.3,bioconductor-cardinal=2.6.0,r-rcolorbrewer=1.1_2,r-pheatmap=1.0.12,r-ggplot2=3.3.2,r-scales=1.1.1,r-kernsmooth=2.23_17	bgruening/busybox-bash:0.1	0
