@@ -77,3 +77,4 @@ bedtools=2.29.0,pigz=2.3.4
 pandas=0.24.2,pigz=2.3.4
 star=2.7.5b,samtools=1.9,pigz=2.3.4
 umi_tools=1.0.1,samtools=1.1.0
+icount=2.0.0,bedtools=2.28.0,pigz=2.3.4
