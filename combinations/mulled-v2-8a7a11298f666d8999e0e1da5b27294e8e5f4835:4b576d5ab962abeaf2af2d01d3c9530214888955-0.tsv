@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-optparse=1.6.4,r-qqman=0.1.4	bgruening/busybox-bash:0.1	0
