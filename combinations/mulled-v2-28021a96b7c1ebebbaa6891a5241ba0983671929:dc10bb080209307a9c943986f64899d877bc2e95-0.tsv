@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+openms-thirdparty=2.6,ctdopts=1.4,openms=2.6,blast=2.9.0	bgruening/busybox-bash:0.1	0
