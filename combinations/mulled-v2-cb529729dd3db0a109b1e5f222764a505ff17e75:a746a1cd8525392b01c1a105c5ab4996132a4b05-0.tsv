@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+apoc=1b16,coreutils=8.31	bgruening/busybox-bash:0.1	0
