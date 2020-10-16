@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+jinja2=2.11.2,clustergrammer=1.13.6	bgruening/busybox-bash:0.1	0
