@@ -1,4 +1,9 @@
 #targets	base_image	image_build
+bwa-mem2=2.0,bwakit=0.7.17.dev1,samtools=1.10	bgruening/busybox-bash:0.1	0
+bwa-mem2=2.0,samtools=1.10	bgruening/busybox-bash:0.1	0
+hisat2=2.2.0,samtools=1.10	bgruening/busybox-bash:0.1	0
+bwa=0.7.17,samtools=1.10	bgruening/busybox-bash:0.1	0
+bwakit=0.7.17.dev1,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwa=0.7.15,samtools=1.3.1	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.6	bgruening/busybox-bash:0.1	0
 blast=2.6.0,diamond=0.8.9,megahit=1.1.1,pauda=1.0.1,spades=3.9.0,velvet=1.2.10	bgruening/busybox-bash:0.1	0
@@ -46,3 +51,34 @@ cyvcf2=0.11.5,click=6.7	bgruening/busybox-bash:0.1	0
 vtools=1.0.0,jq=1.6	bgruening/busybox-bash:0.1	0
 pgx-variant-tools=0.0.2=py_2,locus_processing=0.0.4,snakemake-minimal=5.10.0,biopython=1.76,pyyaml=3.12	bgruening/busybox-bash:0.1	1
 biopython=1.76,pybedtools=0.8.1,locus_processing=0.0.4,pyyaml=3.12	bgruening/busybox-bash:0.1	0
+varscan=2.4.2,samtools=1.3.1,tabix=0.2.6,grep=2.14	bgruening/busybox-bash:0.1	0
+bedtools=2.27.1,grep=2.14,gawk=5.0.1	bgruening/busybox-bash:0.1	0
+bedtools=2.27.1,grep=2.14,gawk=5.0.1,click=7,python=3.7	bgruening/busybox-bash:0.1	0
+bedtools=2.17.0--0,python=2.7.13	bgruening/busybox-bash:0.1	0
+bioconductor-rtracklayer=1.42.1,bioconductor-biostrings=2.50.2,r-optparse=1.6.4	bgruening/busybox-bash:0.1	0
+bioconductor-dropletutils=1.6.1,openblas=0.3.9,r-matrix=1.2,r-ggplot2=3.2.1,r-optparse=1.6.4,r-gridextra=2.3,bioconductor-delayedarray=0.12.0	bgruening/busybox-bash:0.1	0
+scipy=1.4.1,pandas=1.0.1	bgruening/busybox-bash:0.1	0
+scipy=1.4.1,pandas=1.0.1,file=5.37	bgruening/busybox-bash:0.1	0
+bx-python=0.7.1,galaxy-ops=1.0.0	bgruening/busybox-bash:0.1	1
+r-seurat=3.1.5,r-rmarkdown=2.2	bioconda/extended-base-image:latest	0
+biopython=1.76
+singularity=3.5.3
+bioconductor-biocgenerics=0.30.0,bioconductor-summarizedexperiment=1.14.0,metaphlan2=2.9.21,python=3.7.3,pyyaml=5.1.2,r-argparse=2.0.1,r-base=3.6.1,r-basejump=0.11.18,r-bcbiobase=0.6.10,r-bcbiornaseq=0.3.28,r-brio=0.3.11,r-deseqanalysis=0.2.10,r-goalie=0.3.10,sambamba=0.7.0
+bedtools=2.29.0,bioconductor-biocparallel=1.18.0,bioconductor-deseq2=1.24.0,bioconductor-limma=3.40.2,bioconductor-rhdf5=2.28.0,bioconductor-rtracklayer=1.44.2,bioconductor-tximport=1.12.3,bx-python=0.8.4,fastqc=0.11.7,gatk4=4.1.3.0,gffread=0.11.4,kallisto=0.46.0,kraken2=2.0.8_beta,multiqc=1.7,ngmerge=0.3,numpy=1.17.2,openjdk=8.0.192=h14c3975_1003,pandas=0.25.1,picard=2.19.2,pysam=0.15.4,python=3.6.7,qualimap=2.2.2c,r-argparse=2.0.1,r-data.table=1.12.2,r-dplyr=0.8.3,r-magrittr=1.5,rna-seqc=2.3.4,r-readr=1.3.1,r-stringi=1.4.3,r-xlsx=0.6.1,salmon=1.1.0,sambamba=0.7.0,samtools=1.9,star=2.7.2b,tzcode,ucsc-gtftogenepred=377	bgruening/busybox-bash:0.1	1
+r-readr=1.3.1
+ambertools=20.4 
+picard=2.22.8--0,bwa=0.7.17	bgruening/busybox-bash:0.1	0
+whatshap=1.0--py37h9a982cc_1,tabix=0.2.6--ha92aebf_0	bgruening/busybox-bash:0.1	0
+r-gridextra=2.3,bioconductor-cardinal=2.6.0	bioconda/extended-base-image:latest	0
+rsem=1.3.3,star=2.7.6a	bgruening/busybox-bash:0.1	0
+perl-io-uncompress-gunzip=2.064,pigz=2.3.4
+bowtie2=2.4.1,samtools=1.9,pigz=2.3.4
+bedtools=2.29.0,pigz=2.3.4
+pandas=0.24.2,pigz=2.3.4
+star=2.7.5b,samtools=1.9,pigz=2.3.4
+umi_tools=1.0.1,samtools=1.1.0
+icount=2.0.0,bedtools=2.28.0,pigz=2.3.4
+r-base=4.0.2,seacr=1.3,bedtools=2.29.2
+nanopolish=0.13.2,samtools=1.10,minimap2=2.17
+r-base=4.0.3,r-optparse=1.6.6,r-ggplot2=3.3.2,r-rcolorbrewer=1.1_2,r-pheatmap=1.0.12,bioconductor-deseq2=1.28.0,bioconductor-biocparallel=1.22.0,bioconductor-tximport=1.16.0,bioconductor-complexheatmap=2.4.2
+fates-emerald=2.0.1	bioconda/extended-base-image:latest	0

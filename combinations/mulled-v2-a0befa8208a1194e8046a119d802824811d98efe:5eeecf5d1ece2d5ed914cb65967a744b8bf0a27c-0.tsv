@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+snpeff=4.3.1t,biopython=1.70,libmagic=5.32,python-magic=0.4.15,python=3.6	bgruening/busybox-bash:0.1	0

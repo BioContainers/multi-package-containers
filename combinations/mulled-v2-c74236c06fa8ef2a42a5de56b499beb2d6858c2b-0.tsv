@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-geometadb,bioconductor-affy,r-jsonlite,r-dplyr,bioconductor-geoquery,bioconductor-biobase,bioconductor-limma,r-optparse	bioconda/extended-base-image:latest	0

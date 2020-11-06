@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+rdkit=2019.03.2.0,scipy=1.3.0	bgruening/busybox-bash:0.1	0

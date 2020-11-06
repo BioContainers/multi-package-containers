@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+mageck=0.5.9.2,r-gplots=3.0.3,r-xtable=1.8_4,r-ggplot2=3.3.0	bgruening/busybox-bash:0.1	0

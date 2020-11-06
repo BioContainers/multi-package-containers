@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+samtools=1.10,sra-tools=2.10.7,pigz=2.3.4	bgruening/busybox-bash:0.1	0

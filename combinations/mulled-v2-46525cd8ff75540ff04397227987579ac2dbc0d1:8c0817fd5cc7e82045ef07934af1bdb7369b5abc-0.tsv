@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-base=3.6.1,r-maldiquantforeign=0.12,r-maldiquant=1.19.3,r-ggplot2=3.2.1,bioconductor-cardinal=2.4.0	bgruening/busybox-bash:0.1	0
