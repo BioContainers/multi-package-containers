@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-glmmtmb=1.0.1,r-dharma=0.3.3.0,r-gap=1.2.2,r-multcomp=1.4_13	bgruening/busybox-bash:0.1	0
