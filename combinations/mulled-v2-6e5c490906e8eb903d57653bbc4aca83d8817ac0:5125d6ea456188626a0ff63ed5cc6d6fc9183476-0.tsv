@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pysam=0.15,matplotlib=3.1.2,cyvcf2=0.11.6	bgruening/busybox-bash:0.1	0
