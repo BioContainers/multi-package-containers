@@ -83,3 +83,4 @@ r-base=4.0.2,seacr=1.3,bedtools=2.29.2
 nanopolish=0.13.2,samtools=1.10,minimap2=2.17
 r-base=4.0.3,r-optparse=1.6.6,r-ggplot2=3.3.2,r-rcolorbrewer=1.1_2,r-pheatmap=1.0.12,bioconductor-deseq2=1.28.0,bioconductor-biocparallel=1.22.0,bioconductor-tximport=1.16.0,bioconductor-complexheatmap=2.4.2
 fates-emerald=2.0.1	bioconda/extended-base-image:latest	0
+r-base=4.0.3,r-optparse=1.6.6,r-rmariadb=1.0.6,bioconductor-annotationdbi=1.42.1,bioconductor-genomicfeatures=1.32.3,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2,bioconductor-edgeR=3.32.0,bioconductor-org.hs.eg.db=3.6.0,bioconductor-grohmm=1.24.0
