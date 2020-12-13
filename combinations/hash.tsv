@@ -88,7 +88,4 @@ trimmomatic=0.38,coreutils=8.25	bgruening/busybox-bash:0.1	0
 python=3.7
 python=3.8
 python=3.9
-r-base=4.0.3,r-optparse=1.6.6,r-rmariadb=1.0.10,r-gplots=3.0.1.1,bioconductor-annotationdbi=1.52.0,bioconductor-genomicfeatures=1.42.0,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2,bioconductor-edgeR=3.32.0,bioconductor-org.hs.eg.db=3.12.0,bioconductor-grohmm=1.24.0
-
-
-
+r-base=4.0,r-catools-1.18.0,r-optparse=1.6.6,r-rmariadb=1.0.10,r-gplots=3.1.1,bioconductor-annotationdbi=1.52.0,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2,bioconductor-org.hs.eg.db=3.12.0, bioconductor-edger=3.32.0,bioconductor-grohmm=1.24.0
