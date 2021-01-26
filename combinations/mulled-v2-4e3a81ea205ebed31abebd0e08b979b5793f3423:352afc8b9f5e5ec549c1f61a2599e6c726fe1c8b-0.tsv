@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-scater=1.18.0,r-base=4.0,bioconductor-dropletutils=1.10.0,fonts-conda-ecosystem=1,r-matrix=1.2_18	bgruening/busybox-bash:0.1	0
