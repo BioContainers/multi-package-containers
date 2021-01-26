@@ -24,18 +24,13 @@ jobs:
         mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations --verbose
     - name: Upload images (if pushed to master branch)
       if: github.event_name == 'push' && github.event.ref == 'master'
+      env: SSH_AUTH_SOCK: /tmp/ssh_agent.sock
       run: |
-        openssl aes-256-cbc -K ${{ secrets.encrypted_69030c032500_key }} -iv ${{ secrets.encrypted_69030c032500_iv }} -in galaxy_depot_travis.enc -out ~/.ssh/galaxy_depot_travis -d
-        chmod 600 ~/.ssh/galaxy_depot_travis
-        printf "%s\n" \
-            "Host orval.galaxyproject.org" \
-            "  IdentityFile ~/.ssh/galaxy_depot_travis" \
-            "  LogLevel ERROR" >> ~/.ssh/config
-        eval $(ssh-agent)
-        sshpass -e -P 'Enter passphrase for' ssh-add ~/.ssh/galaxy_depot_travis
-
-         mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token ${{ secrets.QUAY_OAUTH_TOKEN }} push ./combinations;
-         ls -l singularity_import;
-         ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts;
+         mkdir -p ~/.ssh
+         ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts
+         ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+         ssh-add - < "${{ secrets.ORVAL_KEY }}"
+         mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token ${{ secrets.QUAY_OAUTH_TOKEN }} push ./combinations
+         ls -l singularity_import
          [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp singularity_import/*:* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
 
