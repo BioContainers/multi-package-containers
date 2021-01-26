@@ -23,7 +23,7 @@ jobs:
       run: |
         mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations --verbose
     - name: Upload images (if pushed to master branch)
-      if: github.event_name == 'push' && github.event.ref == 'master'
+      if: github.ref == 'refs/heads/master' && github.repository_owner == 'BioContainers'
       env:
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
       run: |
