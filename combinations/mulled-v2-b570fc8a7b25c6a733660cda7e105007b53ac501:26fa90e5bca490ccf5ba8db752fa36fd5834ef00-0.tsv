@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+hisat2=2.1.0,samtools=1.11,seqtk=1.3	bgruening/busybox-bash:0.1	0
