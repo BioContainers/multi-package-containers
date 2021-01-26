@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-diffbind=2.10.0,r-rjson=0.2.20,r-getopt=1.20.3,r-base=3.5.1	bgruening/busybox-bash:0.1	0
