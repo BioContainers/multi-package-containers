@@ -24,7 +24,8 @@ jobs:
         mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations --verbose
     - name: Upload images (if pushed to master branch)
       if: github.event_name == 'push' && github.event.ref == 'master'
-      env: SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
       run: |
          mkdir -p ~/.ssh
          ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts
