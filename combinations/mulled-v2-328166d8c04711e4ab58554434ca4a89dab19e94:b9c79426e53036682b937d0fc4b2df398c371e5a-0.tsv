@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+anndata=0.7.4,h5py=2.9.0,scanpy=1.4.4.post1,loompy=2.0.17	bgruening/busybox-bash:0.1	0
