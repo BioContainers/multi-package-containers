@@ -30,7 +30,7 @@ jobs:
          mkdir -p ~/.ssh
          ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts
          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-         ssh-add - < "${{ secrets.ORVAL_KEY }}"
+         ssh-add - <<< "${{ secrets.ORVAL_KEY }}"
          mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token ${{ secrets.QUAY_OAUTH_TOKEN }} push ./combinations
          ls -l singularity_import
          [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp singularity_import/*:* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
