@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+fates-emerald=2.0.1,python=3,binutils=2.35,perl-xml-libxml=2.0132,tar=1.32	bgruening/busybox-bash:0.1	0

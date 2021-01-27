@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+blat,blast,proteinortho=6.0.23,diamond,last	bioconda/extended-base-image:latest	0

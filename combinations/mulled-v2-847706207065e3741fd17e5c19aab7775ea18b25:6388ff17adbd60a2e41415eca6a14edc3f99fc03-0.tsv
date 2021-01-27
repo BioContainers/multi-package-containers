@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+openms-thirdparty=2.5,openjdk=8.0.192,ctdopts=1.4,blast=2.9.0,openms=2.5	bgruening/busybox-bash:0.1	0
