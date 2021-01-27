@@ -26,6 +26,7 @@ jobs:
       if: github.ref == 'refs/heads/master' && github.repository_owner == 'BioContainers'
       env:
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        INVOLUCRO_AUTH: "https://${{ secrets.MY_USER }}:${{ secrets.MY_PASSWORD }}@quay.io/v1/?email=${{ secrets.MY_EMAIL }}"
       run: |
          mkdir -p ~/.ssh
          ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts
@@ -34,4 +35,3 @@ jobs:
          mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token ${{ secrets.QUAY_OAUTH_TOKEN }} push ./combinations
          ls -l singularity_import
          [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp singularity_import/*:* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
-
