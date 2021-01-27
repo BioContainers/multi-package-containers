@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+ena-upload-cli=0.2.4,xlrd=1.2.0	bgruening/busybox-bash:0.1	0
