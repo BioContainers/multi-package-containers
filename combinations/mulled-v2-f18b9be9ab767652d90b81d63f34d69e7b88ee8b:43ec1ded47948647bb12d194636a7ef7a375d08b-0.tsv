@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+quast=3.1,python=2.7.10,perl=5.18.1	bioconda/extended-base-image:latest	0
