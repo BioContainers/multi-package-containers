@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+galaxy_sequence_utils=1.1.4,bx-python=0.8.6	bioconda/extended-base-image:latest	0
