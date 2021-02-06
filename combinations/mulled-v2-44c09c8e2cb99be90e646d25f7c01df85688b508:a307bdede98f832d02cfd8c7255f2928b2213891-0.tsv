@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-ggplot2=2.2.1=r3.3.2_0,r-optparse=1.3.2=r3.3.2_0	bgruening/busybox-bash:0.1	0
