@@ -100,5 +100,6 @@ r-base=4.0.3,r-reshape2=1.4.4,r-optparse=1.6.6,r-ggplot2=3.3.3,r-scales=1.1.1,r-
 metabat2=2.15,python=3.6.7,biopython=1.74,pandas=1.1.5
 cd-hit=4.8.1,exonerate=2.4,blast=2.2.31
 trinity=2.9.1,pigz=2.3.4
-python=3.6.10,biopython=1.78,pandas=1.1.2,numpy=1.18.1
-r-base=3.6.2,r-reshape2=1.4.4,r-plotly=4.9.2.1,plotly-orca=3.4.2,r-ggplot2=3.3.0,r-svglite=1.2.3,r-ggthemes=4.2.0,r-knitr=1.29,r-rmarkdown=2.3,r-kableextra=1.1.0
+biopython=1.78,pandas=1.1.2,numpy=1.18.1
+r-reshape2=1.4.4,r-plotly=4.9.2.1,plotly-orca=3.4.2,r-ggplot2=3.3.0,r-svglite=1.2.3,r-ggthemes=4.2.0,r-knitr=1.29,r-rmarkdown=2.3,r-kableextra=1.1.0
+velvet=1.2.10,oases=0.2.09
