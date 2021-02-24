@@ -104,3 +104,4 @@ biopython=1.78,pandas=1.1.2,numpy=1.18.1
 r-reshape2=1.4.4,r-plotly=4.9.2.1,plotly-orca=3.4.2,r-ggplot2=3.3.0,r-svglite=1.2.3,r-ggthemes=4.2.0,r-knitr=1.29,r-rmarkdown=2.3,r-kableextra=1.1.0
 velvet=1.2.10,oases=0.2.09
 pandas=1.1.5
+changeo=1.2.0,igblast=1.15.0
