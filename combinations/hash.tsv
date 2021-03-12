@@ -108,3 +108,6 @@ fred2=2.0.6,mhcflurry=1.4.3,mhcnuggets=2.3.2
 changeo=1.0.2,igblast=1.15.0
 homer=4.11,samtools=1.11,r-base=4.0.2,bioconductor-deseq2=1.30.0,bioconductor-edger=3.32.0,perl=5.26.2
 umi_tools=1.1.1,samtools=1.1.0
+pigz=2.3.4
+jq=1.6
+r-base=4.0.3,r-shazam=1.0.2,r-tigger=1.0.0
