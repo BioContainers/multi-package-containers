@@ -111,3 +111,4 @@ umi_tools=1.1.1,samtools=1.1.0
 pigz=2.3.4
 jq=1.6
 r-base=4.0.3,r-shazam=1.0.2,r-tigger=1.0.0
+r-base=4.0.3,r-shazam=1.0.2,r-tigger=1.0.0,tzdata=2021a
