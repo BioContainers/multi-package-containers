@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+samtools=1.9,bcbiogff=0.6.4,jbrowse=1.16.11,biopython=1.72,tabix=0.2.6,findutils=4.6.0,python=2.7,pyyaml=3.13	bgruening/busybox-bash:0.1	0
