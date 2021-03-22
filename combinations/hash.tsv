@@ -5,6 +5,7 @@ bwa-mem2=2.0,bwakit=0.7.17.dev1,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.0,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.1,samtools=1.11	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.2,samtools=1.11	bgruening/busybox-bash:0.1	0
+bwa-mem2=2.2,samtools=1.12	bgruening/busybox-bash:0.1	0
 hisat2=2.2.0,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwakit=0.7.17.dev1,samtools=1.10	bgruening/busybox-bash:0.1	0
