@@ -124,3 +124,4 @@ yara=1.0.2,samtools=1.12
 pysam=0.16.0.1,biopython=1.78
 rapidnj=2.3.2,biopython=1.78
 r-base=4.0.3,r-optparse=1.6.6,r-rmariadb=1.1.0,bioconductor-edger=3.32.0,bioconductor-grohmm=1.24.0,bioconductor-org.hs.eg.db=3.12.0,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2
+kraken2=2.1.1,pigz=2.6
