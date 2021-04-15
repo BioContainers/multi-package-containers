@@ -127,3 +127,4 @@ r-base=4.0.3,r-optparse=1.6.6,r-rmariadb=1.1.0,bioconductor-edger=3.32.0,biocond
 kraken2=2.1.1,pigz=2.6
 merqury=1.1,tar=1.34,findutils=4.6.0
 star=2.6.1d,samtools=1.10
+star=2.6.1d,samtools=1.10,gawk 5.1.0
