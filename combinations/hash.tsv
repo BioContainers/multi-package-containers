@@ -131,4 +131,4 @@ star=2.6.1d,samtools=1.10,gawk=5.1.0
 planemo=0.74.3,git=2.30.2,galaxyxml=0.4.14
 minimap2=2.18,samtools=1.12
 changeo=1.0.2,igblast=1.15.0,wget=1.20.1
-changeo=1.0.2,igblast=1.15.0,wget=1.20.1	bioconda/extended-base-image:latest	0
+changeo=1.0.2,igblast=1.15.0,wget=1.20.1	quay.io/bioconda/base-glibc-busybox-bash:2.1.0	1
