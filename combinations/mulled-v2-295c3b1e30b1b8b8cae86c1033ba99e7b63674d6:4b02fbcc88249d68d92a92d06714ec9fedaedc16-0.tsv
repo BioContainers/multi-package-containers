@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+tar=1.34=ha1f6473_0,bowtie=1.3.0=py39h176da8b_2,samtools=1.12=h9aed4be_1,r-lattice=0.20_44=r40hcfec24a_0,r-optparse=1.6.6=r40h6115d3f_1,pysam=0.16.0.1=py39h051187c_3	bgruening/busybox-bash:0.1	0
