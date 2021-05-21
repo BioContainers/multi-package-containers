@@ -2,7 +2,6 @@ name: Build image
 on: [push, pull_request]
 env:
   MULLED_NAMESPACE: biocontainers
-  DEST_BASE_IMAGE: 'quay.io/bioconda/base-glibc-busybox-bash:latest'
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
