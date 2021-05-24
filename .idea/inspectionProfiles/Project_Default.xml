@@ -1,0 +1,27 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyArgumentListInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="12">
+            <item index="0" class="java.lang.String" itemvalue="idna-ssl" />
+            <item index="1" class="java.lang.String" itemvalue="motor" />
+            <item index="2" class="java.lang.String" itemvalue="aiojobs" />
+            <item index="3" class="java.lang.String" itemvalue="cx-Freeze" />
+            <item index="4" class="java.lang.String" itemvalue="numpy" />
+            <item index="5" class="java.lang.String" itemvalue="wasmer" />
+            <item index="6" class="java.lang.String" itemvalue="aiocontextvars" />
+            <item index="7" class="java.lang.String" itemvalue="bcrypt" />
+            <item index="8" class="java.lang.String" itemvalue="contextvars" />
+            <item index="9" class="java.lang.String" itemvalue="certifi" />
+            <item index="10" class="java.lang.String" itemvalue="urllib3" />
+            <item index="11" class="java.lang.String" itemvalue="visvalingamwyatt" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
