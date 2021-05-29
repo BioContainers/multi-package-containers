@@ -134,3 +134,4 @@ biopython=1.78,pigz=2.6
 python=3.9,pysam,biopython,click,pandas,numpy,ete3
 python=3.6,galaxy-ml=0.8.1
 python=3.6,galaxy-ml=0.7.12
+biopython=1.78,openpyxl=3.0.7,pyfastx=0.8.2,numpy=1.20.2,pandas=1.2.4
