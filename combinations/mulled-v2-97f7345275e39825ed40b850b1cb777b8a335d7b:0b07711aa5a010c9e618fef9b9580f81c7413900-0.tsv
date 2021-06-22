@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+snvphyl-tools=1.8.2,mummer=3.23	quay.io/bioconda/base-glibc-busybox-bash:latest	0
