@@ -44,7 +44,7 @@ git-lfs=2.4.0,git=2.20.1,coreutils=8.31,pypgatk=0.0.4	bgruening/busybox-bash:0.1
 click=7.0,pyvcf=0.6.8,python=3.5	bgruening/busybox-bash:0.1	0
 click=7.0,pyvcf=0.6.8,python=3.5,pybedtools=0.8	bgruening/busybox-bash:0.1	0
 qualimap=2.2.2a,perl-bioperl=1.6.924	bgruening/busybox-bash:0.1	0
-qualimap=2.2.2d,samtools=1.12	bgruening/busybox-bash:0.1	0
+qualimap=2.2.2d,samtools=1.12	quay.io/bioconda/base-glibc-busybox-bash:latest	0
 aniso8601=8.0.0,requests=2.22	bgruening/busybox-bash:0.1	0
 jinja2=2.10,pathlib=1.0.1	bgruening/busybox-bash:0.1	0
 umi_tools=0.5.5	bgruening/busybox-bash:0.1	0
