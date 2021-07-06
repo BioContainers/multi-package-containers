@@ -1,5 +1,4 @@
 #targets	base_image	image_build
-bwa=0.7.17,samtools=1.9	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.10,samblaster=0.1.24	bgruening/busybox-bash:0.1	1
 bowtie=1.1.1,picard=2.23.3	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.0,bwakit=0.7.17.dev1,samtools=1.10	bgruening/busybox-bash:0.1	0
@@ -141,3 +140,4 @@ python=3.9,biopython=1.78,openpyxl=3.0.7,pandas=1.2.4,rich=10.2.2,typer=0.3.2,xl
 asciigenome=1.16.0,bedtools=2.30.0
 r-recetox-aplcms=0.9.3,r-base=4.1.0,r-arrow=4.0.1	quay.io/bioconda/base-glibc-debian-bash:latest	0
 python=3.9,pandas=1.3.0,seaborn=0.11.0
+bwa=0.7.17,samtools=1.9,bcftools=1.9	bgruening/busybox-bash:0.1	0
