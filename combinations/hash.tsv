@@ -146,3 +146,4 @@ python=3.9,pandas=1.3.0,seaborn=0.11.0,rich=10.6.0,typer=0.3.2,bcbio-gff=0.6.6,d
 r-base=4.0.3,r-alakazam=1.0.2,r-shazam=1.0.2,r-airr=1.3.0,r-kableextra=1.3.4,r-dt=0.18,r-knitr=1.33,r-rmarkdown=2.8,r-dplyr=1.0.6
 r-mass=7.3_54,r-zoo=1.8_9,r-gplots=3.1.1
 r-base=4.1.0,r-rmarkdown=2.9,r-yaml=2.2.1
+r-mass=7.3_54,r-zoo=1.8_9,r-gplots=3.1.1,ghostscript
