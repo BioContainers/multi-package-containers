@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+fonts-conda-ecosystem=1,busco=5.0.0,tar=1.32	bioconda/extended-base-image:latest	0

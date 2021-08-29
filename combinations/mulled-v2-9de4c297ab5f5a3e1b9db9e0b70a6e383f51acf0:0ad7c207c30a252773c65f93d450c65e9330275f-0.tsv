@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pretextsnapshot=0.0.3,rename=1.601	bgruening/busybox-bash:0.1	0

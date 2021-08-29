@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+samtools=1.11,imagemagick=7.0.10_62,jvarkit-wgscoverageplotter=20201223	bgruening/busybox-bash:0.1	1
