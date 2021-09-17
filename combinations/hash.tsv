@@ -150,3 +150,4 @@ r-base=4.1.0,r-rmarkdown=2.9,r-yaml=2.2.1
 r-mass=7.3_54,r-zoo=1.8_9,r-gplots=3.1.1,ghostscript
 chromap=0.1,samtools=1.13
 bbmap=38.92,samtools=1.13
+bbmap=38.92,samtools=1.13,pigz=2.6
