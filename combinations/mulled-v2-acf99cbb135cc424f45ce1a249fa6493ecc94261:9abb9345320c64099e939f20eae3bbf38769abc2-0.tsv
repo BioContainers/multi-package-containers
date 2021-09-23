@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+zip=3.0,searchgui=4.0.12	bgruening/busybox-bash:0.1	0

@@ -1,8 +1,14 @@
 #targets	base_image	image_build
+bwa=0.7.17,samtools=1.10,samblaster=0.1.24	bgruening/busybox-bash:0.1	1
+bowtie=1.1.1,picard=2.23.3	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.0,bwakit=0.7.17.dev1,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.0,samtools=1.10	bgruening/busybox-bash:0.1	0
+bwa-mem2=2.1,samtools=1.11	bgruening/busybox-bash:0.1	0
+bwa-mem2=2.2,samtools=1.11	bgruening/busybox-bash:0.1	0
+bwa-mem2=2.2.1,samtools=1.12	bgruening/busybox-bash:0.1	0
 hisat2=2.2.0,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.10	bgruening/busybox-bash:0.1	0
+bwa=0.7.17,samtools=1.12	bgruening/busybox-bash:0.1	0
 bwakit=0.7.17.dev1,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwa=0.7.15,samtools=1.3.1	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.6	bgruening/busybox-bash:0.1	0
@@ -12,10 +18,6 @@ canu=1.5,miniasm=0.2_r159,pacbio_falcon=052016,pilon=1.22	bgruening/busybox-bash
 tensorflow=1.4.0,tensorboard=0.4.0rc3,matplotlib=2.1.0,numpy=1.13.3,scipy=0.19.1,libgcc	bgruening/busybox-bash:0.1	0
 migmap=1.0.2,tophat=2.1.1,trinity=date.2011_11_26	bgruening/busybox-bash:0.1	0
 r-optparse=1.4.4,r-seurat=2.3.1	bgruening/busybox-bash:0.1	0
-nomkl,python=3.5.0,numpy=1.11.3,idr=2.0.4.2,bedtools=2.26.0,java-jdk=8.0.92,libgcc=5.2.0,matplotlib=1.5.1	bgruening/busybox-bash:0.1	0
-nomkl,samtools=1.2,htslib=1.4,bedtools=2.26.0,picard=2.10.6,ucsc-fetchchromsizes,ucsc-wigtobigwig,ucsc-bedgraphtobigwig,ucsc-bigwiginfo,ucsc-bedclip,ucsc-bedtobigbed,ucsc-twobittofa,macs2=2.1.1.20160309,boost=1.57.0,openblas=0.2.19,numpy=1.11.3,matplotlib=1.5.1,six=1.11.0,python-dateutil=2.6.1,libgfortran=3.0,graphviz=2.38.0,libtool,ghostscript,pigz,zlib,sambamba=0.6.6,r=3.2.2,r-snow,r-snowfall,r-bitops,r-catools,bioconductor-rsamtools,r-spp=1.13,pyfaidx=0.4.7.1,cutadapt=1.9.1,preseq=2.0.3,trim-galore=0.4.1,python-levenshtein,bowtie2=2.2.6,ncurses,ucsc-bigWigAverageOverBed,gnuplot,scipy,pandas,metaseq,jinja2,gsl,pysam=0.8.4,pybedtools=0.6.9,cromwell,phantompeakqualtools=1.2	bgruening/busybox-bash:0.1	0
-_r-mutex=1.0.0,ca-certificates=2018.4.16,font-ttf-dejavu-sans-mono=2.37,gettext=0.19.8.1,gsl=1.16,htslib=1.2.1,icu=56.1,libgcc-ng=7.2.0,libgfortran=3.0.0,libgfortran-ng=7.2.0,libstdcxx-ng=7.2.0,lzo=2.10,nomkl=2.0,openjdk=8.0.121,pixman=0.34.0,readline=6.2,sambamba=0.6.6,samtools=1.2,tk=8.5.19,boost=1.57.0,expat=2.2.5,findutils=4.6.0,jpeg=9c,libffi=3.2.1,libgcc=7.2.0,libiconv=1.15,libopenblas=0.2.20,libtool=2.4.6,libuuid=2.32.1,ncurses=6.0,openblas=0.2.19,openssl=1.0.2o,pcre=8.41,perl=5.26.2,sqlite=3.19.3,xz=5.2.4,yaml=0.1.7,zlib=1.2.11,bedtools=2.26.0,blas=1.1,fastqc=0.11.6,ghostscript=9.18,glib=2.51.4,libpng=1.6.35,libtiff=4.0.6,libxml2=2.9.3,mysql-connector-c=6.1.6,pigz=2.3.4,preseq=2.0.3,python=2.7.11,argcomplete=1.9.4,argh=0.26.1,bowtie2=2.2.6,certifi=2018.4.16,cromwell=0.34,cutadapt=1.9.1,cython=0.28.5,freetype=2.6.3,functools32=3.2.3.2,markupsafe=1.0,msgpack-python=0.5.6,numpy=1.11.3,olefile=0.45.1,picard=2.10.6,pyparsing=2.2.0,pysam=0.8.4,python-lzo=1.11,pytz=2018.5,pyyaml=3.12,simplejson=3.8.1,sip=4.18,six=1.11.0,ucsc-bedclip=366,ucsc-bedgraphtobigwig=366,ucsc-bedtobigbed=366,ucsc-bigwigaverageoverbed=366,ucsc-bigwiginfo=366,ucsc-fetchchromsizes=366,ucsc-twobittofa=366,ucsc-wigtobigwig=366,bx-python=0.8.1,cycler=0.10.0,fisher=0.1.4,fontconfig=2.11.1,mmtf-python=1.0.2,pillow=4.0.0,pyfaidx=0.4.7.1,python-dateutil=2.7.3,scipy=1.0.0,setuptools=40.0.0,trim-galore=0.4.1,cairo=1.14.6,gffutils=0.9,jinja2=2.10,libgd=2.2.3,nose=1.3.7,pandas=0.21.1,reportlab=3.4.0,scikit-learn=0.19.1,wheel=0.31.1,biopython=1.68,gnuplot=5.0.3,harfbuzz=1.3.4,pip=18.0,pybedtools=0.6.9,python-levenshtein=0.12.0,pango=1.40.3,graphviz=2.38.0,qt=4.8.7,r-base=3.2.2,macs2=2.1.1.20160309,pyqt=4.11.4,matplotlib=1.5.1,metaseq=0.5.6,bioconductor-biocgenerics=0.18.0,bioconductor-s4vectors=0.8.11,bioconductor-iranges=2.4.8,bioconductor-genomeinfodb=1.6.3,bioconductor-zlibbioc=1.16.0,bioconductor-xvector=0.10.0,bioconductor-biostrings=2.38.4,bioconductor-genomicranges=1.22.4,r=3.2.2,r-bitops=1.0_6,r-boot=1.3_17,r-cluster=2.0.3,r-codetools=0.2_14,r-foreign=0.8_66,r-futile.options=1.0.0,r-kernsmooth=2.23_15,r-lambda.r=1.1.7,r-lattice=0.20_33,r-mass=7.3_45,r-nnet=7.3_11,r-rpart=4.1_10,r-snow=0.4_1,r-spatial=7.3_11,r-survival=2.38_3,r-catools=1.17.1,r-class=7.3_14,r-futile.logger=1.4.1,r-matrix=1.2_2,r-nlme=3.1_122,r-snowfall=1.84_6.1,bioconductor-biocparallel=1.4.3,r-mgcv=1.8_9,bioconductor-rsamtools=1.22.0,r-recommended=3.2.2,r-spp=1.13,phantompeakqualtools=1.2	bgruening/busybox-bash:0.1	0
-_r-mutex=1.0.0,ca-certificates=2018.4.16,gettext=0.19.8.1,icu=56.1,libgcc-ng=7.2.0,libgfortran=3.0.0,libgfortran-ng=7.2.0,libstdcxx-ng=7.2.0,nomkl=2.0,openjdk=8.0.121,pixman=0.34.0,readline=6.2,tk=8.5.19,xz=5.0.5,boost=1.57.0,findutils=4.6.0,jpeg=9c,libffi=3.2.1,libgcc=7.2.0,libiconv=1.15,libopenblas=0.2.20,ncurses=6.0,openblas=0.2.19,openssl=1.0.2o,pcre=8.41,sqlite=3.19.3,zlib=1.2.11,bedtools=2.26.0,blas=1.1,glib=2.51.4,libpng=1.6.35,libtiff=4.0.6,libxml2=2.9.3,python=3.5.0,certifi=2018.4.16,cromwell=0.34,freetype=2.6.3,numpy=1.11.3,pyparsing=2.2.0,pytz=2018.5,sip=4.18,six=1.11.0,cycler=0.10.0,fontconfig=2.11.1,python-dateutil=2.7.3,scipy=1.0.0,setuptools=40.0.0,cairo=1.14.6,wheel=0.31.1,harfbuzz=1.3.4,pip=18.0,pango=1.40.3,qt=4.8.7,r-base=3.2.2,pyqt=4.11.4,matplotlib=1.5.1,idr=2.0.4.2,bioconductor-biocgenerics=0.18.0,bioconductor-s4vectors=0.8.11,bioconductor-iranges=2.4.8,bioconductor-genomeinfodb=1.6.3,bioconductor-zlibbioc=1.16.0,bioconductor-xvector=0.10.0,bioconductor-biostrings=2.38.4,bioconductor-genomicranges=1.22.4,r=3.2.2,r-bitops=1.0_6,r-boot=1.3_17,r-cluster=2.0.3,r-codetools=0.2_14,r-foreign=0.8_66,r-futile.options=1.0.0,r-kernsmooth=2.23_15,r-lambda.r=1.1.7,r-lattice=0.20_33,r-mass=7.3_45,r-nnet=7.3_11,r-rpart=4.1_10,r-snow=0.4_1,r-spatial=7.3_11,r-survival=2.38_3,r-catools=1.17.1,r-class=7.3_14,r-futile.logger=1.4.1,r-matrix=1.2_2,r-nlme=3.1_122,bioconductor-biocparallel=1.4.3,r-mgcv=1.8_9,bioconductor-rsamtools=1.22.0,r-recommended=3.2.2,r-spp=1.13	bgruening/busybox-bash:0.1	0
 anndata=0.6.13,loompy=2.0.16,r-seurat=2.3.4,qt=5.6.2	bgruening/busybox-bash:0.1	0
 astropy=3.0.5=py37h7b6447c_1	bgruening/busybox-bash:0.1	0
 flashlfq=0.1.111=0	bgruening/busybox-bash:0.1	0
@@ -42,6 +44,7 @@ git-lfs=2.4.0,git=2.20.1,coreutils=8.31,pypgatk=0.0.4	bgruening/busybox-bash:0.1
 click=7.0,pyvcf=0.6.8,python=3.5	bgruening/busybox-bash:0.1	0
 click=7.0,pyvcf=0.6.8,python=3.5,pybedtools=0.8	bgruening/busybox-bash:0.1	0
 qualimap=2.2.2a,perl-bioperl=1.6.924	bgruening/busybox-bash:0.1	0
+qualimap=2.2.2d,samtools=1.12	quay.io/bioconda/base-glibc-busybox-bash:latest	0
 aniso8601=8.0.0,requests=2.22	bgruening/busybox-bash:0.1	0
 jinja2=2.10,pathlib=1.0.1	bgruening/busybox-bash:0.1	0
 umi_tools=0.5.5	bgruening/busybox-bash:0.1	0
@@ -66,7 +69,7 @@ singularity=3.5.3
 bioconductor-biocgenerics=0.30.0,bioconductor-summarizedexperiment=1.14.0,metaphlan2=2.9.21,python=3.7.3,pyyaml=5.1.2,r-argparse=2.0.1,r-base=3.6.1,r-basejump=0.11.18,r-bcbiobase=0.6.10,r-bcbiornaseq=0.3.28,r-brio=0.3.11,r-deseqanalysis=0.2.10,r-goalie=0.3.10,sambamba=0.7.0
 bedtools=2.29.0,bioconductor-biocparallel=1.18.0,bioconductor-deseq2=1.24.0,bioconductor-limma=3.40.2,bioconductor-rhdf5=2.28.0,bioconductor-rtracklayer=1.44.2,bioconductor-tximport=1.12.3,bx-python=0.8.4,fastqc=0.11.7,gatk4=4.1.3.0,gffread=0.11.4,kallisto=0.46.0,kraken2=2.0.8_beta,multiqc=1.7,ngmerge=0.3,numpy=1.17.2,openjdk=8.0.192=h14c3975_1003,pandas=0.25.1,picard=2.19.2,pysam=0.15.4,python=3.6.7,qualimap=2.2.2c,r-argparse=2.0.1,r-data.table=1.12.2,r-dplyr=0.8.3,r-magrittr=1.5,rna-seqc=2.3.4,r-readr=1.3.1,r-stringi=1.4.3,r-xlsx=0.6.1,salmon=1.1.0,sambamba=0.7.0,samtools=1.9,star=2.7.2b,tzcode,ucsc-gtftogenepred=377	bgruening/busybox-bash:0.1	1
 r-readr=1.3.1
-ambertools=20.4 
+ambertools=20.4
 picard=2.22.8--0,bwa=0.7.17	bgruening/busybox-bash:0.1	0
 whatshap=1.0--py37h9a982cc_1,tabix=0.2.6--ha92aebf_0	bgruening/busybox-bash:0.1	0
 r-gridextra=2.3,bioconductor-cardinal=2.6.0	bioconda/extended-base-image:latest	0
@@ -79,3 +82,73 @@ star=2.7.5b,samtools=1.9,pigz=2.3.4
 umi_tools=1.0.1,samtools=1.1.0
 icount=2.0.0,bedtools=2.28.0,pigz=2.3.4
 r-base=4.0.2,seacr=1.3,bedtools=2.29.2
+nanopolish=0.13.2,samtools=1.10,minimap2=2.17
+r-base=4.0.3,r-optparse=1.6.6,r-ggplot2=3.3.2,r-rcolorbrewer=1.1_2,r-pheatmap=1.0.12,bioconductor-deseq2=1.28.0,bioconductor-biocparallel=1.22.0,bioconductor-tximport=1.16.0,bioconductor-complexheatmap=2.4.2
+fates-emerald=2.0.1	bioconda/extended-base-image:latest	0
+trimmomatic=0.38,coreutils=8.25	bgruening/busybox-bash:0.1	0
+python=3.7
+python=3.8
+python=3.9
+samtools=1.11,bowtie=1.3.0
+r-base=4.0,r-optparse=1.6.6,r-ggplot2=3.3.2,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2=r40_9,bioconductor-edger=3.32.0,bioconductor-grohmm=1.24.0,bioconductor-org.hs.eg.db=3.12.0
+searchgui=4.0.4,zip=3.0	bioconda/extended-base-image:latest	0
+bowtie2=2.4.2,samtools=1.11,pigz=2.3.4
+r-base=4.0,bioconductor-edger=3.32.0,bioconductor-limma=3.46.0,r-rjson=0.2.20,r-getopt=1.20.3,r-statmod=1.4.35,r-scales=1.1.1	bgruening/busybox-bash:0.1	0
+qcat=1.1.0,pigz=2.3.4	bgruening/busybox-bash:0.1	0
+r-base=4.0.2,r-devtools=2.3.2,r-gmodels=2.18.1,r-optparse=1.6.6,bioconductor-deseq2=1.30.0,bioconductor-edger=3.32.0,bioconductor-genomicalignments=1.26.0,bioconductor-org.hs.eg.db=3.12.0,bioconductor-rsubread=2.4.0
+r-base=4.0.3,r-reshape2=1.4.4,r-optparse=1.6.6,r-ggplot2=3.3.3,r-scales=1.1.1,r-viridis=0.5.1,r-tidyverse=1.3.0,bioconductor-biostrings=2.58.0,bioconductor-complexheatmap=2.6.2
+metabat2=2.15,python=3.6.7,biopython=1.74,pandas=1.1.5
+cd-hit=4.8.1,exonerate=2.4,blast=2.11.0
+trinity=2.9.1,pigz=2.3.4
+biopython=1.78,pandas=1.1.2,numpy=1.18.1
+r-reshape2=1.4.4,r-plotly=4.9.2.1,plotly-orca=3.4.2,r-ggplot2=3.3.0,r-svglite=1.2.3,r-ggthemes=4.2.0,r-knitr=1.29,r-rmarkdown=2.3,r-kableextra=1.1.0
+velvet=1.2.10,oases=0.2.09
+pandas=1.1.5
+fred2=2.0.6,mhcflurry=1.4.3,mhcnuggets=2.3.2
+changeo=1.0.2,igblast=1.15.0
+homer=4.11,samtools=1.11,r-base=4.0.2,bioconductor-deseq2=1.30.0,bioconductor-edger=3.32.0,perl=5.26.2
+umi_tools=1.1.1,samtools=1.10
+pigz=2.3.4
+jq=1.6
+r-base=4.0.3,r-shazam=1.0.2,r-tigger=1.0.0
+r-base=4.0.3,r-shazam=1.0.2,r-tigger=1.0.0,tzdata=2021a
+wget=1.20.1,biopython=1.78,igblast=1.15.0
+cat=4.6,diamond=2.0.6
+changeo=1.0.2,r-base=4.0.3,r-alakazam=1.0.2,igphyml=1.1.3
+changeo=1.0.2,r-base=4.0.3,r-alakazam=1.0.2,phylip=3.697
+r-base=4.0.3,r-alakazam=1.0.2,r-shazam=1.0.2
+yara=1.0.2,samtools=1.12
+pysam=0.16.0.1,biopython=1.78
+rapidnj=2.3.2,biopython=1.78
+r-base=4.0.3,r-optparse=1.6.6,r-rmariadb=1.1.0,bioconductor-edger=3.32.0,bioconductor-grohmm=1.24.0,bioconductor-org.hs.eg.db=3.12.0,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2
+kraken2=2.1.1,pigz=2.6
+merqury=1.1,tar=1.34,findutils=4.6.0
+star=2.6.1d,samtools=1.10
+star=2.6.1d,samtools=1.10,gawk=5.1.0
+planemo=0.74.3,git=2.30.2,galaxyxml=0.4.14
+minimap2=2.18,samtools=1.12
+changeo=1.0.2,igblast=1.15.0,wget=1.20.1
+changeo=1.0.2,igblast=1.15.0,wget=1.20.1	quay.io/bioconda/base-glibc-busybox-bash:2.1.0	1
+r-base=4.0.3,r-alakazam=1.0.2,r-shazam=1.0.2,r-kableextra=1.3.4,r-knitr=1.33,r-rmarkdown=2.8,r-stringr=1.4.0,r-dplyr=1.0.6
+bioconductor-biomart=2.46.3,bioconductor-deseq2=1.30.1,bioconductor-genomicranges=1.42.0,bioconductor-rtracklayer=1.50.0,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2,r-base=4.0.3,r-dplyr=1.0.5,r-optparse=1.6.6,r-stringr=1.4.0,r-tidyr=1.1.3
+biopython=1.78,pigz=2.6
+python=3.9,pysam,biopython,click,pandas,numpy,ete3
+python=3.6,galaxy-ml=0.8.1
+python=3.6,galaxy-ml=0.7.12
+biopython=1.78,openpyxl=3.0.7,pyfastx=0.8.2,numpy=1.20.2,pandas=1.2.4
+python=3.9,biopython=1.78,openpyxl=3.0.7,pandas=1.2.4,rich=10.2.2,typer=0.3.2,xlsxwriter=1.4.3
+asciigenome=1.16.0,bedtools=2.30.0
+r-recetox-aplcms=0.9.3,r-base=4.1.0,r-arrow=4.0.1	quay.io/bioconda/base-glibc-debian-bash:latest	0
+python=3.9,pandas=1.3.0,seaborn=0.11.0
+bwa=0.7.17,samtools=1.9,bcftools=1.9	quay.io/bioconda/base-glibc-debian-bash:latest	0
+star=2.7.9a,samtools=1.13,gawk=5.1.0
+python=3.9,pandas=1.3.0,seaborn=0.11.0,rich=10.6.0,typer=0.3.2,bcbio-gff=0.6.6,dna_features_viewer=3.0.3
+r-base=4.0.3,r-alakazam=1.0.2,r-shazam=1.0.2,r-airr=1.3.0,r-kableextra=1.3.4,r-dt=0.18,r-knitr=1.33,r-rmarkdown=2.8,r-dplyr=1.0.6
+r-mass=7.3_54,r-zoo=1.8_9,r-gplots=3.1.1
+jupytext=1.11.4,matplotlib=3.4.2,ipykernel=6.0.3,papermill=2.3.3,nbconvert=6.1.0
+r-base=4.1.0,r-rmarkdown=2.9,r-yaml=2.2.1
+r-mass=7.3_54,r-zoo=1.8_9,r-gplots=3.1.1,ghostscript
+chromap=0.1,samtools=1.13
+bbmap=38.92,samtools=1.13
+bbmap=38.92,samtools=1.13,pigz=2.6
+r-optparse=1.6.6,r-tidyverse=1.3.1,r-data.table=1.14.0,r-dtplyr=1.1.0,bioconductor-biostrings=2.58.0,bioconductor-treeio=1.14.3,r-ape=5.4_1,bioconductor-ggtree=2.4.1

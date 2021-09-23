@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-kernsmooth=2.23_17,r-ggplot2=3.3.2	bgruening/busybox-bash:0.1	0

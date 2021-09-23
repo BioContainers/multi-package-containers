@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pyfaidx=0.5.9.2,pyvcf=0.6.8,samtools=1.11	bgruening/busybox-bash:0.1	0
