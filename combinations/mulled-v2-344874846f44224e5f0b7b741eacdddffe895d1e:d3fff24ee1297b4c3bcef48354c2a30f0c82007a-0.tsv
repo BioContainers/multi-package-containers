@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pandas=1.2.4,numpy=1.19.2	bgruening/busybox-bash:0.1	0

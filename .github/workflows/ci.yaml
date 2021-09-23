@@ -1,0 +1,37 @@
+name: Build image
+on: [push, pull_request]
+env:
+  MULLED_NAMESPACE: biocontainers
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        python-version: [3.8]
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install python dependencies
+      run: |
+        python -m pip install galaxy-tool-util
+    - run: docker --version
+    - run: docker info
+    - name: Build images
+      run: |
+        mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations --verbose
+    - name: Upload images (if pushed to master branch)
+      if: github.ref == 'refs/heads/master' && github.repository_owner == 'BioContainers'
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        INVOLUCRO_AUTH: "https://${{ secrets.MY_USER }}:${{ secrets.MY_PASSWORD }}@quay.io/v1/?email=${{ secrets.MY_EMAIL }}"
+      run: |
+         mkdir -p ~/.ssh
+         ssh-keyscan -t rsa orval.galaxyproject.org >> ~/.ssh/known_hosts
+         ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+         ssh-add - <<< "${{ secrets.ORVAL_KEY }}"
+         mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token ${{ secrets.QUAY_OAUTH_TOKEN }} push ./combinations
+         ls -l singularity_import
+         [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp singularity_import/*:* singularity@orval.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
