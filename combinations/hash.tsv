@@ -153,4 +153,4 @@ bbmap=38.92,samtools=1.13
 bbmap=38.92,samtools=1.13,pigz=2.6
 r-optparse=1.6.6,r-tidyverse=1.3.1,r-data.table=1.14.0,r-dtplyr=1.1.0,bioconductor-biostrings=2.58.0,bioconductor-treeio=1.14.3,r-ape=5.4_1,bioconductor-ggtree=2.4.1
 mirtop=0.4.23,samtools=1.13,r-base=4.1.1
-homer=4.11,gcc=4.8.2,make=4.3,perl=5.32.1,unzip=6.0,wget=1.20.1,samtools=1.13,bioconductor-deseq2=1.28.0,bioconductor-edger=3.34.0
+homer=4.11,make=4.3,perl=5.32.1,unzip=6.0,wget=1.20.1,samtools=1.13,bioconductor-deseq2=1.28.0,bioconductor-edger=3.34.0
