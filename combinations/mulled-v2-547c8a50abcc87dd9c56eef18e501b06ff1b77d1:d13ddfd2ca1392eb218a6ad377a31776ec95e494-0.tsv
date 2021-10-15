@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bcftools=1.10,samtools=1.10,tectonic=0.8.0,htslib=1.10,matplotlib=3.4.3	quay.io/bioconda/base-glibc-busybox-bash:latest	0
