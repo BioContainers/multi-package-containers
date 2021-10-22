@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+gnuplot=5.4.1,mummer4=4.0.0rc1	bioconda/extended-base-image:latest	0
