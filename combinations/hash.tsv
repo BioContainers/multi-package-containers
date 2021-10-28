@@ -159,4 +159,3 @@ megahit=1.2.9,pigz=2.6
 sra-tools=2.11.0,pigz=2.6
 biopython=1.78,blast=2.9.0,pysam=0.17.0
 r-recetox-aplcms=0.9.3,r-base=4.1.0,r-arrow=4.0.1,r-dplyr=1.0.7	quay.io/bioconda/base-glibc-debian-bash:latest	0
-fred2=2.0.7,mhcflurry=2.0.1,mhcnuggets=2.3.2
