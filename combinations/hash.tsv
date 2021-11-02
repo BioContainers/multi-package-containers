@@ -161,3 +161,4 @@ biopython=1.78,blast=2.9.0,pysam=0.17.0
 r-recetox-aplcms=0.9.3,r-base=4.1.0,r-arrow=4.0.1,r-dplyr=1.0.7	quay.io/bioconda/base-glibc-debian-bash:latest	0
 samblaster=0.1.26,samtools=1.14
 circularmapper=1.93.5,bwa=0.7.17
+clonalframeml=1.12.1,maskrc-svg=0.5.1
