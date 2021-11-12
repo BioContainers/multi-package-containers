@@ -166,5 +166,6 @@ r-optparse=1.7.1,r-upsetr=1.4.0,bedtools=2.30.0
 python=3.7.1,changeo=0.4.4,biopython=1.72,xlrd=1.2.0,r-ggplot2=3.0.0,r-reshape2=1.4.3,r-scales=0.5.0,r-seqinr=3.4_5,r-data.table=1.11.4,unzip=6.0,bash=4.4.18,tar=1.34,file=5.39,bc=1.07.1,findutils=4.6.0
 snpsift=4.3.1t,python=2.7.15,pyvcf=0.6.8,pandas=0.24.2,fred2=2.0.7,mhcflurry=1.4.3,mhcnuggets=2.3.2
 biopython,r-optparse=1.7.1,r-upsetr=1.4.0,bedtools=2.30.0
-krakenuniq=0.5.8,pigz=2.6
 r-optparse=1.7.1,r-desolve=1.30
+bioconductor-limma=3.50.0,bioconductor-edger=3.36.0,r-data.table=1.14.2,r-gplots=3.1.1,r-statmod=1.4.36
+krakenuniq=0.5.8,pigz=2.6
