@@ -173,4 +173,3 @@ requests=2.26	quay.io/bioconda/base-glibc-debian-bash:latest	0
 mirtop=0.4.24,samtools=1.13,r-base=4.1.1,r-data.table=1.14.2
 krakenuniq=0.5.8,pigz=2.6
 gatk4=4.2.0.0,R=4.1,r-ggplot2=3.3.5,datamash=1.1.0
-jemunro::quanttb=1.01,bioconda::bwa=0.7.17
