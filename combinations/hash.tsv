@@ -174,3 +174,6 @@ mirtop=0.4.24,samtools=1.13,r-base=4.1.1,r-data.table=1.14.2
 krakenuniq=0.5.8,pigz=2.6
 ambertools=21.10
 gromacs=2020.2
+mdtraj=1.9.6
+ambertools=21.10,gromacs=2021.3,jinja2=3.0.1,parmed=3.4.3
+ambertools=21.10,jinja2=3.0.1
