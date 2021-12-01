@@ -177,3 +177,4 @@ gromacs=2020.2
 mdtraj=1.9.6
 ambertools=21.10,gromacs=2021.3,jinja2=3.0.1,parmed=3.4.3
 ambertools=21.10,jinja2=3.0.1
+dragmap=1.2.1,samtools=1.14,pigz=2.3.4
