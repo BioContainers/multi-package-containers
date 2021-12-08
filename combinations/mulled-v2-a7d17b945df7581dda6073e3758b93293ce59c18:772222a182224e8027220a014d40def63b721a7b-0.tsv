@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+king=2.2.4,r-igraph=1.2.2,r-kinship2=1.6.4	quay.io/bioconda/base-glibc-busybox-bash:latest	0
