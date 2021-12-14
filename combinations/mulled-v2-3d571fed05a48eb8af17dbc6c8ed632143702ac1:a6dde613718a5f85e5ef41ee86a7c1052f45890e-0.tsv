@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-statmod=1.4.36,r-getopt=1.20.3,r-scales=1.1.1,r-gplots=3.1.1,bioconductor-edger=3.36.0,bioconductor-glimma=2.4.0,bioconductor-limma=3.50.0,r-rjson=0.2.20	quay.io/bioconda/base-glibc-busybox-bash:latest	0
