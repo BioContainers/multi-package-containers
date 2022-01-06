@@ -179,3 +179,4 @@ ambertools=21.10,jinja2=3.0.1
 dragmap=1.2.1,samtools=1.14,pigz=2.3.4
 dfam=3.3,hmmer=3.3.2,star-fusion=1.10.0,trinity=date.2011_11_26,samtools=1.9,star=2.7.8a
 changeo=1.2.0,r-base=4.1.2,r-alakazam=1.0.2,phylip=3.697
+r-base=4.1.2,r-optparse=1.7.1,r-data.table=1.14.2,r-ggplot2=3.3.5,r-scales=1.1.1,r-ggthemes=4.2.4,r-cowplot=1.1.1,bioconductor-rtracklayer=1.54.0,bioconductor-genomicfeatures=1.46.1,bioconductor-genomicranges=1.46.0,bioconductor-bsgenome.hsapiens.ucsc.hg38=1.4.4,bioconductor-bsgenome.mmusculus.ucsc.mm10=1.4.3,bioconductor-bsgenome.rnorvegicus.ucsc.rn6=1.4.1,bioconductor-bsgenome.drerio.ucsc.danrer7=1.4.0
