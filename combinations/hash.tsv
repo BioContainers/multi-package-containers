@@ -181,3 +181,4 @@ dfam=3.3,hmmer=3.3.2,star-fusion=1.10.0,trinity=date.2011_11_26,samtools=1.9,sta
 changeo=1.2.0,r-base=4.1.2,r-alakazam=1.0.2,phylip=3.697
 bowtie2=2.4.4,samtools=1.14,pigz=2.6
 kraken2=2.1.2,pigz=2.6
+prodigal=2.6.3,pigz=2.6
