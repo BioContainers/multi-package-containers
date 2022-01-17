@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-optparse=1.7.1,tzdata=2021d,bioconductor-genomicsupersignature=1.2.0,r-wordcloud=2.6,r-magick=2.7.3,bioconductor-biocstyle=2.22.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
