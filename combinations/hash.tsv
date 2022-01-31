@@ -193,3 +193,4 @@ r-base=4.1.2,r-alakazam=1.2.0,r-shazam=1.1.0,r-kableextra=1.3.4,r-knitr=1.33,r-s
 python=3.9.5,samtools=1.14
 bioconductor-diffbind=3.4.0,bioconductor-csaw=1.28.0,bioconductor-edger=3.36.0,r-optparse=1.7.1
 r-shazam=1.1.0,r-tigger=1.0.0
+bamcmp=2.2	quay.io/bioconda/base-glibc-debian-bash:latest	0
