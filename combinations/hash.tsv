@@ -197,4 +197,4 @@ bamcmp=2.2	quay.io/bioconda/base-glibc-debian-bash:latest	0
 ascat=3.0.0,cancerit-allelecount=4.3.0
 biscuit=1.0.2.20220113,samtools=1.14,samblaster=0.1.26
 samtools=1.14.0,bedtools=2.30.0,ucsc-facount=377
-gatk4=4.2.0.0,R=4.1,r-ggplot2=3.3.5,datamash=1.1.0
+gatk4=4.2.0.0,r-base=4.1,r-ggplot2=3.3.5,datamash=1.1.0
