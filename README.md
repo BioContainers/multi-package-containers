@@ -3,7 +3,7 @@
 ## Building multiple package Containers
 
 Creating containers is easy! All you need to do is add a combination of packages to the
-[hash.tsv file](https://github.com/BioContainers/multi-package-containers/blob/master/combinations/hash.tsv).
+[hash.tsv file](/combinations/hash.tsv).
 
 To assemble the required string of package combinations you can use the little
 [helper service](https://biocontainers.pro/#/multipackage) 
