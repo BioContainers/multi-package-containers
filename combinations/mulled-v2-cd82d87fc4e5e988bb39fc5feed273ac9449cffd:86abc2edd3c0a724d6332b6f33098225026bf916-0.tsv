@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+freebayes=1.3.5=py39hba5d119_3,samtools=1.6=hb116620_7,sambamba=0.8.1=h41abebc_0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
