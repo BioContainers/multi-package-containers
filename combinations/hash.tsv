@@ -202,3 +202,4 @@ biscuit=1.0.2.20220113,samtools=1.15,samblaster=0.1.26,parallel=20211222
 samtools=1.14.0,bedtools=2.30.0,ucsc-facount=377,python=3.8
 gatk4=4.2.0.0,r-base=4.1,r-ggplot2=3.3.5,datamash=1.1.0
 pyliftover=0.4,pandas=1.1.5
+python=2.7,pysam=0.17.0,flask=1.1.2,cython=0.29.14,numpy=1.16.6,scipy=1.2.1,matplotlib=2.2.5,mosek=8.0.60
