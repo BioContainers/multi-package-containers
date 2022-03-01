@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pangolin=3.1.20,csvtk=0.23.0,scorpio=0.3.16	quay.io/bioconda/base-glibc-busybox-bash:latest	0
