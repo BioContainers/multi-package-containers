@@ -226,4 +226,4 @@ python=2.7,pysam=0.17.0,flask=1.1.2,cython=0.29.14,numpy=1.16.6,scipy=1.2.1,matp
 samclip=0.4.0,samtools=1.15
 bowtie2=2.4.5,samtools=1.15,pigz=2.6
 longshot=0.4.1,samtools=1.15
-python=3.9,matplotlib=3.5.1,pandas=1.3.5,r-sys=3.4,regex=2021.11.10,scipy=1.7.3,click=8.04
+python=3.9,matplotlib=3.5.1,pandas=1.3.5,r-sys=3.4,regex=2021.11.10,scipy=1.7.3,click=8.0.4
