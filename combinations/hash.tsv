@@ -227,3 +227,4 @@ samclip=0.4.0,samtools=1.15
 bowtie2=2.4.5,samtools=1.15,pigz=2.6
 longshot=0.4.1,samtools=1.15
 biopython=1.78,pandas=1.3.5,matplotlib=3.5.1,typer=0.4.1,xlsxwriter=1.4.3
+python=3.7,mash=2.0
