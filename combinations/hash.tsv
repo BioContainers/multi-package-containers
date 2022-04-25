@@ -234,3 +234,4 @@ bamtools=2.5.2,samtools=1.15.1
 ncbi-datasets-cli,bash
 bedtools=2.30.0,samtools=1.15.1
 pysam=0.19.0,samtools=1.15.1
+mirtop=0.4.25,samtools=1.15.1,r-base=4.1.1,r-data.table=1.14.2
