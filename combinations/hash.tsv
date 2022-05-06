@@ -9,10 +9,13 @@ bwa-mem2=2.2,samtools=1.11	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.2.1,samtools=1.12	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.2.1,samtools=1.14	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.2.1,samtools=1.15	bgruening/busybox-bash:0.1	0
+bwa-mem2=2.2.1,samtools=1.15.1	bgruening/busybox-bash:0.1	0
 hisat2=2.2.0,samtools=1.10	bgruening/busybox-bash:0.1	0
+hisat2=2.2.0,samtools=1.15.1	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.12	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.15	bgruening/busybox-bash:0.1	0
+bwa=0.7.17,samtools=1.15.1	bgruening/busybox-bash:0.1	0
 bwakit=0.7.17.dev1,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwa=0.7.15,samtools=1.3.1	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.6	bgruening/busybox-bash:0.1	0
@@ -50,6 +53,7 @@ click=7.0,pyvcf=0.6.8,python=3.5,pybedtools=0.8	bgruening/busybox-bash:0.1	0
 qualimap=2.2.2a,perl-bioperl=1.6.924	bgruening/busybox-bash:0.1	0
 qualimap=2.2.2d,samtools=1.12	quay.io/bioconda/base-glibc-busybox-bash:latest	0
 qualimap=2.2.2d,samtools=1.15	quay.io/bioconda/base-glibc-busybox-bash:latest	0
+qualimap=2.2.2d,samtools=1.15.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
 aniso8601=8.0.0,requests=2.22	bgruening/busybox-bash:0.1	0
 jinja2=2.10,pathlib=1.0.1	bgruening/busybox-bash:0.1	0
 umi_tools=0.5.5	bgruening/busybox-bash:0.1	0
@@ -96,6 +100,7 @@ python=3.7
 python=3.8
 python=3.9
 samtools=1.11,bowtie=1.3.0
+samtools=1.15.1,bowtie=1.3.0
 searchgui=4.0.4,zip=3.0	bioconda/extended-base-image:latest	0
 bowtie2=2.4.2,samtools=1.11,pigz=2.3.4
 r-base=4.0,bioconductor-edger=3.32.0,bioconductor-limma=3.46.0,r-rjson=0.2.20,r-getopt=1.20.3,r-statmod=1.4.35,r-scales=1.1.1	bgruening/busybox-bash:0.1	0
@@ -123,6 +128,7 @@ changeo=1.0.2,r-base=4.0.3,r-alakazam=1.0.2,igphyml=1.1.3
 changeo=1.0.2,r-base=4.0.3,r-alakazam=1.0.2,phylip=3.697
 r-base=4.0.3,r-alakazam=1.0.2,r-shazam=1.0.2
 yara=1.0.2,samtools=1.12
+yara=1.0.2,samtools=1.15.1
 pysam=0.16.0.1,biopython=1.78
 rapidnj=2.3.2,biopython=1.78
 r-base=4.1.1,r-optparse=1.7.1,r-argparse=2.1.3,bioconductor-genomicfeatures=1.46.1,bioconductor-grohmm=1.28.0
@@ -147,6 +153,7 @@ r-recetox-aplcms=0.9.3,r-base=4.1.0,r-arrow=4.0.1	quay.io/bioconda/base-glibc-de
 python=3.9,pandas=1.3.0,seaborn=0.11.0
 bwa=0.7.17,samtools=1.9,bcftools=1.9	quay.io/bioconda/base-glibc-debian-bash:latest	0
 star=2.7.9a,samtools=1.13,gawk=5.1.0
+star=2.7.9a,samtools=1.15.1,gawk=5.1.0
 python=3.9,pandas=1.3.0,seaborn=0.11.0,rich=10.6.0,typer=0.3.2,bcbio-gff=0.6.6,dna_features_viewer=3.0.3
 r-base=4.0.3,r-alakazam=1.0.2,r-shazam=1.0.2,r-airr=1.3.0,r-kableextra=1.3.4,r-dt=0.18,r-knitr=1.33,r-rmarkdown=2.8,r-dplyr=1.0.6
 r-mass=7.3_54,r-zoo=1.8_9,r-gplots=3.1.1
@@ -156,8 +163,11 @@ r-mass=7.3_54,r-zoo=1.8_9,r-gplots=3.1.1,ghostscript
 chromap=0.1,samtools=1.13
 chromap=0.1.5,samtools=1.14
 chromap=0.2.0,samtools=1.14
+chromap=0.2.1,samtools=1.15
+chromap=0.2.1,samtools=1.15.1
 bbmap=38.92,samtools=1.13
 bbmap=38.92,samtools=1.13,pigz=2.6
+bbmap=38.92,samtools=1.15.1,pigz=2.6
 r-optparse=1.6.6,r-tidyverse=1.3.1,r-data.table=1.14.0,r-dtplyr=1.1.0,bioconductor-biostrings=2.58.0,bioconductor-treeio=1.14.3,r-ape=5.4_1,bioconductor-ggtree=2.4.1
 mirtop=0.4.23,samtools=1.13,r-base=4.1.1
 multiqc=1.11,r-tidyverse=1.3.0,r-yaml=2.2.1
@@ -166,6 +176,7 @@ sra-tools=2.11.0,pigz=2.6
 biopython=1.78,blast=2.9.0,pysam=0.17.0
 r-recetox-aplcms=0.9.3,r-base=4.1.0,r-arrow=4.0.1,r-dplyr=1.0.7	quay.io/bioconda/base-glibc-debian-bash:latest	0
 samblaster=0.1.26,samtools=1.14
+samblaster=0.1.26,samtools=1.15.1
 circularmapper=1.93.5,bwa=0.7.17
 clonalframeml=1.12,maskrc-svg=0.5
 r-optparse=1.7.1,r-upsetr=1.4.0,bedtools=2.30.0
@@ -184,9 +195,11 @@ mdtraj=1.9.6
 ambertools=21.10,gromacs=2021.3,jinja2=3.0.1,parmed=3.4.3
 ambertools=21.10,jinja2=3.0.1
 dragmap=1.2.1,samtools=1.14,pigz=2.3.4
+dragmap=1.2.1,samtools=1.15.1,pigz=2.3.4
 dfam=3.3,hmmer=3.3.2,star-fusion=1.10.0,trinity=date.2011_11_26,samtools=1.9,star=2.7.8a
 changeo=1.2.0,r-base=4.1.2,r-alakazam=1.0.2,phylip=3.697
 bowtie2=2.4.4,samtools=1.14,pigz=2.6
+bowtie2=2.4.4,samtools=1.15.1,pigz=2.6
 kraken2=2.1.2,pigz=2.6
 prodigal=2.6.3,pigz=2.6
 python=3.9,matplotlib=3.5.1,pandas=1.3.5,r-sys=3.4,regex=2021.11.10,scipy=1.7.3
@@ -209,3 +222,21 @@ r-tidyverse=1.3.1,r-rsqlite=2.1.1
 scikit-optimize=0.9.0,matplotlib=3.5.0,pandas=1.3.5
 r-ampir=1.1.0	bgruening/busybox-bash:0.1	0
 r-base=4.0,r-dplyr=1.0.5,r-readr=1.4.0,r-optparse=1.6.6,bioconductor-singscore=1.10.0
+python=2.7,pysam=0.17.0,flask=1.1.2,cython=0.29.14,numpy=1.16.6,scipy=1.2.1,matplotlib=2.2.5,mosek::mosek=8.0.60
+samclip=0.4.0,samtools=1.15
+bowtie2=2.4.5,samtools=1.15,pigz=2.6
+longshot=0.4.1,samtools=1.15
+biopython=1.78,pandas=1.3.5,matplotlib=3.5.1,typer=0.4.1,xlsxwriter=1.4.3
+python=3.7,mash=2.0
+python=3.9,matplotlib=3.5.1,pandas=1.3.5,r-sys=3.4,regex=2021.11.10,scipy=1.7.3,biopython=1.79
+python=3.7,pandas=1.3.5,tabulate=0.8.9,mash=2.0
+bamtools=2.5.2,samtools=1.15.1
+ncbi-datasets-cli,bash
+bedtools=2.30.0,samtools=1.15.1
+pysam=0.19.0,samtools=1.15.1
+mirtop=0.4.25,samtools=1.15.1,r-base=4.1.1,r-data.table=1.14.2
+r-base=4.1.2,r-alakazam=1.2.0,r-shazam=1.1.0,r-kableextra=1.3.4,r-knitr=1.33,r-stringr=1.4.0,r-dplyr=1.0.6,r-optparse=1.7.1
+rsem=1.3.3,star=2.7.10a
+star=2.7.10a,samtools=1.15.1,gawk=5.1.0
+python=2.7,pysam=0.15.2,flask=1.1.2,cython=0.29.14,numpy=1.16.6,scipy=1.2.1,matplotlib=2.2.5,mosek::mosek=8.0.60,future=0.18.2
+dnaio=0.8.1,pysam=0.19.0
