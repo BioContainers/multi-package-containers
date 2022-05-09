@@ -179,3 +179,4 @@ ambertools=21.10,jinja2=3.0.1
 dragmap=1.2.1,samtools=1.14,pigz=2.3.4
 dfam=3.3,hmmer=3.3.2,star-fusion=1.10.0,trinity=date.2011_11_26,samtools=1.9,star=2.7.8a
 changeo=1.2.0,r-base=4.1.2,r-alakazam=1.0.2,phylip=3.697
+numpy=1.22.3,pandas=1.4.2,seaborn=0.11.2,deeptools=3.5.1,pysam=0.19.0,pyranges=0.0.115,dask=2022.4.1,upsetplot=0.6.0
