@@ -245,3 +245,5 @@ python=2.7,pysam=0.15.2,flask=1.1.2,cython=0.29.14,numpy=1.16.6,scipy=1.2.1,matp
 dnaio=0.8.1,pysam=0.19.0
 numpy=1.22.3,pandas=1.4.2,seaborn=0.11.2,deeptools=3.5.1,pysam=0.19.0,pyranges=0.0.115,dask=2022.4.1,upsetplot=0.6.0
 epytope=3.0.0,gawk=5.1.0
+pymuonsuite=0.2.1
+muspinsim=1.0.4
