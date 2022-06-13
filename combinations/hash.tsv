@@ -260,3 +260,4 @@ r-base=4.1.3,bioconductor-diffbind=3.4.11,r-sleuth=0.30.0,r-ggplot2=3.3.5,r-magr
 galaxyxml=0.4.14,bioblend=0.17.0
 manta=1.6.0,samtools=1.15.1
 vcf2maf=1.6.21,ensembl-vep=106.1
+grep=3.4,gawk=5.1.0,aria2=1.34.0
