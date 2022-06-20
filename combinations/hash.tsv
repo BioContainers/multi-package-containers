@@ -261,4 +261,4 @@ galaxyxml=0.4.14,bioblend=0.17.0
 manta=1.6.0,samtools=1.15.1
 vcf2maf=1.6.21,ensembl-vep=106.1
 aria2=1.34.0,pigz=2.6,tar=1.34
-conda-forge::scanpy=1.9.1,conda-forge::python-igraph,conda-forge::leidenalg
+scanpy=1.9.1,python-igraph,leidenalg
