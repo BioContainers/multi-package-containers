@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+biopython=1.76,mcl=14.137,clustalo=1.2.4,matplotlib=2.2.3	quay.io/bioconda/base-glibc-busybox-bash:latest	0
