@@ -262,3 +262,4 @@ manta=1.6.0,samtools=1.15.1
 vcf2maf=1.6.21,ensembl-vep=106.1
 aria2=1.34.0,pigz=2.6,tar=1.34
 pysam=0.19.1,pandas=1.4.2
+aria2=1.36.0,pigz=2.6,tar=1.34
