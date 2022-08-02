@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+cif2cell=2.0.0a3	quay.io/bioconda/base-glibc-busybox-bash:latest	0
