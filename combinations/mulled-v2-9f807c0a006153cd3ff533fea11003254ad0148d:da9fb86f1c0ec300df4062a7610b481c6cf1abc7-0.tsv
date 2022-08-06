@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bedtools=2.30.0,quast=5.2.0,bwa=0.7.17	quay.io/bioconda/base-glibc-debian-bash:latest	0
