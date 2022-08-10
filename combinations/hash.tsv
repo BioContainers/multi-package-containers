@@ -277,3 +277,4 @@ pysam=0.19.1,edlib=1.3.9,tqdm=4.64.0
 vcf2maf=1.6.21,ensembl-vep=104.3,python=3.7.12,bcftools=1.10.2
 samtools=1.11,pretextmap=0.1.9
 pysam=0.19.1,edlib=1.3.9,tqdm=4.64.0
+bbmap=38.9.8,fastp=0.23.2
