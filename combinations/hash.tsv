@@ -279,3 +279,4 @@ samtools=1.11,pretextmap=0.1.9
 pysam=0.19.1,edlib=1.3.9,tqdm=4.64.0
 bbmap=38.98,fastp=0.23.2
 bcftools=1.15.1,samtools=1.15.1,python=3.8.3
+p7zip=16.02
