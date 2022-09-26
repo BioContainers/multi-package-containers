@@ -13,7 +13,6 @@ bwa-mem2=2.2.1,samtools=1.12	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.2.1,samtools=1.14	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.2.1,samtools=1.15	bgruening/busybox-bash:0.1	0
 bwa-mem2=2.2.1,samtools=1.15.1	bgruening/busybox-bash:0.1	0
-hisat2=2.2.1,samtools=1.10	bgruening/busybox-bash:0.1	0
 hisat2=2.2.1,samtools=1.15.1	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.10	bgruening/busybox-bash:0.1	0
 bwa=0.7.17,samtools=1.12	bgruening/busybox-bash:0.1	0
