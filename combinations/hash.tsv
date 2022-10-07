@@ -288,3 +288,4 @@ vsearch=2.21.1,cd-hit=4.8.1,seqtk=1.3,bbmap=38.98
 r-plotly=4.10.0,r-knitr=1.39,r-cowplot=1.1.1,r-scales=1.2.0,bioconductor-ggtree=3.2.0,r-devtools=2.4.4,r-biocmanager=1.30.18,r-rmarkdown=2.14,r-kableextra=1.3.4,r-vegan=2.6_2,r-tidyverse=1.3.2
 cnvkit=0.9.8,pysam=0.19.1
 fastp=0.23.2,dnaio=0.9.1
+aria2=1.34.0
