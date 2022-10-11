@@ -289,3 +289,4 @@ r-plotly=4.10.0,r-knitr=1.39,r-cowplot=1.1.1,r-scales=1.2.0,bioconductor-ggtree=
 cnvkit=0.9.8,pysam=0.19.1
 fastp=0.23.2,dnaio=0.9.1
 samtools=1.15.1,pandas=1.4.3	bgruening/busybox-bash:0.1	0
+aria2=1.36.0
