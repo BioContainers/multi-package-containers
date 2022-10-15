@@ -156,6 +156,7 @@ asciigenome=1.16.0,bedtools=2.30.0
 r-recetox-aplcms=0.9.3,r-base=4.1.0,r-arrow=4.0.1	quay.io/bioconda/base-glibc-debian-bash:latest	0
 python=3.9,pandas=1.3.0,seaborn=0.11.0
 bwa=0.7.17,samtools=1.9,bcftools=1.9	quay.io/bioconda/base-glibc-debian-bash:latest	0
+retropath2_wrapper=2.4.0	quay.io/bioconda/base-glibc-debian-bash:latest	0
 star=2.7.9a,samtools=1.13,gawk=5.1.0
 star=2.7.9a,samtools=1.15.1,gawk=5.1.0
 python=3.9,pandas=1.3.0,seaborn=0.11.0,rich=10.6.0,typer=0.3.2,bcbio-gff=0.6.6,dna_features_viewer=3.0.3
