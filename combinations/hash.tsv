@@ -293,3 +293,4 @@ fastp=0.23.2,dnaio=0.9.1
 samtools=1.15.1,pandas=1.4.3	bgruening/busybox-bash:0.1	0
 aria2=1.36.0
 pretextmap=0.1.9,samtools=1.16.1
+r-base=4.2.1
