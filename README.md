@@ -15,7 +15,7 @@ Singularity images hosted at https://depot.galaxyproject.org/singularity/ (Hosti
 ## Associated command line tools
 
 You can list and search for existing conda packages and container images as well as build multi-package container images locally 
-using the command line `mulled-*` tools avialable as part of [`galaxy-tool-util`](https://pypi.org/project/galaxy-tool-util/) 
+using the command line `mulled-*` tools available as part of [`galaxy-tool-util`](https://pypi.org/project/galaxy-tool-util/) 
 These can be installed using conda 
 
 ```
