@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bx-python=0.8.9,galaxy-data=22.1.1	quay.io/bioconda/base-glibc-debian-bash:latest	0
