@@ -235,6 +235,7 @@ biscuit=1.0.2.20220113,samtools=1.15.1,bedtools=2.30.0,samblaster=0.1.26,paralle
 biscuit=1.0.2.20220113,samtools=1.16.1,bedtools=2.30.0,samblaster=0.1.26,parallel=20211222,gawk=5.1.0
 samtools=1.14.0,bedtools=2.30.0,ucsc-facount=377,python=3.8
 gatk4=4.2.0.0,r-base=4.1,r-ggplot2=3.3.5,datamash=1.1.0
+gatk4=4.2.6.1,samtools=1.16.1
 pyliftover=0.4,pandas=1.1.5
 circle-map=1.1.4,biopython=1.77
 r-tidyverse=1.3.1,r-rsqlite=2.1.1
