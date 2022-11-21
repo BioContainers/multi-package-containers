@@ -323,3 +323,4 @@ ucsc-gtftogenepred=377,ucsc-genepredtobed=377,bedtools=2.27.0
 bioconductor-dexseq=1.36.0,bioconductor-drimseq=1.18.0
 rmats=4.1.2,bioconductor-pairadise=1.6.0
 fsnviz=0.3.0
+r-base=3.6,python=2.7.15,r-argparser,r-dplyr
