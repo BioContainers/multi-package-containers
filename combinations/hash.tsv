@@ -328,3 +328,4 @@ fsnviz=0.3.0
 r-base=3.6.3,conda-forge::r-argparser=0.6,conda-forge::r-dplyr=1.0.5,conda-forge::r-ggplot2=3.3.3,r-ggpubr=0.4.0,conda-forge::r-gplots=3.1.1,conda-forge::r-pheatmap=1.0.12,r-plyr=1.8.6,r-pvclust=2.2_0,r-rcolorbrewer=1.1_2,conda-forge::r-circlize=0.4.12,bioconductor-biomart=2.42.0,bioconductor-complexheatmap=2.2.0,bioconductor-deseq2=1.26.0,bioconductor-enhancedvolcano=1.4.0,bioconductor-ihw=1.14.0,bioconductor-org.hs.eg.db=3.10.0,bioconductor-pcatools=1.2.0,bioconductor-tximport=1.14.0
 rxdock=2013.1.1_148c5bd1,python=3.9,parallel=20211022
 r-base=3.6.3,python=2.7.15,r-argparser=0.6,r-dplyr=1.0.5
+bbmap=39.01,samtools=1.16.1,pigz=2.6
