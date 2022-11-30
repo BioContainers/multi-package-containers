@@ -332,3 +332,4 @@ bbmap=39.01,samtools=1.16.1,pigz=2.6
 vcf2maf=1.6.21,ensembl-vep=107.0,samtools=1.15.1,bcftools=1.15.1
 r-base,r-aod,r-ggplot2,r-plyr
 bbmap=38.98,seqkit=2.3.1,pigz=2.6
+modbam2bed=0.6.3
