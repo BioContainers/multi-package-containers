@@ -297,6 +297,7 @@ vsearch=2.21.1,samtools=1.15.1
 vsearch=2.21.1,samtools=1.16.1
 svdb=2.6.1,samtools=1.15.1
 svdb=2.7.1,samtools=1.16.1
+svdb=2.8.1,samtools=1.16.1
 r-base=4.1.2,changeo=1.2.0,r-alakazam=1.2.0,phylip=3.697,r-optparse=1.7.1
 ont-fast5-api=0.4.1,r-tailfindr=1.3.0
 gatk4=4.2.6.1,samtools=1.15.1,sambamba=0.8.2,bcftools=1.15.1,perl=5.32.1,r-base=4.1.2
@@ -332,3 +333,9 @@ bbmap=39.01,samtools=1.16.1,pigz=2.6
 vcf2maf=1.6.21,ensembl-vep=107.0,samtools=1.15.1,bcftools=1.15.1
 circtools,r-base
 find_circ=1.2,bowtie2
+r-base,r-aod,r-ggplot2,r-plyr
+bbmap=38.98,seqkit=2.3.1,pigz=2.6
+gatk4=4.3.0.0,gatktool=0.0.1
+fgbio=2.0.2,bwa=0.7.17,samtools=1.16.1
+wham=1.8.0,tabix=1.11
+aria2=1.36.0,rsync=3.2.7
