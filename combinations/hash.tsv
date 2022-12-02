@@ -331,3 +331,4 @@ r-base=3.6.3,python=2.7.15,r-argparser=0.6,r-dplyr=1.0.5
 bbmap=39.01,samtools=1.16.1,pigz=2.6
 vcf2maf=1.6.21,ensembl-vep=107.0,samtools=1.15.1,bcftools=1.15.1
 circtools,r-base
+find_circ=1.2,bowtie2
