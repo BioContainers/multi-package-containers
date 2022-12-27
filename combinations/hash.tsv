@@ -340,4 +340,4 @@ gatk4=4.3.0.0,gatktool=0.0.1
 fgbio=2.0.2,bwa=0.7.17,samtools=1.16.1
 wham=1.8.0,tabix=1.11
 aria2=1.36.0,rsync=3.2.7
-python=3.7.3,numpy=1.20.3,pandas=1.2.5,scipy=1.4.1,matplotlib=3.5.1
+python=3.7.3,numpy=1.20.3
