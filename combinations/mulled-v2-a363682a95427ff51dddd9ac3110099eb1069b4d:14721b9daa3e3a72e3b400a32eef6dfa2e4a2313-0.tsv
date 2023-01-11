@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-ggplot2=3.4.0,r-dplyr=1.0.10,r-optparse=1.7.3,bioconductor-org.mm.eg.db=3.16.0,openssl=1.1.1s,bioconductor-org.dr.eg.db=3.16.0,bioconductor-org.hs.eg.db=3.16.0,bioconductor-org.rn.eg.db=3.16.0,bioconductor-org.dm.eg.db=3.16.0,bioconductor-goseq=1.50.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
