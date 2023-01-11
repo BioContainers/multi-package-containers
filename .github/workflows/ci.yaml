@@ -16,7 +16,9 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install python dependencies
       run: |
-        python -m pip install galaxy-tool-util
+        python -m pip install git+https://git@github.com/galaxyproject/galaxy.git@dev#subdirectory=packages/util
+        python -m pip install git+https://git@github.com/galaxyproject/galaxy.git@dev#subdirectory=packages/tool_util
+        #python -m pip install galaxy-tool-util
     - run: docker --version
     - run: docker info
     - name: Build images
