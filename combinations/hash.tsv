@@ -75,6 +75,7 @@ varscan=2.4.2,samtools=1.3.1,tabix=0.2.6,grep=2.14	bgruening/busybox-bash:0.1	0
 bedtools=2.27.1,grep=2.14,gawk=5.0.1	bgruening/busybox-bash:0.1	0
 bedtools=2.27.1,grep=2.14,gawk=5.0.1,click=7,python=3.7	bgruening/busybox-bash:0.1	0
 bedtools=2.17.0--0,python=2.7.13	bgruening/busybox-bash:0.1	0
+bedtools=2.23.0,pandas=1.5.2
 bioconductor-rtracklayer=1.42.1,bioconductor-biostrings=2.50.2,r-optparse=1.6.4	bgruening/busybox-bash:0.1	0
 bioconductor-dropletutils=1.6.1,openblas=0.3.9,r-matrix=1.2,r-ggplot2=3.2.1,r-optparse=1.6.4,r-gridextra=2.3,bioconductor-delayedarray=0.12.0	bgruening/busybox-bash:0.1	0
 scipy=1.4.1,pandas=1.0.1	bgruening/busybox-bash:0.1	0
