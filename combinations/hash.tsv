@@ -340,5 +340,6 @@ gatk4=4.3.0.0,gatktool=0.0.1
 fgbio=2.0.2,bwa=0.7.17,samtools=1.16.1
 wham=1.8.0,tabix=1.11
 aria2=1.36.0,rsync=3.2.7
+tzdata==2022g,r-fastqcr==0.1.2
 gffcompare=0.11.2,biopython=1.80
 python=3.11.0,biopython=1.80,pandas=1.5.2
