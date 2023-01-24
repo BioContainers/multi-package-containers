@@ -340,4 +340,4 @@ gatk4=4.3.0.0,gatktool=0.0.1
 fgbio=2.0.2,bwa=0.7.17,samtools=1.16.1
 wham=1.8.0,tabix=1.11
 aria2=1.36.0,rsync=3.2.7
-r-alakazam=1.2.1,r-shazam=1.1.2,r-kableextra=1.3.4,r-knitr=1.41,r-stringr=1.5.0,r-dplyr=1.0.10,r-tidyr=1.2.1,r-optparse=1.7.3,r-plotly=4.10.1
+r-enchantr=0.0.6,r-kableextra=1.3.4,r-plotly=4.10.1
