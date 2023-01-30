@@ -358,3 +358,4 @@ blast=2.13.0,r-gridbase=0.4.7,r-gridextra=2.3,r-hash=3.0.1,r-optparse=1.7.3,r-pa
 python=3.11.0,samtools=1.16.1
 chromap=0.2.4,samtools=1.16.1
 biopython=1.79,dna_features_viewer=3.1.2,matplotlib=3.6.2,pandas=1.5.2
+parsimonious=0.10.0
