@@ -362,3 +362,4 @@ parsimonious=0.10.0
 strelka=2.9.10,manta=1.6.0,samtools=1.15.1,bcftools=1.15.1,perl=5.32.1
 delly=1.1.6,samtools=1.15.1,bcftools=1.15.1,perl=5.32.1
 tiara=1.0.3
+snp-pileup=0.6.2,r-facets=0.6.2,samtools=1.15.1,bcftools=1.15.1,perl=5.32.1
