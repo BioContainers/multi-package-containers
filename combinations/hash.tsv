@@ -366,4 +366,4 @@ snp-pileup=0.6.2,r-facets=0.6.2,samtools=1.15.1,bcftools=1.15.1,perl=5.32.1
 biopython=1.79,coreutils=9.1,dna_features_viewer=3.1.2,gawk=5.1.0,matplotlib=3.6.2,pandas=1.5.2
 coreutils=9.1,gawk=5.1.0,grep=3.4,matplotlib=3.6.2,numpy=1.23.5,pandas=1.5.2,samtools=1.16.1
 gffutils=0.11.1,biopython=1.80,pyvcf=0.6.8
-python=3.9,biopython=1.78,openpyxl=3.0.7,pandas=1.5.3,rich=10.2.2,typer=0.3.2,xlsxwriter=1.4.3,polars=0.15.14,pyarrow=11.0.0
+python=3.10,biopython=1.78,openpyxl=3.1.0,pandas=1.5.3,rich=13.3.1,typer=0.7.0,xlsxwriter=1.4.3,polars=0.15.14,pyarrow=11.0.0
