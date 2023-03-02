@@ -375,3 +375,4 @@ bedtools=2.30.0,biopython=1.79,gawk=5.1.0,matplotlib=3.6.2,numpy=1.23.5,pandas=1
 biopython=1.79,pandas=1.2.3,numpy=1.21.6,tqdm=4.64.1,matplotlib=3.5.3,pip=23.0.1,python-levenshtein=0.12.0
 pandas=1.4.3,pybedtools=0.9.0
 pandas=1.5.2,biopython=1.79,numpy=1.23.5
+pandas=1.5.2
