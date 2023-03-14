@@ -381,3 +381,5 @@ python=3.9,biopython=1.79,pandas=1.5.3,pandarallel=1.6.4
 enasearch=0.1.1	quay.io/bioconda/base-glibc-debian-bash:latest	1
 bioconductor-scater=1.26.0,bioconductor-deseq2=1.38.0,bioconductor-limma=3.54.0,r-ashr=2.2_54,r-pheatmap=1.0.12
 rmats=4.1.2,r-pairadise=1.0.0
+vibrant=1.2.1,coreutils=8.30
+
