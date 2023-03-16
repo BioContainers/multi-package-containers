@@ -382,3 +382,4 @@ enasearch=0.1.1	quay.io/bioconda/base-glibc-debian-bash:latest	1
 bioconductor-scater=1.26.0,bioconductor-deseq2=1.38.0,bioconductor-limma=3.54.0,r-ashr=2.2_54,r-pheatmap=1.0.12
 rmats=4.1.2,r-pairadise=1.0.0
 bedtools=2.30.0,biopython=1.79,circos=0.69.8,coreutils=9.1,gawk=5.1.0,numpy=1.23.5,pandas=1.5.3
+bioconductor-purecn=2.4.0,gatk4=4.3.0.0,r-optparse=1.7.3,bioconductor-biocparallel=1.32.5,bioconductor-biocstyle=2.26.0,r-pscbs=0.66.0,r-r.utils=2.12.0,bioconductor-txdb.hsapiens.ucsc.hg38.knowngene=3.16.0,bioconductor-copynumber=1.38.0,r-knitr=1.41,r-covr=3.6.1,bioconductor-org.hs.eg.db=3.16.0,r-rmarkdown=2.19,r-jsonlite=1.8.4,r-markdown=1.4,r-testthat=3.1.6
