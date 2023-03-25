@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+fiji-simple_omero_client=5.12.2,fiji-omero_ij=5.8.0,fiji=20220414	quay.io/bioconda/base-glibc-busybox-bash:latest	0
