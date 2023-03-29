@@ -233,6 +233,8 @@ bioconductor-diffbind=3.4.0,bioconductor-csaw=1.28.0,bioconductor-edger=3.36.0,r
 r-shazam=1.1.0,r-tigger=1.0.0
 bamcmp=2.2	quay.io/bioconda/base-glibc-debian-bash:latest	0
 ascat=3.0.0,cancerit-allelecount=4.3.0
+ascat=3.1.1,cancerit-allelecount=4.3.0
+biscuit=1.1.0.20220707,samtools=1.16.1,bedtools=2.30.0,samblaster=0.1.26,gawk=5.1.0
 biscuit=1.2.0.20230130,samtools=1.16.1,bedtools=2.30.0,samblaster=0.1.26,gawk=5.1.0
 samtools=1.14.0,bedtools=2.30.0,ucsc-facount=377,python=3.8
 gatk4=4.2.0.0,r-base=4.1,r-ggplot2=3.3.5,datamash=1.1.0
