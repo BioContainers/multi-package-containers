@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+biopython=1.81,circos-tools=0.23,pybigwig=0.3.18,circos=0.69.8,grep=3.10,bcbiogff=0.6.6,tar=1.34	bgruening/busybox-bash:0.1	0
