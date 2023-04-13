@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+circos=0.69.8,tar=1.34,grep=3.10,bcbiogff=0.6.6,pybigwig=0.3.18,circos-tools=0.23,biopython=1.79	quay.io/bioconda/base-glibc-busybox-bash:latest	0
