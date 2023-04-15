@@ -392,3 +392,4 @@ bioconductor-clusterprofiler=4.6.0,bioconductor-org.hs.eg.db=3.16.0
 xopen=1.1.0,pysam=0.16.0
 bioconductor-purecn=2.4.0,bioconductor-txdb.hsapiens.ucsc.hg38.knowngene=3.16.0,bioconductor-org.hs.eg.db=3.16.0,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2
 python=3.6.13,pandas=1.1.5,numpy=1.19.5,jinja2==2.11.3,pyyaml=5.3,fire=0.3
+ghostscript,mummer=3.23,gnuplot
