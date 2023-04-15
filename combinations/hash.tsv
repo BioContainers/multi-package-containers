@@ -393,4 +393,3 @@ xopen=1.1.0,pysam=0.16.0
 bioconductor-purecn=2.4.0,bioconductor-txdb.hsapiens.ucsc.hg38.knowngene=3.16.0,bioconductor-org.hs.eg.db=3.16.0,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2
 python=3.6.13,pandas=1.1.5,numpy=1.19.5,jinja2==2.11.3,pyyaml=5.3,fire=0.3
 python=2.7,pysam=0.20.0,flask=1.1.2,numpy=1.16.5,matplotlib=2.2.4,scipy=1.2.0,mosek::mosek=8.0.60,intervaltree=3.0.2,future=0.18.2
-
