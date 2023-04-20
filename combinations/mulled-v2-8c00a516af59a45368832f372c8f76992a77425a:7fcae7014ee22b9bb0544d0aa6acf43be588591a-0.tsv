@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-randomcolor=1.1.0.1,r-ggplot2=3.4.0,bioconductor-sva=3.40.0,r-gridextra=2.3,bioconductor-cardinal=2.10.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
