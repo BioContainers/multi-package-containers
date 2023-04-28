@@ -284,6 +284,7 @@ skewer=0.2.2,pigz=2.6
 r-base=4.1.3,bioconductor-chipseeker=1.30.0,r-magrittr=2.0.3,bioconductor-genomicfeatures=1.46.1,bioconductor-clusterprofiler=4.2.0,bioconductor-annotationdbi=1.56.1,r-purrr=0.3.4,r-ggplot2=3.3.5
 r-base=4.1.3,r-ggplot2=3.3.5,r-magrittr=2.0.3,r-gridextra=2.3,r-rcolorbrewer=1.1_3,r-data.table=1.14.2
 r-base=4.1.3,bioconductor-diffbind=3.4.11,r-sleuth=0.30.0,r-ggplot2=3.3.5,r-magrittr=2.0.3,r-openxlsx=4.2.5
+
 galaxyxml=0.4.14,bioblend=0.17.0
 manta=1.6.0,samtools=1.15.1
 manta=1.6.0,samtools=1.16.1
@@ -396,3 +397,4 @@ geojson=3.0.1,numpy=1.24.2,opencv=4.7.0,pandas=2.0.0	bioconda/extended-base-imag
 anndata=0.9.1,matplotlib=3.7.1,pandas=2.0.0,scanpy=1.9.3
 python=3.9,pandas=1.4.2,seaborn=0.11.2,numpy=1.20.0,bottleneck=1.3.2
 python=3.10,biopython=1.80,openpyxl=3.1.0,pandas=1.5.3,rich=12.6.0,typer=0.7.0,xlsxwriter=3.0.8,numpy=1.24.2,polars=0.17.9,pyarrow=11.0.0
+r-base=4.2.1,r-rmarkdown=1.10,r-knitr=1.20,r-kableextra=1.3.4,r-dplyr=1.1.2,r-tidyverse=1.2.1,genomedk::tinytex=2023.04
