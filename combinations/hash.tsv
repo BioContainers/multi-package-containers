@@ -391,7 +391,7 @@ cadd-scripts=1.6,conda=4.14.0,mamba=1.4.0
 bioconductor-clusterprofiler=4.6.0,bioconductor-org.hs.eg.db=3.16.0
 xopen=1.1.0,pysam=0.16.0
 bioconductor-purecn=2.4.0,bioconductor-txdb.hsapiens.ucsc.hg38.knowngene=3.16.0,bioconductor-org.hs.eg.db=3.16.0,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2
-python=3.6.13,pandas=1.1.5,numpy=1.19.5,jinja2==2.11.3,pyyaml=5.3,fire=0.3
+ython=2.7,pysam=0.20.0,flask=1.1.2,numpy=1.16.5,matplotlib=2.2.4,scipy=1.2.0,mosek::mosek=8.0.60,intervaltree=3.0.2,future=0.18.2
 conda-forge::python=2,bioconda::pysam,anaconda::flask,conda-forge::numpy,conda-forge::matplotlib,anaconda::scipy,mosek::mosek=8,anaconda::intervaltree,anaconda::future
 geojson=3.0.1,numpy=1.24.2,opencv=4.7.0,pandas=2.0.0	bioconda/extended-base-image:latest	0
 anndata=0.9.1,matplotlib=3.7.1,pandas=2.0.0,scanpy=1.9.3
