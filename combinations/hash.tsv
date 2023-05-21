@@ -402,3 +402,4 @@ bbmap=39.01,seqkit=2.4.0,pigz=2.6,csvtk=0.25.0
 bedtools=2.31.0,samtools=1.17,coreutils=9.3,gawk=5.1.0
 bioconductor-tximeta=1.16.0,bioconductor-rhdf5=2.42.0
 bismark=0.24.0,seqkit=2.4.0,pigz=2.6,csvtk=0.25.0
+bbmap=39.01,samtools=1.17,seqkit=2.4.0,pigz=2.6,csvtk=0.25.0
