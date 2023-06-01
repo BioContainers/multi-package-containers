@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-sleuth=0.30.1,r-tidyverse=2.0.0,r-argparse=2.2.1,r-annotables=0.2.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
