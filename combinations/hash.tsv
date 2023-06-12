@@ -271,8 +271,8 @@ python=2.7,pysam=0.15.2,flask=1.1.2,cython=0.29.14,numpy=1.16.6,scipy=1.2.1,matp
 dnaio=0.8.1,pysam=0.19.0
 numpy=1.22.3,pandas=1.4.2,seaborn=0.11.2,deeptools=3.5.1,pysam=0.19.0,pyranges=0.0.115,dask=2022.4.1,upsetplot=0.6.0
 epytope=3.1.0,gawk=5.1.0,tcsh=6.20.00,perl=5.32.1
-pymuonsuite=0.2.1
-muspinsim=2.2.0
+pymuonsuite=0.3.0
+muspinsim=2.3.0
 changeo=1.2.0,igblast=1.17.1,wget=1.20.1	quay.io/bioconda/base-glibc-busybox-bash:2.1.0	0
 cnvkit=0.9.9,samtools=1.15.1
 cnvkit=0.9.9,samtools=1.16.1
