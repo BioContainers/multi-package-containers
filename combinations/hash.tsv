@@ -409,4 +409,4 @@ bwa-mem2=2.2.1,samtools=1.16.1,staden_io_lib=1.14.14
 r-nacho=2.0.4,r-tidyverse=2.0.0,r-ggplot2=3.4.2,r-rlang=1.1.1,r-tidylog=1.0.2,r-fs=1.6.2,bioconductor-complexheatmap=2.14.0,r-circlize=0.4.15,r-yaml=2.3.7,r-ragg=1.2.5,r-rcolorbrewer=1.1_3,r-pheatmap=1.0.12,pandoc=2.19.2,gmp=6.2.1
 bismark=0.24.1,seqkit=2.4.0,pigz=2.6,csvtk=0.25.0
 numpy=1.23.5,bacphlip=0.9.6,hmmer=3.3.2
-bedtools=2.30.0,samtools=1.16.1,ubuntu=20.04 
+bedtools=2.30.0,samtools=1.16.1 quay.io/bioconda/base-glibc-debian-bash:latest	0
