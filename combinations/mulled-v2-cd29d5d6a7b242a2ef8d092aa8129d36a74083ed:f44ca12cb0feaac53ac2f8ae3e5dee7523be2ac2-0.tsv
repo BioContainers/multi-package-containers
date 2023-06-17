@@ -1,2 +1,2 @@
 #targets	base_image	image_build
-maxquant=2.0.3.0,pyyaml=5.4.1,dotnet=3.1.418,r-ptxqc=1.0.16	quay.io/bioconda/base-glibc-busybox-bash:latest	0
+maxquant=2.0.3.0,pyyaml=5.4.1,dotnet=3.1.418,r-ptxqc=1.0.16,tar=1.32	quay.io/bioconda/base-glibc-busybox-bash:latest	0
