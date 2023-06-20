@@ -410,4 +410,4 @@ r-nacho=2.0.4,r-tidyverse=2.0.0,r-ggplot2=3.4.2,r-rlang=1.1.1,r-tidylog=1.0.2,r-
 bismark=0.24.1,seqkit=2.4.0,pigz=2.6,csvtk=0.25.0
 numpy=1.23.5,bacphlip=0.9.6,hmmer=3.3.2
 vcf2maf=1.6.21,ensembl-vep=109.3,samtools=1.17,bcftools=1.17
-python=2.7.10,deepTools=2.2.2
+python=2.7,deepTools=2.2.2
