@@ -134,7 +134,7 @@ jq=1.6
 r-base=4.0.3,r-shazam=1.0.2,r-tigger=1.0.0
 r-base=4.0.3,r-shazam=1.0.2,r-tigger=1.0.0,tzdata=2021a
 wget=1.20.1,biopython=1.78,igblast=1.15.0
-cat=4.6,diamond=2.0.6 1
+cat=4.6,diamond=2.0.6	1
 changeo=1.0.2,r-base=4.0.3,r-alakazam=1.0.2,igphyml=1.1.3
 changeo=1.0.2,r-base=4.0.3,r-alakazam=1.0.2,phylip=3.697
 r-base=4.0.3,r-alakazam=1.0.2,r-shazam=1.0.2
