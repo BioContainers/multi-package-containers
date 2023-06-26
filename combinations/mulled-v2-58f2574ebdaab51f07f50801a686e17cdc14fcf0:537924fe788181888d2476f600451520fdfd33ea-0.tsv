@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+htslib=1.16,coreutils=9.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+drep=3.4.2,checkm-genome=1.2.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0

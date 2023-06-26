@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+keras=2.9.0,python=3.9.12,h5py=3.6.0,scikit-learn=1.0.2,pandas=1.4.2,tensorflow=2.9.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
