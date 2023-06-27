@@ -1,2 +1,0 @@
-#targets	base_image	image_build
-khmer=3.0.0a3,fastx_toolkit=0.0.14	quay.io/bioconda/base-glibc-busybox-bash:latest	0

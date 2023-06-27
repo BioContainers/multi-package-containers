@@ -1,2 +1,0 @@
-#targets	base_image	image_build
-kraken=1.1.1,krona=2.7.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
