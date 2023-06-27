@@ -416,3 +416,4 @@ ms2pip=3.11.0,pyopenms=2.9.1
 r-ggplot2=3.4.2,r-data.table=1.14.8,r-dplyr=1.1.2,r-stringr=1.5.0,r-ggpubr=0.6.0
 deeplc=2.2.0,pyopenms=2.9.1
 r-base=4.2.1,r-proteus-bartongroup=0.2.16,bioconductor-limma=3.54.0,r-plotly=4.10.2
+pretextmap=0.1.9,samtools=1.17
