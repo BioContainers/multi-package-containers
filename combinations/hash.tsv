@@ -298,6 +298,7 @@ aria2=1.36.0,pigz=2.6,tar=1.34
 samtools=1.15.1,ultra_bioinformatics=0.0.4.1
 samtools=1.15.1,ultra_bioinformatics=0.0.4.2
 samtools=1.16.1,ultra_bioinformatics=0.0.4.2
+samtools=1.17,ultra_bioinformatics=0.1
 SetSimilaritySearch=1.0.0
 vsearch=2.21.1,samtools=1.15.1
 vsearch=2.21.1,samtools=1.16.1
