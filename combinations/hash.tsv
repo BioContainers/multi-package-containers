@@ -423,7 +423,7 @@ r-base=4.2.1,r-proteus-bartongroup=0.2.16,bioconductor-limma=3.54.0,r-plotly=4.1
 pretextmap=0.1.9,samtools=1.17
 r-ggplot2=3.4.2,r-data.table=1.14.8,r-dplyr=1.1.2,r-stringr=1.5.0,r-ggpubr=0.6.0,r-optparse=1.7.3
 minimap2=2.26,samtools=1.17
-r-tidyverse=2.0.0,r-knitr=1.43,r-dt=0.28,r-formattable=0.2.1,r-purrr=1.0.1,r-vegan=2.6_4,r-rmarkdown=2.22,r-optparse=1.7.3,r-ggplot2=3.4.2,r-dplyr=1.1.2,r-data.table=1.14.8,r-base=4.2.3,r-dtplyr=1.3.1,r-patchwork=1.1.2
+r-tidyverse=2.0.0,r-knitr=1.43,r-dt=0.28,r-formattable=0.2.1,r-purrr=1.0.1,r-vegan=2.6_4,r-rmarkdown=2.22,r-optparse=1.7.3,r-ggplot2=3.4.2,r-dplyr=1.1.2,r-data.table=1.14.8,r-base=4.2.3,r-dtplyr=1.3.1,r-patchwork=1.1.2	quay.io/bioconda/base-glibc-debian-bash:latest	0
 r-propr=4.2.6
 python=3.10,biopython=1.80,pandas=1.5.3,rich=12.6.0,typer=0.7.0,numpy=1.24.2,edlib=1.3.9
 bioconductor-msnbase=2.24.0-0,r-protviz=0.7.7,r-stringr=1.5.0
