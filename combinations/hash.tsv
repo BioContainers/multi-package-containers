@@ -1,4 +1,5 @@
 #targets	base_image	image_build
+python=3.10.2, numpy=1.15.4, pandas=1.5.2, intervals=0.6.0, gzip=1.12
 bioblend=1.0.0,galaxyxml=0.4.14,git=2.38.1,planemo=0.75.3
 cooltools=0.5.1,ucsc-bedgraphtobigwig=377
 python=3.9,scipy=1.8.0,numpy=1.22.3,iced=0.5.10,bx-python=0.8.13,pysam=0.19.0
