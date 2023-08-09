@@ -1,6 +1,7 @@
 #targets	base_image	image_build
 bioblend=1.0.0,galaxyxml=0.4.14,git=2.38.1,planemo=0.75.3
 cooltools=0.5.1,ucsc-bedgraphtobigwig=377
+cooltools=0.5.4,ucsc-bedgraphtobigwig=377
 python=3.9,scipy=1.8.0,numpy=1.22.3,iced=0.5.10,bx-python=0.8.13,pysam=0.19.0
 python=3.9,pandas=1.3.0,seaborn=0.11.0
 bwa=0.7.17,samtools=1.10,samblaster=0.1.24	bgruening/busybox-bash:0.1	1
