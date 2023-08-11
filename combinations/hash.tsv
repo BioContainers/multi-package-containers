@@ -437,5 +437,5 @@ numpy=1.25.2,pandas=2.0.3,bx-python=0.10.0,gzip=1.12
 macs2=2.2.7.1,ucsc-bedgraphtobigwig=445,bedtools=2.30.0
 vcf2maf-umccr=1.6.21.20230511,ensembl-vep=108.2
 r-nacho=2.0.5,r-tidyverse=2.0.0,r-ggplot2=3.4.2,r-rlang=1.1.1,r-tidylog=1.0.2,r-fs=1.6.2,bioconductor-complexheatmap=2.14.0,r-circlize=0.4.15,r-yaml=2.3.7,r-ragg=1.2.5,r-rcolorbrewer=1.1_3,r-pheatmap=1.0.12,pandoc=2.19.2,gmp=6.2.1
-python=3.9.15,yte=1.5.1,pandas=2.0.3,numpy=1.25.2
+yte=1.5.1,pandas=2.0.3,numpy=1.25.2
 datavzrd=2.23.2
