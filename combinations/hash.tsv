@@ -85,6 +85,7 @@ scipy=1.4.1,pandas=1.0.1,file=5.37	bgruening/busybox-bash:0.1	0
 bx-python=0.7.1,galaxy-ops=1.0.0	bgruening/busybox-bash:0.1	1
 r-seurat=3.1.5,r-rmarkdown=2.2	bioconda/extended-base-image:latest	0
 biopython=1.76
+cutadapt=1.8,perl
 singularity=3.5.3
 bioconductor-biocgenerics=0.30.0,bioconductor-summarizedexperiment=1.14.0,metaphlan2=2.9.21,python=3.7.3,pyyaml=5.1.2,r-argparse=2.0.1,r-base=3.6.1,r-basejump=0.11.18,r-bcbiobase=0.6.10,r-bcbiornaseq=0.3.28,r-brio=0.3.11,r-deseqanalysis=0.2.10,r-goalie=0.3.10,sambamba=0.7.0
 bedtools=2.29.0,bioconductor-biocparallel=1.18.0,bioconductor-deseq2=1.24.0,bioconductor-limma=3.40.2,bioconductor-rhdf5=2.28.0,bioconductor-rtracklayer=1.44.2,bioconductor-tximport=1.12.3,bx-python=0.8.4,fastqc=0.11.7,gatk4=4.1.3.0,gffread=0.11.4,kallisto=0.46.0,kraken2=2.0.8_beta,multiqc=1.7,ngmerge=0.3,numpy=1.17.2,openjdk=8.0.192=h14c3975_1003,pandas=0.25.1,picard=2.19.2,pysam=0.15.4,python=3.6.7,qualimap=2.2.2c,r-argparse=2.0.1,r-data.table=1.12.2,r-dplyr=0.8.3,r-magrittr=1.5,rna-seqc=2.3.4,r-readr=1.3.1,r-stringi=1.4.3,r-xlsx=0.6.1,salmon=1.1.0,sambamba=0.7.0,samtools=1.9,star=2.7.2b,tzcode,ucsc-gtftogenepred=377	bgruening/busybox-bash:0.1	1
