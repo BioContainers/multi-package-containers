@@ -442,6 +442,7 @@ yte=1.5.1,pandas=2.0.3,numpy=1.25.2
 datavzrd=2.23.2
 biopython=1.80,openpyxl=3.1.0,pandas=1.5.3,rich=12.6.0,typer=0.7.0,xlsxwriter=3.0.8,numpy=1.24.2,polars=0.18.15,pyarrow=11.0.0
 polars=0.18.15
+bedtools=2.24.0
 pyopenms=2.9.1,sirius-csifingerid=5.8.2
 vcftools=0.1.14-0,htslib=1.3.1-0
 r-ggplot2=3.4.3,bioconductor-shortread=1.58.0,r-ggpubr=0.6.0,r-ggmsa=1.0.2,r-seqmagick=0.1.6,r-tidyr=1.3.0,r-ggseqlogo=0.1,r-cowplot=1.1.1,r-seqinr=4.2_30,r-optparse=1.7.3,r-dplyr=1.1.2,r-plyr=1.8.8,r-stringr=1.5.0,r-plotly=4.10.2
