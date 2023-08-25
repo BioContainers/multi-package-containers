@@ -451,3 +451,4 @@ r-ggplot2=3.4.3,bioconductor-shortread=1.58.0,r-ggpubr=0.6.0,r-ggmsa=1.0.2,r-seq
 bowtie2=2.5.1,samtools=1.17
 preseq=3.2.0,samtools=1.17,csvtk=0.25.0
 bedtools=2.31.0,samtools=1.17,ucsc-bedgraphtobigwig=377
+bedtools=2.31.0,samtools=1.17,ucsc-wigtobigwig=447
