@@ -158,6 +158,7 @@ r-base=4.0.3,r-alakazam=1.0.2,r-shazam=1.0.2,r-kableextra=1.3.4,r-knitr=1.33,r-r
 bioconductor-biomart=2.46.3,bioconductor-deseq2=1.30.1,bioconductor-genomicranges=1.42.0,bioconductor-rtracklayer=1.50.0,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2,r-base=4.0.3,r-dplyr=1.0.5,r-optparse=1.6.6,r-stringr=1.4.0,r-tidyr=1.1.3
 biopython=1.78,pigz=2.6
 python=3.9,pysam,biopython,click,pandas,numpy,ete3
+python=3.9,pigz=2.6,sed=4.8
 python=3.6,galaxy-ml=0.8.1
 python=3.6,galaxy-ml=0.7.12
 biopython=1.78,openpyxl=3.0.7,pyfastx=0.8.2,numpy=1.20.2,pandas=1.2.4
