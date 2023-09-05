@@ -454,3 +454,4 @@ preseq=3.2.0,samtools=1.17,csvtk=0.25.0
 bedtools=2.31.0,samtools=1.17,ucsc-bedgraphtobigwig=377
 bedtools=2.31.0,samtools=1.17,ucsc-wigtobigwig=447
 r-base=4.0.2,vcftools=0.1.14-0
+perl==5.26.2,perl-sort-key=1.33,perl-yaml-libyaml=0.88
