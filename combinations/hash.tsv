@@ -457,3 +457,4 @@ r-base=4.0.2,vcftools=0.1.14-0
 perl==5.26.2,perl-sort-key=1.33,perl-yaml-libyaml=0.88
 tophat=2.1.1,samtools=1.17
 perl==5.26.2,r==3.6.0,bcftools==1.13,bedtools==2.30.0,bc==1.07.1
+python==3.7.9,pandas==1.3.4,numpy==1.21.4,pyranges==0.0.115,fire==0.4.0
