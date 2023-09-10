@@ -458,3 +458,4 @@ perl==5.26.2,perl-sort-key=1.33,perl-yaml-libyaml=0.88
 tophat=2.1.1,samtools=1.17
 r-base=3.5,bioconductor-htqpcr=1.36.0,bioconductor-rankprod=3.8.0,bioconductor-impute=1.56.0,r-bbmisc=1.11.0,r-psych=1.8.4,r-zoo=1.8_3,bioconductor-normqpcr=1.28.0,r-rgl=0.99.16
 umi-transfer=1.0.0
+gzip=1.12,tar=1.34,bzip2=1.0.8,unzip=6.0
