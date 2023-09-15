@@ -465,3 +465,4 @@ r-base=3.5,bioconductor-htqpcr=1.36.0,bioconductor-rankprod=3.8.0,bioconductor-i
 umi-transfer=1.0.0
 gzip=1.12,tar=1.34,bzip2=1.0.8,unzip=6.0,xz=5.2.6
 pbgzip=2016.08.04,bcftools=1.8
+ms2pip=3.11.0,deeplc=2.2.14,pyopenms=2.9.1
