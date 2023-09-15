@@ -418,8 +418,9 @@ numpy=1.23.5,bacphlip=0.9.6,hmmer=3.3.2
 vcf2maf=1.6.21,ensembl-vep=109.3,samtools=1.17,bcftools=1.17
 python=2.7,deepTools=2.2.2
 r-yaml=2.3.7,r-ggplot2=3.4.2,r-tidylog=1.0.2,r-tidyverse=2.0.0,r-stringr=1.5.0,bioconductor-gsva=1.46.0,bioconductor-singscore=1.18.0,r-factominer=2.8.0
-ms2pip=3.11.0,deeplc=2.2.14,pyopenms=2.9.1
+ms2pip=3.11.0,pyopenms=2.9.1
 r-ggplot2=3.4.2,r-data.table=1.14.8,r-dplyr=1.1.2,r-stringr=1.5.0,r-ggpubr=0.6.0
+deeplc=2.2.0,pyopenms=2.9.1
 r-base=4.3,r-rdimtools=1.1.2	bioconda/extended-base-image:latest	0
 r-base=4.2.1,r-proteus-bartongroup=0.2.16,bioconductor-limma=3.54.0,r-plotly=4.10.2
 pretextmap=0.1.9,samtools=1.17
@@ -463,3 +464,4 @@ r-base=3.5,bioconductor-htqpcr=1.36.0,bioconductor-rankprod=3.8.0,bioconductor-i
 umi-transfer=1.0.0
 gzip=1.12,tar=1.34,bzip2=1.0.8,unzip=6.0,xz=5.2.6
 pbgzip=2016.08.04,bcftools=1.8
+ms2pip=3.11.0,deeplc=2.2.14,pyopenms=2.9.1
