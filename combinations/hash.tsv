@@ -469,3 +469,4 @@ ms2pip=3.11.0,deeplc=2.2.14,pyopenms=2.9.1
 gffutils=0.12,pysam=0.21.0,pandas=2.1.1
 sambamba=0.6.1,bedops=2.4.19
 macs2=2.2.9.1,bedtools=2.31.0,ucsc-bedclip=377,ucsc-bedgraphtobigwig=445
+python=3.9,tensorflow==2.10.0,scikit-learn==1.1.2,umap-learn==0.5.3,matplotlib==3.6.0
