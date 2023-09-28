@@ -471,3 +471,4 @@ sambamba=0.6.1,bedops=2.4.19
 macs2=2.2.9.1,bedtools=2.31.0,ucsc-bedclip=377,ucsc-bedgraphtobigwig=445
 bioconductor-flowsom=1.18.0,mscorefonts=0.0.1
 bioconductor-flowsom=1.16.0,mscorefonts=0.0.1
+bioconductor-flowai=1.2.9,bioconductor-flowcore=1.42.0,mscorefonts=0.0.1
