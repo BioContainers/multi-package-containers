@@ -477,4 +477,4 @@ pretextgraph=0.0.6,ucsc-bedtobigbed=447
 pretextgraph=0.0.6,ucsc-bigwigtobedgraph=448
 sra-tools=3.0.8,pigz=2.6
 pydeseq2=0.4.1,biopython=1.81,numpy=1.26.0,pandas=2.1.1,pysam=0.21.0,matplotlib=3.8,gzip=1.12,hybkit=0.3.3,natsort=7.1.1
-conda-forge::r-ggplot2=3.4.3,conda-forge::r-gprofiler2=0.2.2
+r-ggplot2=3.4.3,r-gprofiler2=0.2.2
