@@ -479,9 +479,6 @@ sra-tools=3.0.8,pigz=2.6
 pydeseq2=0.4.1,biopython=1.81,numpy=1.26.0,pandas=2.1.1,pysam=0.21.0,matplotlib=3.8,gzip=1.12,hybkit=0.3.3,natsort=7.1.1
 r-ggplot2=3.4.3,r-gprofiler2=0.2.2
 pigz=2.8
-pandas=2.1.1,kcounter=0.1.1
-macs2=2.2.9.1,picard=3.1.0
-bamutil=1.0.15,samtools=1.18,seqkit=2.5.1
 pgzip=0.3.5
 r-tidyverse,r-data.table,r-caret,r-rjson=,r-furrr,r-purrr=,r-optparse,r-r6,r-tidymodels,r-pls,r-flowml=0.1.2
 pgzip=0.3.5
