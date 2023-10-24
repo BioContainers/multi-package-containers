@@ -483,3 +483,10 @@ pandas=2.1.1,kcounter=0.1.1
 macs2=2.2.9.1,picard=3.1.0
 bamutil=1.0.15,samtools=1.18,seqkit=2.5.1
 pgzip=0.3.5
+r-tidyverse,r-data.table,r-caret,r-rjson=,r-furrr,r-purrr=,r-optparse,r-r6,r-tidymodels,r-pls,r-flowml=0.1.2
+pgzip=0.3.5
+pandas=2.1.1,kcounter=0.1.1
+macs2=2.2.9.1,picard=3.1.0
+bamutil=1.0.15,samtools=1.18,seqkit=2.5.1
+r-taxonomizr=0.10.2,r-tidyverse=2.0.0
+pandas=2.1.1,tensorflow=2.10.0,scikit-learn=1.1.2,umap-learn=0.5.3,matplotlib=3.6.0
