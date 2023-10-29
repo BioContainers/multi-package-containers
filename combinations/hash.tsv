@@ -487,3 +487,4 @@ bamutil=1.0.15,samtools=1.18,seqkit=2.5.1
 r-taxonomizr=0.10.2,r-tidyverse=2.0.0
 pandas=2.1.1,tensorflow=2.10.0,scikit-learn=1.1.2,umap-learn=0.5.3,matplotlib=3.6.0
 samtools=1.18,bwakit=0.7.17.dev1
+gatk4=4.4.0.0,samtools=1.18,bcftools=1.18,perl=5.32.1,r-base=4.3
