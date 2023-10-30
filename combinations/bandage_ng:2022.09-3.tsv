@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bandage_ng=2022.09	quay.io/bioconda/base-glibc-debian-bash:latest	3
