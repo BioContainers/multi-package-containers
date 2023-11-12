@@ -491,3 +491,4 @@ samtools=1.18,bwakit=0.7.17.dev1
 gatk4=4.4.0.0,samtools=1.18,bcftools=1.18,perl=5.32.1,r-base=4.3
 r-base=4.2.1,r-optparse
 biopython=1.78,pybedtools=0.9.1
+xengsort=2.0.1,pigz=2.8,htop=3.2.2,seqkit=2.6.0
