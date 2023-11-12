@@ -133,6 +133,7 @@ homer=4.11,samtools=1.11,r-base=4.0.2,bioconductor-deseq2=1.30.0,bioconductor-ed
 umi_tools=1.1.1,samtools=1.10
 pigz=2.3.4
 jq=1.6
+openjdk=8.0.121,python=2.7
 r-base=4.0.3,r-shazam=1.0.2,r-tigger=1.0.0
 r-base=4.0.3,r-shazam=1.0.2,r-tigger=1.0.0,tzdata=2021a
 wget=1.20.1,biopython=1.78,igblast=1.15.0
