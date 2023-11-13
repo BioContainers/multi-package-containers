@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+python=3.11,mzmine=3.9.0	quay.io/bioconda/base-glibc-debian-bash:latest	0
