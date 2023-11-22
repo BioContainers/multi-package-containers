@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+kleborate=2.2.0,kaptive=2.0.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
