@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-mvtnorm=1.1-3,r-xlconnect=1.0.7,r-gdata=2.18.0.1,r-rms=6.5-0,r-base=4.2.3	quay.io/bioconda/base-glibc-busybox-bash:latest	0
