@@ -502,3 +502,4 @@ pandas=1.1.4,matchms=0.24.0,click=8.0.1	quay.io/bioconda/base-glibc-busybox-bash
 cnvkit=0.9.10,samtools=1.18
 gatk4=4.4.0.0,samtools=1.18
 pretextmap=0.1.9,samtools=1.18
+samtools=1.18,ultra_bioinformatics=0.1
