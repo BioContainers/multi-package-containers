@@ -506,4 +506,4 @@ bwa-mem2=2.2.1,samtools=1.18
 manta=1.6.0,samtools=1.18
 minimap2=2.24,samtools=1.18
 gatk4=4.4.0.0,samtools=1.18
-r-base r-optparse r-ggplot2 r-dplyr r-rlist r-openxlsx
+r-base,r-optparse,r-ggplot2,r-dplyr,r-rlist,r-openxlsx
