@@ -505,3 +505,4 @@ bwa=0.7.17,samtools=1.18
 bwa-mem2=2.2.1,samtools=1.18
 manta=1.6.0,samtools=1.18
 minimap2=2.24,samtools=1.18
+gatk4=4.4.0.0,samtools=1.18
