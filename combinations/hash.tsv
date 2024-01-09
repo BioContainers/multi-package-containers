@@ -515,3 +515,4 @@ gatk4=4.4.0.0,samtools=1.18,coreutils=9.3
 mtm-align=20220104,pigz=2.8
 gatk4=4.4.0.0,samtools=1.18,coreutils=9.3
 r-base,r-dplyr,r-optparse,r-devtools,r-topicmodels,r-philentropy,r-metrics,r-jsonlite
+presto=0.7.1,igblast=1.21.0,wget=1.20.1	quay.io/bioconda/base-glibc-busybox-bash:2.1.0	0
