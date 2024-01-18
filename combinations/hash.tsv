@@ -513,3 +513,4 @@ mafft=7.520,pigz=2.8
 gatk4=4.4.0.0,samtools=1.18,coreutils=9.3
 mtm-align=20220104,pigz=2.8
 gatk4=4.4.0.0,samtools=1.18,coreutils=9.3
+t-coffee=13.46.0.919e8c6b,pigz=2.8
