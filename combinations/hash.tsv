@@ -524,3 +524,4 @@ r-yaml=2.3.7,r-ggplot2=3.4.4,r-dplyr=1.1.4,r-fs=1.6.2,bioconductor-complexheatma
 oatk=1.0
 spingo=1.3
 r-clustree=0.5.1
+t-coffee=13.46.0.919e8c6b,pigz=2.8
