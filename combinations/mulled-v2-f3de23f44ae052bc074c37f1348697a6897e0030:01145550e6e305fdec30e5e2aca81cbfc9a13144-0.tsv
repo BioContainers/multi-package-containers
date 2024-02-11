@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-bsgenome.hsapiens.ucsc.hg38=1.4.5,r-rjson=0.2.21,r-ggplot2=3.4.4,bioconductor-bsgenome.hsapiens.ucsc.hg19=1.4.3,bioconductor-mutationalpatterns=3.12.0,r-gridextra=2.3,r-nmf=0.21.0,r-optparse=1.7.4	quay.io/bioconda/base-glibc-busybox-bash:latest	0
