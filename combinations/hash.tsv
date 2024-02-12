@@ -531,3 +531,4 @@ minimap2=2.26,samtools=1.17,perl=5.32.1
 pandas=2.2.0,numpy=1.26.3,statsmodels=0.14.1
 minimap2=2.24,samtools=1.17,perl=5.32.1,staden_io_lib=1.14.14,bwa-mem2=2.2.1
 kalign3=3.3.5,pigz=2.8
+gem3-mapper=3.6.1,samtools=1.17
