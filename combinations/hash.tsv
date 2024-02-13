@@ -535,3 +535,4 @@ minimap2=2.24,samtools=1.17,perl=5.32.1,staden_io_lib=1.14.14,bwa-mem2=2.2.1
 kalign3=3.3.5,pigz=2.8
 gem3-mapper=3.6.1,samtools=1.17
 pyrodigal=3.3.0,pigz=2.6
+kraken2=2.1.3,gnu-coreutils=9.4
