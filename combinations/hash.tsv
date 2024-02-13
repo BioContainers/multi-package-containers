@@ -536,3 +536,4 @@ kalign3=3.3.5,pigz=2.8
 gem3-mapper=3.6.1,samtools=1.17
 pyrodigal=3.3.0,pigz=2.6
 kraken2=2.1.3,gnu-coreutils=9.4
+macs2=2.2.9.1,mawk=1.3.4
