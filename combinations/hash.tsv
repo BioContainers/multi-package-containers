@@ -198,6 +198,7 @@ r-recetox-aplcms=0.9.3,r-base=4.1.0,r-arrow=4.0.1,r-dplyr=1.0.7	quay.io/bioconda
 samblaster=0.1.26,samtools=1.14
 samblaster=0.1.26,samtools=1.15.1
 samblaster=0.1.26,samtools=1.16.1
+samblaster=0.1.26,samtools=1.19.2
 circularmapper=1.93.5,bwa=0.7.17
 clonalframeml=1.12,maskrc-svg=0.5
 r-optparse=1.7.1,r-upsetr=1.4.0,bedtools=2.30.0
