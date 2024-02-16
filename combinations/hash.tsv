@@ -285,6 +285,7 @@ cnvkit=0.9.9,samtools=1.15.1
 cnvkit=0.9.9,samtools=1.16.1
 cnvkit=0.9.10,samtools=1.16.1
 cnvkit=0.9.10,samtools=1.17
+cnvkit=0.9.10,samtools=1.19.2
 deeptools=3.5.1,samtools=1.15.1
 deeptools=3.5.1,samtools=1.16.1
 r-recetox-aplcms=0.9.4,r-base=4.1.0,r-arrow=4.0.1,r-dplyr=1.0.7	quay.io/bioconda/base-glibc-debian-bash:latest	0
