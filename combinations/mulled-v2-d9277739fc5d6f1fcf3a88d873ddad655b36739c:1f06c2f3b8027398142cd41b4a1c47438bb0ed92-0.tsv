@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+omamer=2.0.2,omark=0.3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
