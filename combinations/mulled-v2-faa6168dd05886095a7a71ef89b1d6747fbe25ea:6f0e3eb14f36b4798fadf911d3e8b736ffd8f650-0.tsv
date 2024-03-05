@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+matplotlib=3.5.2,zip=3.0,unzip=6.0,xraylarch=0.9.74	quay.io/bioconda/base-glibc-busybox-bash:latest	0
