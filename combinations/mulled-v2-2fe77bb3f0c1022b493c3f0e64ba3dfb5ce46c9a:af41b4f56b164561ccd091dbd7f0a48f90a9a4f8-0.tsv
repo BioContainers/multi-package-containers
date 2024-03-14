@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+networkx=3.2.1,numpy=1.22,scikit-image=0.18.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
