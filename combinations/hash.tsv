@@ -50,6 +50,7 @@ snpeff=4.1	bgruening/busybox-bash:0.1	0
 pandas=0.24.2,scipy=1.3.0	bgruening/busybox-bash:0.1	0
 deeptools=3.1.2,samtools=1.7	bgruening/busybox-bash:0.1	0
 wget=1.20.1	bgruening/busybox-bash:0.1	0
+wget=1.21.4
 gawk=5.0.1	bgruening/busybox-bash:0.1	0
 pyiron=0.2.2	bgruening/busybox-bash:0.1	0
 pyiron=0.2.2,lammps=2019.06.05	bgruening/busybox-bash:0.1	0
