@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+fasta3=36.3.8,mafft=7.520	quay.io/bioconda/base-glibc-busybox-bash:latest	0
