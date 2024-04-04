@@ -571,3 +571,4 @@ r-tidyverse=2.0.0,r-base=4.3.3,r-seurat=5.0.1,bioconductor-dropletutils=1.22.0,r
 mosdepth=0.3.7,samtools=1.19.2
 snpeff=5.2,tabix=1.11
 magus-msa=0.2.0,pigz=2.8
+kraken2=2.1.3,coreutils=9.4,pigz=2.8
