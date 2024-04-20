@@ -579,3 +579,4 @@ bedtools=2.31.1,samtools=1.19.2,perl=5.32.1
 bedtools=2.31.1,samtools=1.19.2,python=3.11.4
 r-base=4.2.1,r-proteus-bartongroup=0.2.16,bioconductor-limma=3.54.0,r-plotly=4.10.2,r-ggplot2=3.4.4
 segalign-full=0.1.2.1,bashlex=0.18
+r-dartr=1.0.5,r-pophelper=2.2.7,r-vcfr=1.8.0,r-reshape2=1.4.3
