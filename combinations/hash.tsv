@@ -582,3 +582,4 @@ r-base=4.2.1,r-proteus-bartongroup=0.2.16,bioconductor-limma=3.54.0,r-plotly=4.1
 segalign-full=0.1.2.1,bashlex=0.18
 r-base=4.3,r-dartr,r-pophelper,r-reshape2,r-vcfr
 bwa=0.7.18,samtools=1.20,sambamba=1.0
+kma=1.4.14,samtools=1.20
