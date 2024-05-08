@@ -583,3 +583,4 @@ segalign-full=0.1.2.1,bashlex=0.18
 r-base=4.3,r-dartr,r-pophelper,r-reshape2,r-vcfr
 bwa=0.7.18,samtools=1.20,sambamba=1.0
 kma=1.4.14,samtools=1.20
+kma=1.4.9,samtools=1.20
