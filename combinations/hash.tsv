@@ -585,4 +585,3 @@ bwa=0.7.18,samtools=1.20,sambamba=1.0
 kma=1.4.14,samtools=1.20
 kma=1.4.9,samtools=1.20
 bwa-meme=1.0.6,mbuffer=20160228,samtools=1.20
-
