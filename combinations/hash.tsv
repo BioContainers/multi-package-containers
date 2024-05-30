@@ -588,3 +588,4 @@ bwa-meme=1.0.6,mbuffer=20160228,samtools=1.20
 cellpose=3.0.8	quay.io/bioconda/base-glibc-debian-bash:latest	0
 paraphase=3.1.1,minimap2=2.28,samtools=1.20
 bowtie2=2.5.4,samtools=1.20
+minimap2=2.28,samtools=1.20,htslib=1.20
