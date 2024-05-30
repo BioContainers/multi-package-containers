@@ -575,7 +575,7 @@ magus-msa=0.2.0,pigz=2.8
 fgbio=2.0.2,r-ggplot2=3.4
 r-base=4.3.3,bioconductor-rtracklayer=1.62.0,r-optparse=1.7.4,r-dplyr=1.1.4,r-stringr=1.5.1,r-plyr=1.8.9,r-data.table=1.15.2,coreutils=9.5,r-argparse=2.2.2
 kraken2=2.1.3,coreutils=9.4,pigz=2.8
-minimap2=2.28,samtools=1.19.2
+minimap2=2.28,samtools=1.20
 bedtools=2.31.1,samtools=1.19.2,perl=5.32.1
 bedtools=2.31.1,samtools=1.19.2,python=3.11.4
 r-base=4.2.1,r-proteus-bartongroup=0.2.16,bioconductor-limma=3.54.0,r-plotly=4.10.2,r-ggplot2=3.4.4
@@ -588,4 +588,3 @@ bwa-meme=1.0.6,mbuffer=20160228,samtools=1.20
 cellpose=3.0.8	quay.io/bioconda/base-glibc-debian-bash:latest	0
 paraphase=3.1.1,minimap2=2.28,samtools=1.20
 bowtie2=2.5.4,samtools=1.20
-minimap2=2.28,samtools=1.20,htslib=1.20
