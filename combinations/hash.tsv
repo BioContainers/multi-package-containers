@@ -594,3 +594,4 @@ pyopenms=2.9.1,h5py=3.9.0
 plant-seg=1.8.1,pytorch=2.3.1,bioimageio.spec=0.5.3,pyyaml=6.0.1	quay.io/bioconda/base-glibc-debian-bash:latest	0
 groot=1.1.2	quay.io/bioconda/base-glibc-debian-bash:latest	1
 r-shiny=1.8.1.1,bioconductor-phyloseq=1.46.0,r-curl=5.1.0,r-biocmanager=1.30.23
+vardict-java=1.8.3,htslib=1.20
