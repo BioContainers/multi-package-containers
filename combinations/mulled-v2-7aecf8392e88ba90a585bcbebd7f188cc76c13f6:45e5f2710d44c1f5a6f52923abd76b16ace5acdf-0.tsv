@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+requests,matplotlib,python=3.7.3,cdk-inchi-to-svg=0.9,pubchempy=1.0.4,numpy,metfrag=2.4.5	quay.io/bioconda/base-glibc-busybox-bash:latest	0
