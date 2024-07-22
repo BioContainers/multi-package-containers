@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-rmysql=0.10.27,bioconductor-mspuritydata=1.30.0,r-rpostgres=1.4.7,r-optparse=1.7.5,bioconductor-xcms=4.0.0,bioconductor-mspurity=1.28.0,bioconductor-camera=1.58.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
