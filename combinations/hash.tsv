@@ -598,3 +598,4 @@ vardict-java=1.8.3,htslib=1.20
 lumpy-sv=0.3.1	quay.io/bioconda/base-glibc-busybox-bash:3.1	3
 bwameth=0.2.7,bwa-mem2=2.2.1
 pasta=1.9.0,pigz=2.8
+longphase=1.7.3,htslib=1.20
