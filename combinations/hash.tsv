@@ -185,6 +185,7 @@ chromap=0.2.0,samtools=1.14
 chromap=0.2.1,samtools=1.15
 chromap=0.2.1,samtools=1.15.1
 chromap=0.2.1,samtools=1.16.1
+chromap=0.2.6,samtools=1.20
 bbmap=38.92,samtools=1.13
 bbmap=38.92,samtools=1.13,pigz=2.6
 bbmap=38.92,samtools=1.15.1,pigz=2.6
