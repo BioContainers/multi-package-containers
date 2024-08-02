@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+julia-divand=2.7.9,julia=1.8.5	quay.io/bioconda/base-glibc-busybox-bash:latest	0
