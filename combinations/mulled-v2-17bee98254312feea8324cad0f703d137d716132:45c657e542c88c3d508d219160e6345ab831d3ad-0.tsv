@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-getopt=1.20.4,bioconductor-cemitool=1.26.0,r-ggplot2=3.5.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
