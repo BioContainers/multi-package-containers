@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+cnvkit=0.9.11,scikit-learn=1.4.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0

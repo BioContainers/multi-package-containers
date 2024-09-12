@@ -24,6 +24,13 @@ conda create -n mulled galaxy-tool-util -c conda-forge -c bioconda
 conda activate mulled
 ```
 
+## Finding mulled hash names for containers
+
+```bash
+(planemo) bag@bag:~/projects/code/$ mulled-hash  r-shiny=1.8.1.1,bioconductor-phyloseq=1.46.0,r-curl=5.1.0,r-biocmanager=1.30.23
+mulled-v2-3f22c1adbbead1a8888120ab6f59758c0a05e86b:e77384d3aca3277e7caf46a60e0eb848aec72912
+```
+
 ## Searching for containers
 
 Multi-tool containers have hashed names to make them uniquely identifiable.

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+ctdopts=1.5,openms=3.1,blast=2.14.1,openms-thirdparty=3.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
