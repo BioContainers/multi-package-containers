@@ -613,3 +613,4 @@ pandas=2.2.2,matplotlib=3.9.2,seaborn=0.13.2,tqdm=4.66.5,statsmodels=0.14.2,nump
 minimap2=2.26,samtools=1.18,htslib=1.18
 julia=1.10
 r-seqinr=4.2_36,r-digest=0.6.37,r-rlist=0.4.6.2,r-tiledb=0.30.0
+r-seqinr=4.2_36,r-digest=0.6.37,r-rlist=0.4.6.2,r-tiledb=0.30.0,bioconductor-biocgenerics=0.48.1,bioconductor-biostrings=2.70.1,r-optparse=1.7.5,r-rmarkdown=2.28
