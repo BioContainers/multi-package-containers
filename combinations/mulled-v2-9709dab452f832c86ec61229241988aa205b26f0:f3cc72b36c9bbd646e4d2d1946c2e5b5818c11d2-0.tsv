@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+augustus=@VERSION@,maker=2.31.10	quay.io/bioconda/base-glibc-debian-bash:latest	0
