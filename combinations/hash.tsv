@@ -617,3 +617,4 @@ r-seqinr=4.2_36,r-digest=0.6.37,r-rlist=0.4.6.2,r-tiledb=0.30.0,bioconductor-bio
 r-pafr=0.0.2,r-viridislite=0.4.2,r-data.table=1.15.4,r-yaml=2.3.10,r-ggplot2=3.5.1,r-gtools=3.9.5
 mechanize=0.2.5
 svdb=2.8.2,bcftools=1.21
+filesendercli=3.0.0
