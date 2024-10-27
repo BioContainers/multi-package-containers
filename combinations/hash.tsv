@@ -618,3 +618,4 @@ r-pafr=0.0.2,r-viridislite=0.4.2,r-data.table=1.15.4,r-yaml=2.3.10,r-ggplot2=3.5
 mechanize=0.2.5
 svdb=2.8.2,bcftools=1.21
 filesendercli=3.0.0
+python=3.9,bcftools=1.21,samtools=1.21
