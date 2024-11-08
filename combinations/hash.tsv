@@ -619,3 +619,4 @@ mechanize=0.2.5
 svdb=2.8.2,bcftools=1.21
 filesendercli=3.0.0
 python=3.9,bcftools=1.21,samtools=1.21
+r-base=4.3.1,r-tidyverse=1.2.1,r-viridis=0.5.1
