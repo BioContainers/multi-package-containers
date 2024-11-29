@@ -619,3 +619,4 @@ mechanize=0.2.5
 svdb=2.8.2,bcftools=1.21
 filesendercli=3.0.0
 python=3.9,bcftools=1.21,samtools=1.21
+pyrodigal=3.6.3,pigz=2.8
