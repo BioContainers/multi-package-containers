@@ -622,4 +622,4 @@ python=3.9,bcftools=1.21,samtools=1.21
 pyrodigal=3.6.3,pigz=2.8
 mash=2.3,numpy=2.1.3,tqdm=4.67.1
 cobra=0.29.1,pandas=2.2.3,memote=0.17.0,escher=1.7.3
-curl=8.10.1,xmlstarlet=1.6.1,imagemagick=7.1.1_41,ghostscript=10.04.0
+curl=8.10.1,xmlstarlet=1.6.1,imagemagick=7.1.1_41,ghostscript=10.04.0,fonts-conda-forge=1
