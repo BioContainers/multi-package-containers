@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-pheatmap=1.0.12,r-optparse=1.7.4,r-circlize=0.4.15,bioconductor-pathifier=1.40.0,r-scatterplot3d=0.3_44	quay.io/bioconda/base-glibc-busybox-bash:latest	0

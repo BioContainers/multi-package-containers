@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+tar=1.34,busco=5.5.0,fonts-conda-ecosystem=1	quay.io/bioconda/base-glibc-debian-bash:latest	0

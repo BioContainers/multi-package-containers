@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+cooler=0.8.11,htslib=1.16,h5py=3.7.0	quay.io/bioconda/base-glibc-debian-bash:latest	0

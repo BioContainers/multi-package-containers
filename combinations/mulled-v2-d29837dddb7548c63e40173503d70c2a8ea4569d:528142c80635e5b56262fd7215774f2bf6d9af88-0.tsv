@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-w4mrutils=1.0.0,bioconductor-msdata=0.42.0,bioconductor-mzr=2.36.0,r-base=4.3.3	quay.io/bioconda/base-glibc-busybox-bash:latest	0
