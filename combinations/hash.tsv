@@ -625,3 +625,4 @@ cobra=0.29.1,pandas=2.2.3,memote=0.17.0,escher=1.7.3
 curl=8.10.1,xmlstarlet=1.6.1,imagemagick=7.1.1_41,ghostscript=10.04.0,fonts-conda-forge=1
 bioconductor-phyloseq==1.46.0,r-tidyverse=1.3.1
 r-optparse,r-rcolorbrewer,r-paralleldist,r-matrix,r-readr,r-here,r-circlize,bioconductor-complexheatmap,r-scevan
+tabpfn=2.0.3
