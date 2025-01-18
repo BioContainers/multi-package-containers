@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+tb-profiler=6.4.0,delly=1.2.6	quay.io/bioconda/base-glibc-busybox-bash:latest	0
