@@ -1,2 +1,2 @@
 #targets	base_image	image_build
-requests=2.25.1	bgruening/busybox-bash:0.1	0
+requests=2.25.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1

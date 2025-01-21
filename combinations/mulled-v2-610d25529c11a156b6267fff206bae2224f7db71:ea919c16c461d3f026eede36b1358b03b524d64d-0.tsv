@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-envipat=2.6,bioconductor-msbackendmsp=1.6.0,bioconductor-spectra=1.12.0,bioconductor-metabocoreutils=1.10.0,r-readr=2.1.5	quay.io/bioconda/base-glibc-busybox-bash:latest	0

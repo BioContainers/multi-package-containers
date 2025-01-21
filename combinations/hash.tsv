@@ -185,6 +185,7 @@ chromap=0.2.0,samtools=1.14
 chromap=0.2.1,samtools=1.15
 chromap=0.2.1,samtools=1.15.1
 chromap=0.2.1,samtools=1.16.1
+chromap=0.2.6,samtools=1.20
 bbmap=38.92,samtools=1.13
 bbmap=38.92,samtools=1.13,pigz=2.6
 bbmap=38.92,samtools=1.15.1,pigz=2.6
@@ -290,6 +291,7 @@ cnvkit=0.9.10,samtools=1.17
 cnvkit=0.9.10,samtools=1.19.2
 deeptools=3.5.1,samtools=1.15.1
 deeptools=3.5.1,samtools=1.16.1
+deeptools=3.5.5,samtools=1.20
 r-recetox-aplcms=0.9.4,r-base=4.1.0,r-arrow=4.0.1,r-dplyr=1.0.7	quay.io/bioconda/base-glibc-debian-bash:latest	0
 r-base=4.1.3,r-magrittr=2.0.3,r-dplyr=1.0.9,r-purrr=0.3.4,r-ggplot2=3.3.5,r-data.table=1.14.2
 samtools=1.15.1,bedtools=2.30.0,perl=5.32.1
@@ -319,7 +321,7 @@ svdb=2.8.1,samtools=1.16.1
 svdb=2.8.1,samtools=1.19.2
 r-base=4.1.2,changeo=1.2.0,r-alakazam=1.2.0,phylip=3.697,r-optparse=1.7.1
 ont-fast5-api=0.4.1,r-tailfindr=1.3.0
-gatk4=4.2.6.1,samtools=1.15.1,sambamba=0.8.2,bcftools=1.15.1,perl=5.32.1,r-base=4.1.2
+gatk4=4.2.6.1,samtools=1.15.1,sambamba=1.0.1,bcftools=1.15.1,perl=5.32.1,r-base=4.1.2
 bwa=0.7.17,prinseq-plus-plus=1.2.4,perl=5.26
 levenshtein=0.20.1
 pysam=0.19.1,edlib=1.3.9,tqdm=4.64.0
@@ -362,6 +364,7 @@ bbmap=38.98,seqkit=2.3.1,pigz=2.6
 r-base=4.1.3,r-argparse=2.1.3,r-data.table=1.14.2
 gatk4=4.3.0.0,gatktool=0.0.1
 fgbio=2.0.2,bwa=0.7.17,samtools=1.16.1
+fgbio=2.2.1,bwa-mem2=2.2.1,samtools=1.20
 wham=1.8.0,tabix=1.11
 aria2=1.36.0,rsync=3.2.7
 numpy=1.20.3,pandas=1.2.5,scipy=1.4.1,matplotlib=3.5.1
@@ -398,6 +401,7 @@ r-tidyverse=1.3.1,r-data.table=1.14.6,r-caret=6.0_93,r-rjson=0.2.21,r-furrr=0.3.
 python=3.9,biopython=1.79,pandas=1.5.3,pandarallel=1.6.4
 enasearch=0.1.1	quay.io/bioconda/base-glibc-debian-bash:latest	1
 jbrowse2=2.10.0,biopython=1.82,bcbio-gff=0.7.0,samtools=1.19,pyyaml=6.0.1,tabix=1.11,findutils=4.6.0	bioconda/base-glibc-busybox-bash-fake-user:3.0	0
+jbrowse2=2.11.1,biopython=1.82,bcbio-gff=0.7.1,samtools=1.19,pyyaml=6.0.1,tabix=1.11,findutils=4.6.0,hictk=0.0.12-0,zip=3.0	bioconda/base-glibc-busybox-bash-fake-user:3.0	0
 bioconductor-scater=1.26.0,bioconductor-deseq2=1.38.0,bioconductor-limma=3.54.0,r-ashr=2.2_54,r-pheatmap=1.0.12
 rmats=4.1.2,r-pairadise=1.0.0
 bedtools=2.30.0,biopython=1.79,circos=0.69.8,coreutils=9.1,gawk=5.1.0,numpy=1.23.5,pandas=1.5.3
@@ -437,7 +441,9 @@ r-ggplot2=3.4.2,r-data.table=1.14.8,r-dplyr=1.1.2,r-stringr=1.5.0,r-ggpubr=0.6.0
 minimap2=2.26,samtools=1.17
 r-tidyverse=2.0.0,r-knitr=1.43,r-dt=0.28,r-formattable=0.2.1,r-purrr=1.0.1,r-vegan=2.6_4,r-rmarkdown=2.22,r-optparse=1.7.3,r-ggplot2=3.4.2,r-dplyr=1.1.2,r-data.table=1.14.8,r-base=4.2.3,r-dtplyr=1.3.1,r-patchwork=1.1.2	quay.io/bioconda/base-glibc-debian-bash:latest	1
 r-propr=4.2.6
-r-propr=5.0.3
+r-propr=5.0.4
+r-propr=5.1.2,bioconductor-limma=3.58.1
+r-propr=5.1.4,bioconductor-limma=3.58.1
 bedtools=2.27.0,samtools=1.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 minimap2=2.26,racon=1.5.0
 python=3.10,biopython=1.80,pandas=1.5.3,rich=12.6.0,typer=0.7.0,numpy=1.24.2,edlib=1.3.9
@@ -467,7 +473,7 @@ bedtools=2.31.0,samtools=1.17,ucsc-wigtobigwig=447
 r-base=4.0.2,vcftools=0.1.14-0
 perl==5.26.2,perl-sort-key=1.33,perl-yaml-libyaml=0.88
 tophat=2.1.1,samtools=1.17
-perl=5.26.2,r=3.6.0,bcftools=1.13,bedtools=2.30.0,bc=1.07.1,grep
+perl=5.26.2,r=3.6.0,bcftools=1.13,bedtools=2.30.0,bc=1.07.1,grep,coreutils=9.5
 python=3.7.9,pandas=1.3.4,numpy=1.21.4,pyranges=0.0.115,fire=0.4.0
 python=3.6.15,matplotlib=3.3.4,numpy=1.19.5,pyvcf=0.6.8,pysam=0.15.4,htslib=1.9
 r-base=3.5,bioconductor-htqpcr=1.36.0,bioconductor-rankprod=3.8.0,bioconductor-impute=1.56.0,r-bbmisc=1.11.0,r-psych=1.8.4,r-zoo=1.8_3,bioconductor-normqpcr=1.28.0,r-rgl=0.99.16
@@ -546,7 +552,7 @@ pyrodigal=3.3.0,pigz=2.6
 kraken2=2.1.3,gnu-coreutils=9.4
 macs2=2.2.9.1,mawk=1.3.4
 kraken2=2.1.3,coreutils=9.4
-bwa=0.7.17,samtools=1.19.2,sambamba=1.0
+bwa=0.7.17,samtools=1.19.2,sambamba=1.0.1
 optitype=1.3.5,coincbc=2.10.0
 python=3.11.0,requests=2.31.0,biopython=1.83.0
 r-hwriter=1.3.2,r-ggplot2=3.4.4,r-ini=0.3.1,r-ashr=2.2_63,r-dplyr=1.1.4,r-ggrepel=0.9.5,r-png=0.1_8,bioconductor-reportingtools=2.42.2,bioconductor-deseq2=1.42.0,bioconductor-complexheatmap=2.18.0,bioconductor-tximport=1.30.0
@@ -562,6 +568,61 @@ r-base=4.3,r-catboost=1.2,r-ABCanalysis=1.2,r-C50=0.1.8,r-caret=6.0,r-data.table
 picard=3.1.1,samtools=1.19.2
 bedtools=2.31.1,ucsc-bedgraphtobigwig=445,samtools=1.16.1
 star=2.7.11b,samtools=1.19.2,mawk=1.3.4
-bwa-mem2=2.2.1,samtools=1.19.2,sambamba=1.0
+star=2.7.11b,samtools=1.21,htslib=1.21,gawk=5.3.0
+bwa-mem2=2.2.1,samtools=1.19.2,sambamba=1.0.1
+decoupler-py=1.6.0,pandas=2.2.1
 crabz=0.9.0
+panphlan=3.1,bzip2=1.0.8
 r-tidyverse=2.0.0,r-base=4.3.3,r-seurat=5.0.1,bioconductor-dropletutils=1.22.0,r-pdftools=3.4.0,r-magick=2.8.3,bioconductor-preprocesscore=1.64.0,r-devtools=2.4.5,r-data.table=1.15.2,r-ggplot2=3.5.0,r-cowplot=1.1.3,r-here=1.0.1,r-argparse=2.2.2,r-dplyr=1.1.4,bioconductor-demuxmix=1.4.0
+mosdepth=0.3.7,samtools=1.19.2
+snpeff=5.2,tabix=1.11
+squidpy=1.5.0
+magus-msa=0.2.0,pigz=2.8
+fgbio=2.0.2,r-ggplot2=3.4
+r-base=4.3.3,bioconductor-rtracklayer=1.62.0,r-optparse=1.7.4,r-dplyr=1.1.4,r-stringr=1.5.1,r-plyr=1.8.9,r-data.table=1.15.2,coreutils=9.5,r-argparse=2.2.2
+kraken2=2.1.3,coreutils=9.4,pigz=2.8
+minimap2=2.28,samtools=1.20
+bedtools=2.31.1,samtools=1.19.2,perl=5.32.1
+bedtools=2.31.1,samtools=1.19.2,python=3.11.4
+r-base=4.2.1,r-proteus-bartongroup=0.2.16,bioconductor-limma=3.54.0,r-plotly=4.10.2,r-ggplot2=3.4.4
+segalign-full=0.1.2.1,bashlex=0.18
+r-base=4.3,r-dartr,r-pophelper,r-reshape2,r-vcfr
+bwa=0.7.18,samtools=1.20,sambamba=1.0.1
+kma=1.4.14,samtools=1.20
+kma=1.4.9,samtools=1.20
+bwa-meme=1.0.6,mbuffer=20160228,samtools=1.20
+cellpose=3.0.8	quay.io/bioconda/base-glibc-debian-bash:latest	0
+cellpose=3.0.9	quay.io/bioconda/base-glibc-debian-bash:latest	0
+cellpose=3.0.10	quay.io/bioconda/base-glibc-debian-bash:latest	0
+paraphase=3.1.1,minimap2=2.28,samtools=1.20
+bowtie2=2.5.4,samtools=1.20
+vardict-java=1.8.3,htslib=1.4.1
+pyopenms=2.9.1,h5py=3.9.0
+plant-seg=1.8.1,pytorch=2.3.1,bioimageio.spec=0.5.3,pyyaml=6.0.1	quay.io/bioconda/base-glibc-debian-bash:latest	0
+groot=1.1.2	quay.io/bioconda/base-glibc-debian-bash:latest	1
+r-shiny=1.8.1.1,bioconductor-phyloseq=1.46.0,r-curl=5.1.0,r-biocmanager=1.30.23
+vardict-java=1.8.3,htslib=1.20
+lumpy-sv=0.3.1	quay.io/bioconda/base-glibc-busybox-bash:3.1	3
+bwameth=0.2.7,bwa-mem2=2.2.1
+pasta=1.9.0,pigz=2.8
+longphase=1.7.3,htslib=1.20
+r-base=4.4.1,r-igraph=2.0.3,r-dplyr=1.1.4,r-tidyr=1.3.1,r-readr=2.1.5,r-ggplot2=3.5.1
+telseq=0.0.2,samtools=1.20
+star=2.7.10a,samtools=1.18,htslib=1.18
+pandas=2.2.2,matplotlib=3.9.2,seaborn=0.13.2,tqdm=4.66.5,statsmodels=0.14.2,numpy=1.26.4,scipy=1.13.1
+minimap2=2.26,samtools=1.18,htslib=1.18
+julia=1.10
+r-seqinr=4.2_36,r-digest=0.6.37,r-rlist=0.4.6.2,r-tiledb=0.30.0
+r-seqinr=4.2_36,r-digest=0.6.37,r-rlist=0.4.6.2,r-tiledb=0.30.0,bioconductor-biocgenerics=0.48.1,bioconductor-biostrings=2.70.1,r-optparse=1.7.5,r-rmarkdown=2.28
+r-pafr=0.0.2,r-viridislite=0.4.2,r-data.table=1.15.4,r-yaml=2.3.10,r-ggplot2=3.5.1,r-gtools=3.9.5
+mechanize=0.2.5
+svdb=2.8.2,bcftools=1.21
+filesendercli=3.0.0
+python=3.9,bcftools=1.21,samtools=1.21
+pyrodigal=3.6.3,pigz=2.8
+mash=2.3,numpy=2.1.3,tqdm=4.67.1
+cobra=0.29.1,pandas=2.2.3,memote=0.17.0,escher=1.7.3
+curl=8.10.1,xmlstarlet=1.6.1,imagemagick=7.1.1_41,ghostscript=10.04.0,fonts-conda-forge=1
+bioconductor-phyloseq==1.46.0,r-tidyverse=1.3.1
+r-optparse,r-rcolorbrewer,r-paralleldist,r-matrix,r-readr,r-here,r-circlize,bioconductor-complexheatmap,r-scevan
+tabpfn=2.0.3

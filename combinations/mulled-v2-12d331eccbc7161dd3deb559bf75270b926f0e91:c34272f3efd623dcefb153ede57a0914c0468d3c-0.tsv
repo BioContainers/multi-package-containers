@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+biopython=1.80,cooler=0.10.2,hicstuff=3.1.5	quay.io/bioconda/base-glibc-debian-bash:latest	0

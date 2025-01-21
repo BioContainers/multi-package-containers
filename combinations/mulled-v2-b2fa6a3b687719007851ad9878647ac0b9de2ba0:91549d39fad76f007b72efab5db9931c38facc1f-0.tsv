@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+python-igraph=0.11.3,scanorama=1.7.4,plotly=5.18.0,leidenalg=0.10.2,pyarrow=14.0.1,hdbscan=0.8.33,harmonypy=0.0.9,multiprocess=0.70.16,polars=0.19.19,macs3=3.0.1,snapatac2=2.5.3,python-kaleido=0.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0

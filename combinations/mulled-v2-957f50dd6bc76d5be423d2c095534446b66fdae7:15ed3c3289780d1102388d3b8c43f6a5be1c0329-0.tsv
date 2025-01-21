@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+rasterio=1.3.10,numpy=1.26.3,matplotlib=3.8.4,trends_earth_algorithms=2.1.14,trends_earth_schemas=2.1.14	quay.io/bioconda/base-glibc-busybox-bash:latest	0
