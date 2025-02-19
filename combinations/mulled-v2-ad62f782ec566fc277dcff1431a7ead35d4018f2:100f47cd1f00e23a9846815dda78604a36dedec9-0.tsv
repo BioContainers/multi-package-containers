@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+libgfortran=3.0.0,r-matrix=1.2_12,r-reshape2=1.4.3,r-ggplot2=2.2.1,r-batch=1.1_4,r-ptw=1.9_12,r-gridextra=2.3	quay.io/bioconda/base-glibc-busybox-bash:latest	0

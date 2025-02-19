@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-metams=1.18.1,r-batch=1.1_4	quay.io/bioconda/base-glibc-busybox-bash:latest	0
