@@ -635,3 +635,4 @@ r-seurat=4.1.1,r-ggplot2,r-optparse,r-arrow=4.0.1
 ascat=3.2.0,cancerit-allelecount=4.3.0
 r-base=4.4.3,rseqc=5.0.4
 python=3.10,ucsc-gtftogenepred=469,ucsc-genepredtobed=469
+bioconductor-flames=1.8.0,minimap2=2.28
