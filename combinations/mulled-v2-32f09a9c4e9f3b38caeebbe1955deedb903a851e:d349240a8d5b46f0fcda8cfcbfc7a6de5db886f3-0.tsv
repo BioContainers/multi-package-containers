@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+ipython=9.1.0,matplotlib=3.9.2,astropy=5.3,pandas=2.2.3,gammapy=1.2,oda-api=1.2.37	quay.io/bioconda/base-glibc-busybox-bash:latest	0
