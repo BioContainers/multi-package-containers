@@ -645,3 +645,4 @@ bioconductor-sparsesignatures=2.16.0,bioconductor-bsgenome.hsapiens.1000genomes.
 khmer=3.0.0a3,sourmash=4.8.3
 ncbi-datasets-cli=15.11.0,samtools=1.18,unzip=6.0
 quarto=1.6.41,r-pathosurveilr=0.3.1
+ncbi-datasets-cli=16.0.0,samtools=1.18,unzip=6.0
