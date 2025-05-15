@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+mummer=3.23,scikit-learn=1.1.3,bowtie2=2.5.4,vrhyme=1.1.0,bwa-mem2=2.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
