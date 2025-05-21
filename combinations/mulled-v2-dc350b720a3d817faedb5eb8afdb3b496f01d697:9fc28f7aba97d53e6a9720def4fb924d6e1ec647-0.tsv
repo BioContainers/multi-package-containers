@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-ape=5.8_1,bioconductor-sparsearray=1.2.2,r-phyloregion=1.0.8,r-matrix=1.6.5	quay.io/bioconda/base-glibc-busybox-bash:latest	0
