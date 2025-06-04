@@ -647,3 +647,4 @@ ncbi-datasets-cli=15.11.0,samtools=1.18,unzip=6.0
 quarto=1.6.41,r-pathosurveilr=0.3.1
 ncbi-datasets-cli=16.0.0,samtools=1.18,unzip=6.0
 pandas=2.2.3,sigprofilermatrixgenerator=1.3.3,sigprofilerextractor=1.2.1
+r-viber=1.0.0,r-cnaqc=1.1.2,r-dplyr=1.1.4,r-ggplot2=3.5.2,r-tidyverse=2.0.0,r-cli=3.6.5,r-ggpubr=0.6.0
