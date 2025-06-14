@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+fake-useragent=2.2.0,sparqlwrapper=2.0.0,astroquery=0.4.10,transformers=4.43.2,matplotlib=3.10.3,beautifulsoup4=4.13.4,networkx=3.5,numpy=1.26.4,accelerate=0.33.0,scipy=1.15.2,pytorch-cpu=2.7.0,astropy=6.1.7,pandas=2.3.0,oda-api=1.2.28,rdflib=7.1.4,ipython=9.3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
