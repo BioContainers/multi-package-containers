@@ -660,7 +660,6 @@ cpt_gffparser=1.2.2,python=3.9,biopython=1.81
 emboss=5.0.0,perl=5.26	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 python=3.6.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 python=3.7,coreutils=8.30	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-freebayes=1.0.2.29,gawk=4.1.3,samtools=0.1.19,parallel=20160622	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 seqtk=1.3,samtools=1.11,hisat2=2.1.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 seqtk=1.2,bzip2=1.0.6,salmon=0.11.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.11,bowtie2=2.4.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
