@@ -663,7 +663,6 @@ python=3.7,coreutils=8.30	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,hisat2=2.1.0,seqtk=1.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 ucsc-bedgraphtobigwig=357,bedtools=2.27.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 r-optparse=1.6.1,bioconductor-chipseeker=1.18.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-curl=7.49.0,urllib3=1.12,xmltramp2=3.1.1,python=2.7.12	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 r-rtsne=0.13,r-ggplot2=2.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-edger=3.20.7,bioconductor-limma=3.34.9,bioconductor-deseq2=1.18.1,trinity=2.8.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 salmon=0.8.2,bzip2=1.0.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
