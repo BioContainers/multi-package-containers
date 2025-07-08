@@ -668,7 +668,6 @@ samtools=1.9,deeptools=3.3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,star=2.7.5b	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 scikit-image=0.14.2,tifffile=0.15.1,numpy=1.15.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 newick_utils=1.6,imagemagick=7.0.9_6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-gnu-wget=1.18,trinotate=3.1.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 salmon=1.3.0,vpolo=0.2.0,scipy=1.4.1,pandas=1.0.3,seqtk=1.3,samtools=1.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 rdkit=2020.03.4,scipy=1.3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,deeptools=3.5.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
