@@ -666,7 +666,6 @@ numpy=1.14,sed=4.4,python=2.7.13	quay.io/bioconda/base-glibc-busybox-bash:latest
 python=3.6,plotly=3.1.1,pandas=0.22.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,deeptools=3.3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,star=2.7.5b	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-samtools=1.10,sra-tools=2.10.7,pigz=2.3.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 scikit-image=0.14.2,tifffile=0.15.1,numpy=1.15.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,biopython=1.72,jbrowse=1.16.9,bcbiogff=0.6.4,findutils=4.6.0,python=2.7,tabix=0.2.6,pyyaml=3.13	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 newick_utils=1.6,imagemagick=7.0.9_6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
