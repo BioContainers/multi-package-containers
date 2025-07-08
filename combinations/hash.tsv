@@ -674,7 +674,6 @@ zip=3.0,searchgui=3.2.13	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 biopython=1.72,bcbiogff=0.6.4,python=2.7	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 python=3.8.1,ivar=1.3.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 trinity=2.9.1,bioconductor-deseq2=1.18.1,bioconductor-limma=3.34.9,bioconductor-edger=3.20.7	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-osra=2.1.0,poppler=0.52	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 freebayes=1.3.1,gawk=4.1.3,samtools=1.9,parallel=20170422	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-fgsea=1.8.0,r-optparse=1.6.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.10,pigz=2.3.4,sra-tools=2.10.8	quay.io/bioconda/base-glibc-busybox-bash:latest	1
