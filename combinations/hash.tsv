@@ -672,7 +672,6 @@ snippy=4.4.5,tar=1.32	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 coreutils=8.31,numpy=1.15.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 rust-ncbitaxonomy=1.0.7,spaln=2.4.03,python=3.8	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-org.mm.eg.db=3.8.2,r-optparse=1.6.2,bioconductor-org.dm.eg.db=3.8.2,r-dplyr=0.8.3,bioconductor-goseq=1.36.0,bioconductor-org.dr.eg.db=3.8.2,r-ggplot2=3.2.1,bioconductor-org.hs.eg.db=3.8.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-augustus=3.3.2,tar=1.29,busco=3.0.2,r-base=3.5.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 tar=1.32,busco=4.1.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bamtools=2.4.0,samtools=1.4.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 sed=4.4,coreutils=8.25	quay.io/bioconda/base-glibc-busybox-bash:latest	1
