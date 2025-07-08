@@ -674,7 +674,6 @@ snpeff=4.3.1t,biopython=1.70,libmagic=5.32,python-magic=0.4.15,python=3.6	quay.i
 bcbiogff=0.6.4,bedtools=2.27.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 r-gprofiler2=0.1.7,pandoc=2.7.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bwameth=0.2.0,samtools=1.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-pigz=2.3.4,sra-tools=2.10.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 numpy=1.9,rpy2=2.8.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 pysam=0.15,matplotlib=3.1.2,cyvcf2=0.11.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 r-base=3.4.1,picard=2.18.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
