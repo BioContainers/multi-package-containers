@@ -661,7 +661,6 @@ emboss=5.0.0,perl=5.26	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 python=3.6.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 python=3.7,coreutils=8.30	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 diffutils=3.7,sed=4.8	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-urllib3=1.12,xmltramp2=3.1.1,python=2.7.12	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 transdecoder=5.5.0,zip=3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 freebayes=1.0.2.29,samtools=0.1.19	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,minimap2=2.17	quay.io/bioconda/base-glibc-busybox-bash:latest	1
