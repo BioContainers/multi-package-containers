@@ -678,3 +678,6 @@ bcftools=1.4,htslib=1.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 r-wavethresh=4.6.8,r-waveslim=1.7.5,r-bitops=1.0_6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 strelka=2.9.10,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 numpy=1.12.0,pandas=0.19.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+deeptools=3.1.2,samtools=1.7	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+scipy=1.4.1,pandas=1.0.1,file=5.37	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-rtracklayer=1.42.1,bioconductor-biostrings=2.50.2,r-optparse=1.6.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
