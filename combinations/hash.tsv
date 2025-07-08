@@ -667,7 +667,6 @@ r-rjson=0.2.20,r-getopt=1.20.2,bioconductor-dexseq=1.28.1	quay.io/bioconda/base-
 bx-python=0.7.1,ucsc-fatotwobit=324,six=1.10.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 biopython=1.70,tn93=1.0.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.12,winnowmap=2.03	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-anndata=0.7.5,loompy=2.0.17,scanpy=1.7.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bcftools=1.10,matplotlib=3.1.0,htslib=1.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,sra-tools=2.9.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 gb_taxonomy_tools=1.0.0,gawk=4.1.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
