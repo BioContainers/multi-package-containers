@@ -664,7 +664,6 @@ htseq=0.9.1,bioconductor-dexseq=1.24.0	quay.io/bioconda/base-glibc-busybox-bash:
 busco=4.1.2,tar=1.32	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 numpy=1.14,sed=4.4,python=2.7.13	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 python=3.6,plotly=3.1.1,pandas=0.22.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-pyyaml=3.13,jbrowse=1.16.8,samtools=1.9,tabix=0.2.6,python=2.7,bcbiogff=0.6.4,findutils=4.6.0,biopython=1.72	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,deeptools=3.3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,star=2.7.5b	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.10,sra-tools=2.10.7,pigz=2.3.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
