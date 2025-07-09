@@ -716,7 +716,6 @@ r-base=3.4.1,rseqc=2.6.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 pysam=0.15,matplotlib=3.1.2,biopython=1.71	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 xarray=0.15.1,shapely=1.7.0,geopandas=0.7.0,python=3,netcdf4=1.5.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 cufflinks=2.2.1,bioconductor-cummerbund=2.16.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-samtools=1.10,pigz=2.5,awscli=1.18.222,sra-tools=2.10.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.6,bowtie2=2.3.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 mothur=1.39.5,vsearch=2.6.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 sailfish=0.10.1,bzip2=1.0.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
