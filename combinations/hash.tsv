@@ -722,7 +722,6 @@ r-ggdendro=0.1_20,r-egg=0.2.0,r-dplyr=0.7.4,r-cowplot=0.9.2,r-reshape2=1.4.3,r-s
 r-batch=1.1_5,unzip=6.0,bioconductor-msnbase=2.16.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 yak=0.1,hifiasm=0.14	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 r-getopt=1.20.0,r-matrix=1.2-12	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-sed=4.2.3.dev0,grep=2.14	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bcftools=1.10,htslib=1.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 sortmerna=2.1b,samtools=1.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 r-reshape2=1.4.3,r-ggplot2=2.2.1,r-svglite=1.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
