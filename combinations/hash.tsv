@@ -833,7 +833,6 @@ trinity=2.9.1,kallisto=0.44.0,bioconductor-edger=3.20.7	quay.io/bioconda/base-gl
 bioconductor-org.mm.eg.db=3.8.2,r-optparse=1.6.2,bioconductor-org.dm.eg.db=3.8.2,r-dplyr=0.8.3,bioconductor-goseq=1.36.0,bioconductor-org.dr.eg.db=3.8.2,r-ggplot2=3.2.1,bioconductor-org.hs.eg.db=3.8.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 tar=1.32,busco=4.1.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bamtools=2.4.0,samtools=1.4.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-sed=4.4,coreutils=8.25	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-dexseq=1.20.1,r-getopt=1.20.0,r-rjson=0.2.15	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 cdsapi=0.5.1,unzip=6.0,cdo=1.9.9,tar=1.34,python=3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 snpsift=4.3.1t,perl=5.26,coreutils=8.25	quay.io/bioconda/base-glibc-busybox-bash:latest	1
