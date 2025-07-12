@@ -830,3 +830,16 @@ python=3.7,coreutils=8.30	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 openbabel=3.1.1,python=3.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,bcbiogff=0.6.4,jbrowse=1.16.11,biopython=1.72,tabix=0.2.6,findutils=4.6.0,python=2.7,pyyaml=3.13	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 trinity=2.9.1,kallisto=0.44.0,bioconductor-edger=3.20.7	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+merqury=1.1,meryl=1.3,tar=1.34	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-org.ag.eg.db=3.8.2,bioconductor-org.rn.eg.db=3.8.2,bioconductor-org.mm.eg.db=3.8.2,bioconductor-pathview=1.24.0,r-optparse=1.6.2,bioconductor-org.sc.sgd.db=3.8.2,bioconductor-org.ce.eg.db=3.8.2,bioconductor-org.xl.eg.db=3.8.2,bioconductor-org.gg.eg.db=3.8.2,bioconductor-org.pt.eg.db=3.8.2,bioconductor-org.cf.eg.db=3.8.2,bioconductor-org.eck12.eg.db=3.8.2,bioconductor-org.dm.eg.db=3.8.2,bioconductor-org.mmu.eg.db=3.8.2,bioconductor-org.at.tair.db=3.8.2,bioconductor-org.ecsakai.eg.db=3.8.2,bioconductor-org.bt.eg.db=3.8.2,bioconductor-org.dr.eg.db=3.8.2,bioconductor-org.ss.eg.db=3.8.2,bioconductor-org.hs.eg.db=3.8.2,bioconductor-org.pf.plasmo.db=3.8.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+freebayes=1.1.0.46,samtools=0.1.19	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+deeptools=3.3.2,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+subread=1.6.4,samtools=1.9,coreutils=8.31	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+star=2.7.8a,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+apoc=1b16,coreutils=8.31	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-getopt=1.20.2,bioconductor-edger=3.24.1,r-scales=1.0.0,bioconductor-limma=3.38.3,r-statmod=1.4.30,r-rjson=0.2.20,r-gplots=3.0.1,bioconductor-glimma=1.10.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+kalign3=3.2.2,kcalign=0.5.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pysam=0.15,matplotlib=3.1.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,star=2.7.2b	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-seurat=3.1.2,r-rmarkdown=2.0,pandoc=2.7.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-ggplot2=2.2.1,r-svglite=1.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
