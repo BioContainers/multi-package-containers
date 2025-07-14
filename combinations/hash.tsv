@@ -871,4 +871,3 @@ python=3.6,cufflinks=2.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 searchgui=3.3.10,zip=3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bcbiogff=0.6.4,pybigwig=0.3.13,python=2.7,circos=0.69.8,biopython=1.70,circos-tools=0.23,tar=1.29	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bedtools=2.29.2,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-bx-python=0.7.1,numpy=1.7.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
