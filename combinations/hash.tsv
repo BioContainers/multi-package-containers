@@ -877,7 +877,6 @@ pandas=0.24.2,scipy=1.2.1,numpy=1.16.3	quay.io/bioconda/base-glibc-busybox-bash:
 r-rjson=0.2.15,bioconductor-diffbind=2.6.6,r-getopt=1.20.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bedtools=2.27.1,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bowtie2=2.2.8,tophat=2.1.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-ucsc-gtftogenepred=324,r=3.3.1,ucsc-gff3togenepred=324,picard=2.7.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.11,subread=2.0.1,coreutils=8.31	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-deseq2=1.14.1,r-getopt=1.20.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 r-batch=1.1_5,unzip=6.0,bioconductor-xcms=3.12.0,r-rcolorbrewer=1.1_2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
