@@ -861,7 +861,6 @@ python=3.7,exonerate=2.4.0,bcbiogff=0.6.6	quay.io/bioconda/base-glibc-busybox-ba
 samtools=1.9,python=3.8.1,ivar=1.2.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,genrich=0.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 pandas=1.0.0,matplotlib=3.1.1,python=3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-bedtools=2.24,metilene=0.2.6,r-base=3.5.1,coreutils=8.25	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 tabix=0.2.5,samtools=1.9,gatk4=4.1.7.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 tabix=0.2.5,gatk4=4.1.4.0,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 augustus=3.3.3,maker=2.31.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
