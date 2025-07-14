@@ -833,7 +833,6 @@ trinity=2.9.1,kallisto=0.44.0,bioconductor-edger=3.20.7	quay.io/bioconda/base-gl
 ivar=1.2.2,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 python=3.7,exonerate=2.4.0,bcbiogff=0.6.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,python=3.8.1,ivar=1.2.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-r-base=3.4.1,ucsc-gff3togenepred=357,picard=2.18.2,ucsc-gtftogenepred=357	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.9,genrich=0.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 pandas=1.0.0,matplotlib=3.1.1,python=3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bedtools=2.24,metilene=0.2.6,r-base=3.5.1,coreutils=8.25	quay.io/bioconda/base-glibc-busybox-bash:latest	1
