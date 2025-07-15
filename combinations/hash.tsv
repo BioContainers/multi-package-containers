@@ -914,7 +914,6 @@ openbabel=3.1.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 rpy2=2.9.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 mdtraj=1.9.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 samtools=1.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
-galaxy-util=19.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bx-python=0.7.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 r-raceid=0.2.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-dada2=1.14	quay.io/bioconda/base-glibc-busybox-bash:latest	1
