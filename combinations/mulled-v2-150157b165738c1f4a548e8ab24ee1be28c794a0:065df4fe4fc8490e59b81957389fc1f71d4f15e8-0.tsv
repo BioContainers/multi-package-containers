@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-optparse=1,bioconductor-reactomegsa=1.20.0,bioconductor-reactomegsa.data=1.20.0,r-httr=1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
