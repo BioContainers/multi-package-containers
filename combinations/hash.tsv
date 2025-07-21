@@ -920,3 +920,10 @@ bioconductor-dada2=1.14	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-dada2=1.16	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-dada2=1.12	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-dada2=1.18	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+ucsc-bedgraphtobigwig=357,bedtools=2.27.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+ucsc-bedgraphtobigwig=377,bedtools=2.29.2,coreutils=8.25	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+ucsc-bedgraphtobigwig=445,samtools=1.17,bedtools=2.31.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+ucsc-bigbedtobed=377	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+ucsc-bigwigtowig=377	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+ucsc-fatotwobit=357	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+ucsc-wigtobigwig=357	quay.io/bioconda/base-glibc-busybox-bash:latest	1
