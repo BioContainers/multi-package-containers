@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+mosdepth=0.3.11,gzip=1.14	quay.io/bioconda/base-glibc-busybox-bash:latest	0
