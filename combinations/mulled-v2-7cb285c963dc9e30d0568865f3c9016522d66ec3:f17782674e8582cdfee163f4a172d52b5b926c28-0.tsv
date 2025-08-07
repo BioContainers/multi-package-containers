@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+parallel=20250622,gawk=5.3.1,freebayes=1.3.10,coreutils=9.5,samtools=1.22,grep=3.11	quay.io/bioconda/base-glibc-busybox-bash:latest	0
