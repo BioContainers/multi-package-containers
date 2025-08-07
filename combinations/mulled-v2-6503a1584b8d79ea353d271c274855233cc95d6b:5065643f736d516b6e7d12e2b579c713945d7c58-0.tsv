@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+ena-webin-cli=8.1.1,pyyaml=5.3,biopython=1.76	quay.io/bioconda/base-glibc-busybox-bash:latest	0
