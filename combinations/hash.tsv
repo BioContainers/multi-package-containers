@@ -920,3 +920,6 @@ bioconductor-dada2=1.14	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-dada2=1.16	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-dada2=1.12	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 bioconductor-dada2=1.18	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-optparse=1.7.5,r-data.table=1.17.8
+r-poolfstat=3.0.0,r-optparse=1.7.5,r-data.table=1.17.8
+bioconductor-rsamtools=2.22.0,r-optparse=1.7.5,r-data.table=1.17.8
