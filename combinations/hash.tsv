@@ -923,4 +923,4 @@ bioconductor-dada2=1.18	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 r-optparse=1.7.5,r-data.table=1.17.8
 r-poolfstat=3.0.0,r-optparse=1.7.5,r-data.table=1.17.8
 bioconductor-rsamtools=2.22.0,r-optparse=1.7.5,r-data.table=1.17.8
-r-rmarkdown=2.29,r-yaml=2.3.10,r-tidyr=1.3.1,r-data.table=1.17.8,r-knitr=1.5.0,r-plotly=4.11.0,r-dt=0.33,r-stringr=1.5.1,r-purrr=1.1.0,r-paletteer=1.6.0,r-htmltools=0.5.8.1,r-ggplot2=3.5.2,r-forcats=1.0.0,r-scales=1.4.0,r-jsonlite=2.0.0
+r-rmarkdown=2.29,r-yaml=2.3.10,r-tidyr=1.3.1,r-data.table=1.17.8,r-knitr=1.50,r-plotly=4.11.0,r-dt=0.33,r-stringr=1.5.1,r-purrr=1.1.0,r-paletteer=1.6.0,r-htmltools=0.5.8.1,r-ggplot2=3.5.2,r-forcats=1.0.0,r-scales=1.4.0,r-jsonlite=2.0.0
