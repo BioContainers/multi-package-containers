@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+lexicmap=0.8.0,file=5.46	quay.io/bioconda/base-glibc-busybox-bash:latest	0
