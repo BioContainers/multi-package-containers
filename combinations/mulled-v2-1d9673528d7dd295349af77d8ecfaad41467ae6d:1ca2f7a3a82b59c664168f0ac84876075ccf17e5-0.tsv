@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+scipy=1.16.2,medaka=2.1.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
