@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+coreprofiler=1.1.8,blast=2.16.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
