@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+h5py=2.7.0,tabix=0.2.5,cooler=0.7.4	quay.io/bioconda/base-glibc-busybox-bash:latest	0
