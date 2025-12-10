@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+winnowmap=2.03,minimap2=2.28,telogator2=2.2.3,pbmm2=1.13.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
