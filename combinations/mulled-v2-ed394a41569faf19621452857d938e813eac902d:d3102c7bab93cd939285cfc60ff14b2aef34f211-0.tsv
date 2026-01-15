@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pandas=2.2.2,psycopg2=2.9.9,sqlalchemy=2.0.37	quay.io/bioconda/base-glibc-busybox-bash:latest	0

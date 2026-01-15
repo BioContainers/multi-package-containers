@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pip=22.1.2,python=3.10,gitpython=3.1.27,requests=2.28.1,git=2.37.1,git-lfs=3.2.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

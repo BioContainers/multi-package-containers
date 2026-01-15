@@ -1,2 +1,2 @@
 #targets	base_image	image_build
-mummer=3.23,progressivemauve=snapshot_2015_02_13,libgenome=1.3.1=h470a237_0,mauve=2.4.0.r4736	bgruening/busybox-bash:0.1	0
+progressivemauve=snapshot_2015_02_13,mummer=3.23,mauve=2.4.0.r4736,libgenome=1.3.1=h470a237_0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

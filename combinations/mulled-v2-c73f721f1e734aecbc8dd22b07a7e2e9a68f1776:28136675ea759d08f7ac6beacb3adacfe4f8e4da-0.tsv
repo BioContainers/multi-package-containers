@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-argparse=2.2.5,htslib=1.22.1,coreutils=9.5,snp-pileup=0.6.2,bcftools=1.22,parallel=20250822,r-facets=0.6.2,samtools=1.22.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -155,7 +155,7 @@ star=2.6.1d,samtools=1.10,gawk=5.1.0
 planemo=0.74.3,git=2.30.2,galaxyxml=0.4.14
 minimap2=2.18,samtools=1.12
 changeo=1.0.2,igblast=1.15.0,wget=1.20.1
-changeo=1.3.0,igblast=1.22.0,wget=1.20.1	quay.io/bioconda/base-glibc-busybox-bash:2.1.0	1
+changeo=1.3.1,igblast=1.22.0,wget=1.20.1	quay.io/bioconda/base-glibc-busybox-bash:2.1.0	1
 r-base=4.0.3,r-alakazam=1.0.2,r-shazam=1.0.2,r-kableextra=1.3.4,r-knitr=1.33,r-rmarkdown=2.8,r-stringr=1.4.0,r-dplyr=1.0.6
 bioconductor-biomart=2.46.3,bioconductor-deseq2=1.30.1,bioconductor-genomicranges=1.42.0,bioconductor-rtracklayer=1.50.0,bioconductor-txdb.hsapiens.ucsc.hg19.knowngene=3.2.2,r-base=4.0.3,r-dplyr=1.0.5,r-optparse=1.6.6,r-stringr=1.4.0,r-tidyr=1.1.3
 biopython=1.78,pigz=2.6
@@ -167,7 +167,6 @@ biopython=1.78,openpyxl=3.0.7,pyfastx=0.8.2,numpy=1.20.2,pandas=1.2.4
 python=3.9,biopython=1.78,openpyxl=3.0.7,pandas=1.2.4,rich=10.2.2,typer=0.3.2,xlsxwriter=1.4.3
 asciigenome=1.16.0,bedtools=2.30.0
 r-recetox-aplcms=0.9.3,r-base=4.1.0,r-arrow=4.0.1	quay.io/bioconda/base-glibc-debian-bash:latest	0
-python=3.9,pandas=1.3.0,seaborn=0.11.0
 bwa=0.7.17,samtools=1.9,bcftools=1.9	quay.io/bioconda/base-glibc-debian-bash:latest	0
 retropath2_wrapper=2.4.0	quay.io/bioconda/base-glibc-debian-bash:latest	0
 star=2.7.9a,samtools=1.13,gawk=5.1.0
@@ -327,7 +326,6 @@ levenshtein=0.20.1
 pysam=0.19.1,edlib=1.3.9,tqdm=4.64.0
 vcf2maf=1.6.21,ensembl-vep=104.3,python=3.7.12,bcftools=1.10.2
 samtools=1.11,pretextmap=0.1.9
-pysam=0.19.1,edlib=1.3.9,tqdm=4.64.0
 bbmap=38.98,fastp=0.23.2
 bcftools=1.15.1,samtools=1.15.1,python=3.8.3
 p7zip=16.02
@@ -442,6 +440,8 @@ minimap2=2.26,samtools=1.17
 r-tidyverse=2.0.0,r-knitr=1.43,r-dt=0.28,r-formattable=0.2.1,r-purrr=1.0.1,r-vegan=2.6_4,r-rmarkdown=2.22,r-optparse=1.7.3,r-ggplot2=3.4.2,r-dplyr=1.1.2,r-data.table=1.14.8,r-base=4.2.3,r-dtplyr=1.3.1,r-patchwork=1.1.2	quay.io/bioconda/base-glibc-debian-bash:latest	1
 r-propr=4.2.6
 r-propr=5.0.4
+r-propr=5.1.2,bioconductor-limma=3.58.1
+r-propr=5.1.4,bioconductor-limma=3.58.1
 bedtools=2.27.0,samtools=1.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
 minimap2=2.26,racon=1.5.0
 python=3.10,biopython=1.80,pandas=1.5.3,rich=12.6.0,typer=0.7.0,numpy=1.24.2,edlib=1.3.9
@@ -474,7 +474,6 @@ tophat=2.1.1,samtools=1.17
 perl=5.26.2,r=3.6.0,bcftools=1.13,bedtools=2.30.0,bc=1.07.1,grep,coreutils=9.5
 python=3.7.9,pandas=1.3.4,numpy=1.21.4,pyranges=0.0.115,fire=0.4.0
 python=3.6.15,matplotlib=3.3.4,numpy=1.19.5,pyvcf=0.6.8,pysam=0.15.4,htslib=1.9
-r-base=3.5,bioconductor-htqpcr=1.36.0,bioconductor-rankprod=3.8.0,bioconductor-impute=1.56.0,r-bbmisc=1.11.0,r-psych=1.8.4,r-zoo=1.8_3,bioconductor-normqpcr=1.28.0,r-rgl=0.99.16
 r-base=3.5,bioconductor-htqpcr=1.36.0,bioconductor-rankprod=3.8.0,bioconductor-impute=1.56.0,r-bbmisc=1.11.0,r-psych=1.8.4,r-zoo=1.8_3,bioconductor-normqpcr=1.28.0,r-rgl=0.99.16
 umi-transfer=1.0.0
 gzip=1.12,tar=1.34,bzip2=1.0.8,unzip=6.0,xz=5.2.6
@@ -528,9 +527,8 @@ muscle=5.1,pigz=2.8
 mafft=7.520,pigz=2.8
 gatk4=4.4.0.0,samtools=1.18,coreutils=9.3
 mtm-align=20220104,pigz=2.8
-gatk4=4.4.0.0,samtools=1.18,coreutils=9.3
 r-base,r-dplyr,r-optparse,r-devtools,r-topicmodels,r-philentropy,r-metrics,r-jsonlite
-presto=0.7.1,igblast=1.22.0,wget=1.20.1,biopython=1.79	quay.io/bioconda/base-glibc-busybox-bash:2.1.0	0
+presto=0.7.4,igblast=1.22.0,wget=1.20.1,biopython=1.85	quay.io/bioconda/base-glibc-busybox-bash:2.1.0	0
 bioconductor-limma=3.58.1,bioconductor-edger=4.0.2,r-data.table=1.14.10,r-gplots=3.1.3,r-statmod=1.5.0
 r-nacho=2.0.6,r-dplyr=1.1.4,r-ggplot2=3.4.4,r-fs=1.6.2,r-readr=2.1.5,r-tidyr=1.3.0
 r-yaml=2.3.7,r-ggplot2=3.4.4,r-dplyr=1.1.4,r-stringr=1.5.0,bioconductor-gsva=1.46.0,bioconductor-singscore=1.18.0,r-factominer=2.8.0,r-readr=2.1.5,r-tibble=3.2.1,r-matrixstats=1.1.0
@@ -551,6 +549,7 @@ kraken2=2.1.3,gnu-coreutils=9.4
 macs2=2.2.9.1,mawk=1.3.4
 kraken2=2.1.3,coreutils=9.4
 bwa=0.7.17,samtools=1.19.2,sambamba=1.0.1
+bwa=0.7.18,samtools=1.21,sambamba=1.0.1
 optitype=1.3.5,coincbc=2.10.0
 python=3.11.0,requests=2.31.0,biopython=1.83.0
 r-hwriter=1.3.2,r-ggplot2=3.4.4,r-ini=0.3.1,r-ashr=2.2_63,r-dplyr=1.1.4,r-ggrepel=0.9.5,r-png=0.1_8,bioconductor-reportingtools=2.42.2,bioconductor-deseq2=1.42.0,bioconductor-complexheatmap=2.18.0,bioconductor-tximport=1.30.0
@@ -566,7 +565,10 @@ r-base=4.3,r-catboost=1.2,r-ABCanalysis=1.2,r-C50=0.1.8,r-caret=6.0,r-data.table
 picard=3.1.1,samtools=1.19.2
 bedtools=2.31.1,ucsc-bedgraphtobigwig=445,samtools=1.16.1
 star=2.7.11b,samtools=1.19.2,mawk=1.3.4
+star=2.7.11b,samtools=1.21,htslib=1.21,gawk=5.3.0
 bwa-mem2=2.2.1,samtools=1.19.2,sambamba=1.0.1
+bwa-mem2=2.2.1,samtools=1.21,sambamba=1.0.1
+bwa-mem2=2.3,samtools=1.21,sambamba=1.0.1
 decoupler-py=1.6.0,pandas=2.2.1
 crabz=0.9.0
 panphlan=3.1,bzip2=1.0.8
@@ -591,6 +593,8 @@ bwa-meme=1.0.6,mbuffer=20160228,samtools=1.20
 cellpose=3.0.8	quay.io/bioconda/base-glibc-debian-bash:latest	0
 cellpose=3.0.9	quay.io/bioconda/base-glibc-debian-bash:latest	0
 cellpose=3.0.10	quay.io/bioconda/base-glibc-debian-bash:latest	0
+cellpose=3.0.11	quay.io/bioconda/base-glibc-debian-bash:latest	0
+cellpose=3.1.0	quay.io/bioconda/base-glibc-debian-bash:latest	0
 paraphase=3.1.1,minimap2=2.28,samtools=1.20
 bowtie2=2.5.4,samtools=1.20
 vardict-java=1.8.3,htslib=1.4.1
@@ -606,3 +610,325 @@ longphase=1.7.3,htslib=1.20
 r-base=4.4.1,r-igraph=2.0.3,r-dplyr=1.1.4,r-tidyr=1.3.1,r-readr=2.1.5,r-ggplot2=3.5.1
 telseq=0.0.2,samtools=1.20
 star=2.7.10a,samtools=1.18,htslib=1.18
+pandas=2.2.2,matplotlib=3.9.2,seaborn=0.13.2,tqdm=4.66.5,statsmodels=0.14.2,numpy=1.26.4,scipy=1.13.1
+minimap2=2.26,samtools=1.18,htslib=1.18
+julia=1.10
+r-seqinr=4.2_36,r-digest=0.6.37,r-rlist=0.4.6.2,r-tiledb=0.30.0
+r-seqinr=4.2_36,r-digest=0.6.37,r-rlist=0.4.6.2,r-tiledb=0.30.0,bioconductor-biocgenerics=0.48.1,bioconductor-biostrings=2.70.1,r-optparse=1.7.5,r-rmarkdown=2.28
+r-pafr=0.0.2,r-viridislite=0.4.2,r-data.table=1.15.4,r-yaml=2.3.10,r-ggplot2=3.5.1,r-gtools=3.9.5
+mechanize=0.2.5
+svdb=2.8.2,bcftools=1.21
+filesendercli=3.0.0
+python=3.9,bcftools=1.21,samtools=1.21
+pyrodigal=3.6.3,pigz=2.8
+mash=2.3,numpy=2.1.3,tqdm=4.67.1
+cobra=0.29.1,pandas=2.2.3,memote=0.17.0,escher=1.7.3
+curl=8.10.1,xmlstarlet=1.6.1,imagemagick=7.1.1_41,ghostscript=10.04.0,fonts-conda-forge=1
+bioconductor-phyloseq==1.46.0,r-tidyverse=1.3.1
+r-optparse,r-rcolorbrewer,r-paralleldist,r-matrix,r-readr,r-here,r-circlize,bioconductor-complexheatmap,r-scevan
+tabpfn=2.0.3
+r-tidyverse=2.0.0,r-vegan=2.6_10,r-viridis=0.6.5,r-cowplot=1.1.3
+r-seurat=4.1.1,r-ggplot2,r-optparse,r-arrow=4.0.1
+ascat=3.2.0,cancerit-allelecount=4.3.0
+r-base=4.4.3,rseqc=5.0.4
+python=3.10,ucsc-gtftogenepred=469,ucsc-genepredtobed=469
+bioconductor-flames=1.8.0,minimap2=2.28
+bowtie2=2.5.4,samtools=1.21
+python=3.13.2,samtools=1.21
+r-poolfstat=3.0.0,r-optparse=1.7.5,r-tibble=3.2.1,r-stringr=1.5.1,r-readr=2.1.5,r-dplyr=1.1.4
+r-dplyr=1.1.4,r-tidyr=1.3.1,r-readr=2.1.5,r-janitor=2.2.1,r-purrr=1.0.4,r-optparse=1.7.5,r-matrixstats=1.5.0
+amulety=1.1,igblast=1.22.0
+bioconductor-sparsesignatures=2.16.0,bioconductor-bsgenome.hsapiens.1000genomes.hs37d5=0.99.1,bioconductor-bsgenome.hsapiens.ucsc.hg38=1.4.5,r-dplyr=1.1.4,r-tidyr=1.3.1,r-patchwork=1.3.0
+khmer=3.0.0a3,sourmash=4.8.3
+ncbi-datasets-cli=15.11.0,samtools=1.18,unzip=6.0
+quarto=1.6.41,r-pathosurveilr=0.3.1
+ncbi-datasets-cli=16.0.0,samtools=1.18,unzip=6.0
+snpsift=5.2,tabix=1.11
+biopython=1.70,circos-tools=0.23,pybigwig=0.3.13,circos=0.69.8,python=2.7,grep=3.4,bcbiogff=0.6.4,tar=1.29,gawk=5.1.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pandas=2.2.3,sigprofilermatrixgenerator=1.3.3,sigprofilerextractor=1.2.1
+r-ctree=1.1.0,r-viber=1.0.0,r-mobster=0.1.1,r-dplyr=1.1.4,r-ggplot2=3.5.2,r-cli=3.6.5
+r-viber=1.0.0,r-cnaqc=1.1.2,r-dplyr=1.1.4,r-ggplot2=3.5.2,r-tidyverse=2.0.0,r-cli=3.6.5,r-ggpubr=0.6.0
+minimap2=2.29,samtools=1.22
+r-mobster=0.1.1,r-cnaqc=1.1.2,r-dplyr=1.1.4,r-ggplot2=3.5.2,r-cli=3.6.5
+rmats=4.1.2,r-base=4.0
+r-arrow=19.0.1,bioconductor-xcms=3.22.0,r-ramclustr=1.3.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
+cpt_gffparser=1.2.2,python=3.9,biopython=1.81
+emboss=5.0.0,perl=5.26	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3.6.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3.7,coreutils=8.30	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+star=2.5.2b,samtools=0.1.19	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-ggrepel=0.8.0,bioconductor-ruvseq=1.16.0,r-getopt=1.20.2,bioconductor-genomicfeatures=1.34.1,bioconductor-deseq2=1.22.1,bioconductor-tximport=1.10.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-batch=1.1_5,bioconductor-xcms=3.12.0,bioconductor-camera=1.46.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pandas=1.2.4,numpy=1.19.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bedtools=2.30.0,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,bedtools=2.29.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,gawk	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+fargene=0.1,tar=1.32	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+poppler=0.67.0,jcvi=0.8.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bx-python=0.7.1,galaxy-ops=1.0.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-rjson=0.2.15,bioconductor-dexseq=1.24.0,r-getopt=1.20.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bowtie2=2.3.2,samtools=1.3.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-rmarkdown=2.4,r-seurat=3.2.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-scpipe=1.0.0,r-knitr=1.20,r-readr=1.1.1,r-optparse=1.6.0,bioconductor-scater=1.6.0,r-dt=0.4,bioconductor-scran=1.6.2,r-rtsne=0.13,r-ggplot2=2.2.1,r-plotly=4.7.1,bioconductor-rsubread=1.28.1,bioconductor-rhtslib=1.10.0,r-rmarkdown=1.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bcftools=1.4,htslib=1.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-wavethresh=4.6.8,r-waveslim=1.7.5,r-bitops=1.0_6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+strelka=2.9.10,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+numpy=1.12.0,pandas=0.19.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+deeptools=3.1.2,samtools=1.7	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+scipy=1.4.1,pandas=1.0.1,file=5.37	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-rtracklayer=1.42.1,bioconductor-biostrings=2.50.2,r-optparse=1.6.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+seqtk=1.3,samtools=1.11,hisat2=2.1.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+seqtk=1.2,bzip2=1.0.6,salmon=0.11.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.11,bowtie2=2.4.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-rjson=0.2.20,r-getopt=1.20.2,bioconductor-dexseq=1.28.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bx-python=0.7.1,ucsc-fatotwobit=324,six=1.10.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+biopython=1.70,tn93=1.0.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.12,winnowmap=2.03	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bcftools=1.10,matplotlib=3.1.0,htslib=1.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,sra-tools=2.9.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3.9,tn93=1.0.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+snpeff=4.3.1t,biopython=1.70,libmagic=5.32,python-magic=0.4.15,python=3.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bcbiogff=0.6.4,bedtools=2.27.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-gprofiler2=0.1.7,pandoc=2.7.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bwameth=0.2.0,samtools=1.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+numpy=1.9,rpy2=2.8.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pysam=0.15,matplotlib=3.1.2,cyvcf2=0.11.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-base=3.4.1,picard=2.18.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+scikit-image=0.14.2,pillow=5.3.0,scipy=1.2.1,tifffile=0.15.1,numpy=1.15.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-org.mm.eg.db=3.5.0,bioconductor-org.dm.eg.db=3.5.0,bioconductor-org.hs.eg.db=3.5.0,bioconductor-org.dr.eg.db=3.5.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+scikit-image=0.14.2,pillow=5.3.0,tifffile=0.15.1,numpy=1.15.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-org.dr.eg.db=3.7.0,bioconductor-org.rn.eg.db=3.7.0,bioconductor-org.hs.eg.db=3.7.0,bioconductor-org.mm.eg.db=3.7.0,bioconductor-org.dm.eg.db=3.7.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+htslib=1.9,bcftools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pigz=2.3.4,seqtk=1.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+freebayes=1.3.1,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-svglite=1.2.1,r-ggfortify=0.4.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-biomformat=1.2.0,bioconductor-metagenomeseq=1.16.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bcftools=1.4,htslib=1.4,samtools=1.3.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+sed=4.4,python=2.7.13	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+perl-velvetoptimiser=2.2.6,velvet=1.2.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+openbabel=3.1.1,python=3.6,numpy=1.19.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-org.dr.eg.db=3.7.0,bioconductor-org.hs.eg.db=3.7.0,bioconductor-org.mm.eg.db=3.7.0,bioconductor-org.dm.eg.db=3.7.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3.6.1,gawk=4.1.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+six=1.10.0,numpy=1.13.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+hisat2=2.0.5,samtools=1.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-data.table=1.12.2,r-ggplot2=3.1.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,htslib=1.9,bcftools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,deeptools=3.2.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-ggdendro=0.1_20,r-egg=0.2.0,r-dplyr=0.7.4,r-cowplot=0.9.2,r-reshape2=1.4.3,r-svglite=1.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-batch=1.1_5,unzip=6.0,bioconductor-msnbase=2.16.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+yak=0.1,hifiasm=0.14	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-getopt=1.20.0,r-matrix=1.2-12	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bcftools=1.10,htslib=1.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,hisat2=2.1.0,seqtk=1.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+ucsc-bedgraphtobigwig=357,bedtools=2.27.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-optparse=1.6.1,bioconductor-chipseeker=1.18.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-rtsne=0.13,r-ggplot2=2.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-edger=3.20.7,bioconductor-limma=3.34.9,bioconductor-deseq2=1.18.1,trinity=2.8.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+salmon=0.8.2,bzip2=1.0.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+scikit-learn=0.21.3,plotly=4.3.0,pandas=0.25.3,scipy=1.4.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+gawk=4.2.1,pigz=2.3.4,seqtk=1.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+snippy=4.4.5,tar=1.32	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+coreutils=8.31,numpy=1.15.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+rust-ncbitaxonomy=1.0.7,spaln=2.4.03,python=3.8	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+htseq=0.9.1,bioconductor-dexseq=1.24.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+busco=4.1.2,tar=1.32	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+numpy=1.14,sed=4.4,python=2.7.13	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3.6,plotly=3.1.1,pandas=0.22.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,deeptools=3.3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,star=2.7.5b	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+scikit-image=0.14.2,tifffile=0.15.1,numpy=1.15.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+newick_utils=1.6,imagemagick=7.0.9_6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+salmon=1.3.0,vpolo=0.2.0,scipy=1.4.1,pandas=1.0.3,seqtk=1.3,samtools=1.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+rdkit=2020.03.4,scipy=1.3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,deeptools=3.5.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.10,bcftools=1.10,htslib=1.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pretextsnapshot=0.0.3,rename=1.601	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+mageck=0.5.9.2,r-gplots=3.0.3,r-xtable=1.8_4,r-ggplot2=3.3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+gawk=4.2.1,varscan=2.4.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+sra-tools=2.11.0,awscli=1.18.222,pigz=2.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+numpy=1.19.1,python=3.8	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+star=2.7.7a,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+tar=1.32,snippy=4.5.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+sed=4.7,fastqe=0.2.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+numpy=1.17,pandas=0.25	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+htslib=1.9,matplotlib=3.1.0,bcftools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,bowtie2=2.3.4.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bedtools=2.29.2,seacr=1.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+fates-emerald=2.0.1,python=3,binutils=2.35,perl-xml-libxml=2.0132,tar=1.32	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-base=3.4.1,rseqc=2.6.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pysam=0.15,matplotlib=3.1.2,biopython=1.71	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+xarray=0.15.1,shapely=1.7.0,geopandas=0.7.0,python=3,netcdf4=1.5.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+cufflinks=2.2.1,bioconductor-cummerbund=2.16.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.6,bowtie2=2.3.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+mothur=1.39.5,vsearch=2.6.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+sailfish=0.10.1,bzip2=1.0.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+h5py=2.9.0,loompy=2.0.17,anndata=0.7.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-reshape2=1.4.3,r-ggplot2=2.2.1,r-svglite=1.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+fonts-conda-ecosystem=1,r-matrix=1.2_17,bioconductor-dropletutils=1.2.1,bioconductor-scater=1.10.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3,openbabel=3.1.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,deeptools=3.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+mageck=0.5.9.2,ghostscript=9.22,r-ggplot2=3.3.0,r-gplots=3.0.3,r-xtable=1.8_4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+snpeff=4.3.1t,gawk=5.0.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+openmg=0.1,java-jdk=8.0.112	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-rmarkdown=2.2,r-base=3.6,r-seurat=3.1.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+plotly=3.1.1,scipy=1.1.0,pandas=0.22.0,scikit-learn=0.19.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+scikit-image=0.14.2,pandas=0.23.4,numpy=1.15.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+anndata=0.7.5,loompy=2.0.17	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+kobas=2.1.1,r-base=3.4,biopython=1.72	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+umi_tools=0.5.5,sed=4.7	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+tectonic=0.1.11,samtools=1.10,bcftools=1.10,matplotlib=3.1.0,htslib=1.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-variantannotation=1.36.0,r-tidyverse=1.3.0,r-base=4.0,r-pheatmap=1.0.12	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-getopt=1.20.2,r-pheatmap=1.0.10,r-ggrepel=0.8.0,bioconductor-rhdf5=2.26.2,bioconductor-genomicfeatures=1.34.1,r-rjson=0.2.20,r-gplots=3.0.1,bioconductor-deseq2=1.22.1,bioconductor-tximport=1.10.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-edger=3.20.7,r-statmod=1.4.30,r-getopt=1.20.0,bioconductor-limma=3.34.9,r-rjson=0.2.15,r-scales=0.5.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+kalign2=2.04,kcalign=0.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pyyaml=5.1.2,maxquant=1.6.10.43,python=3.7,tar=1.32,r-ptxqc=0.92.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-scales=0.5.0,bioconductor-limma=3.34.9,r-statmod=1.4.30,r-getopt=1.20.0,r-gplots=3.0.1,bioconductor-edger=3.20.7,r-rjson=0.2.15,bioconductor-glimma=1.6.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-getopt=1.20.2,bioconductor-tximport,bioconductor-genomicfeatures=1.34.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-getopt=1.20.2,bioconductor-edger=3.24.1,r-scales=1.0.0,bioconductor-limma=3.38.3,r-statmod=1.4.30,r-rjson=0.2.20	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+htslib=1.7,vcflib=1.0.0_rc1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-ggrepel=0.6.5,r-pheatmap=1.0.8,bioconductor-deseq2=1.18.1,bioconductor-tximport=1.6.0,bioconductor-genomicfeatures=1.30.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+vcflib=1.0.0_rc3,htslib=1.10.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-rjson=0.2.20,bioconductor-egsea=1.10.0,r-optparse=1.6.0,r-statmod=1.4.30	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+stringtie=1.3.4,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+salmon=0.9.1,seqtk=1.2,bzip2=1.0.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,htslib=1.9,tectonic=0.1.11,matplotlib=3.1.0,bcftools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+h5py=2.9.0,anndata=0.6.22.post1,loompy=2.0.17	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-base=3.4,macs2=2.1.1.20160309	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.6,bwa=0.7.17	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-org.dm.eg.db=3.12.0,bioconductor-org.rn.eg.db=3.12.0,bioconductor-org.dr.eg.db=3.12.0,bioconductor-org.hs.eg.db=3.12.0,bioconductor-org.mm.eg.db=3.12.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+kallisto=0.43.1,samtools=1.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+diffutils=3.7,sed=4.8	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+transdecoder=5.5.0,zip=3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+freebayes=1.0.2.29,samtools=0.1.19	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,minimap2=2.17	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-matrix=1.2_17,bioconductor-dropletutils=1.2.1,bioconductor-scater=1.10.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,stringtie=1.3.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.7,subread=1.6.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.4,hisat2=2.1.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+fonts-conda-ecosystem=1,openjdk=11.0.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pretextmap=0.1.6,samtools=1.12	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+zip=3.0,searchgui=3.2.13	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+biopython=1.72,bcbiogff=0.6.4,python=2.7	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3.8.1,ivar=1.3.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+trinity=2.9.1,bioconductor-deseq2=1.18.1,bioconductor-limma=3.34.9,bioconductor-edger=3.20.7	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-fgsea=1.8.0,r-optparse=1.6.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+htslib=1.10,bcftools=1.10,python=3.7	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-base=4.0,fonts-conda-ecosystem=1,bioconductor-dropletutils=1.10.0,bioconductor-scater=1.18.0,r-matrix=1.2_18	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+fonts-conda-ecosystem=1,graphviz=2.42.3,py-graphviz=0.4.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-ggrepel=0.8.0,r-getopt=1.20.2,r-ggplot2=3.1.0,r-dplyr=0.7.8	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+kalign3=3.2.2,kcalign=0.5.8	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+gawk=4.1.3,r-base=3.4,macs2=2.1.1.20160309	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-rjson=0.2.20,bioconductor-diffbind=2.10.0,r-getopt=1.20.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+xlsxwriter=1.1.0,pysam=0.15,matplotlib=3.1.2,cyvcf2=0.11.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,kallisto=0.46.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+openbabel=3.1.1,python=3.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,bcbiogff=0.6.4,jbrowse=1.16.11,biopython=1.72,tabix=0.2.6,findutils=4.6.0,python=2.7,pyyaml=3.13	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+trinity=2.9.1,kallisto=0.44.0,bioconductor-edger=3.20.7	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+merqury=1.1,meryl=1.3,tar=1.34	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-org.ag.eg.db=3.8.2,bioconductor-org.rn.eg.db=3.8.2,bioconductor-org.mm.eg.db=3.8.2,bioconductor-pathview=1.24.0,r-optparse=1.6.2,bioconductor-org.sc.sgd.db=3.8.2,bioconductor-org.ce.eg.db=3.8.2,bioconductor-org.xl.eg.db=3.8.2,bioconductor-org.gg.eg.db=3.8.2,bioconductor-org.pt.eg.db=3.8.2,bioconductor-org.cf.eg.db=3.8.2,bioconductor-org.eck12.eg.db=3.8.2,bioconductor-org.dm.eg.db=3.8.2,bioconductor-org.mmu.eg.db=3.8.2,bioconductor-org.at.tair.db=3.8.2,bioconductor-org.ecsakai.eg.db=3.8.2,bioconductor-org.bt.eg.db=3.8.2,bioconductor-org.dr.eg.db=3.8.2,bioconductor-org.ss.eg.db=3.8.2,bioconductor-org.hs.eg.db=3.8.2,bioconductor-org.pf.plasmo.db=3.8.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+freebayes=1.1.0.46,samtools=0.1.19	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+deeptools=3.3.2,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+subread=1.6.4,samtools=1.9,coreutils=8.31	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+star=2.7.8a,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+apoc=1b16,coreutils=8.31	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-getopt=1.20.2,bioconductor-edger=3.24.1,r-scales=1.0.0,bioconductor-limma=3.38.3,r-statmod=1.4.30,r-rjson=0.2.20,r-gplots=3.0.1,bioconductor-glimma=1.10.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+kalign3=3.2.2,kcalign=0.5.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pysam=0.15,matplotlib=3.1.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,star=2.7.2b	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-seurat=3.1.2,r-rmarkdown=2.0,pandoc=2.7.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-ggplot2=2.2.1,r-svglite=1.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+htseq=0.6.1.post1,samtools=1.3.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,coreutils=8.30,subread=1.6.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-org.mm.eg.db=3.8.2,r-optparse=1.6.2,bioconductor-org.dm.eg.db=3.8.2,r-dplyr=0.8.3,bioconductor-goseq=1.36.0,bioconductor-org.dr.eg.db=3.8.2,r-ggplot2=3.2.1,bioconductor-org.hs.eg.db=3.8.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+tar=1.32,busco=4.1.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bamtools=2.4.0,samtools=1.4.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-dexseq=1.20.1,r-getopt=1.20.0,r-rjson=0.2.15	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+cdsapi=0.5.1,unzip=6.0,cdo=1.9.9,tar=1.34,python=3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-bionet=1.34.0,r-getopt=1.20.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+macs2=2.1.1.20160309,gawk=4.1.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.2,bedtools=2.26.0gx	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-rjson=0.2.20,r-getopt=1.20.3,r-base=3.5.1,bioconductor-diffbind=2.10.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+ucsc-genepredtobed=357,ucsc-gtftogenepred=357	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+kalign3=3.2.2,kcalign=0.5.13	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-testthat=2.0.1,bioconductor-variantannotation=1.28.3,r-rmysql=0.10.13,r-sqldf=0.4_11,r-plyr=1.8.4,r-devtools=2.0.1,r-getoptlong=0.1.7,bioconductor-rgalaxy=1.26.0,r-data.table=1.12.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+zip=3.0,searchgui=4.0.12	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+scipy=1.4.1,medaka=1.0.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-getopt=1.20.2,bioconductor-dexseq=1.28.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+star=2.6.0b,samtools=1.8	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+unzip,peptide-shaker=2.0.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-edger=3.20.7,kallisto=0.44.0,trinity=2.8.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+ucsc-fatotwobit=377,bx-python=0.7.1,six=1.13.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.11,imagemagick=7.0.10_62,jvarkit-wgscoverageplotter=20201223	quay.io/bioconda/base-glibc-busybox-bash:latest	2
+r-argparse=1.0.4,fonts-conda-ecosystem=1,r-base=3.4.1,bioconductor-cummerbund=2.16.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,stringtie=2.1.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3.6,cufflinks=2.2.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+searchgui=3.3.10,zip=3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bcbiogff=0.6.4,pybigwig=0.3.13,python=2.7,circos=0.69.8,biopython=1.70,circos-tools=0.23,tar=1.29	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bedtools=2.29.2,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+ivar=1.2.2,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3.7,exonerate=2.4.0,bcbiogff=0.6.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,python=3.8.1,ivar=1.2.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.9,genrich=0.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pandas=1.0.0,matplotlib=3.1.1,python=3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+tabix=0.2.5,samtools=1.9,gatk4=4.1.7.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+tabix=0.2.5,gatk4=4.1.4.0,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+htseq=0.9.1,samtools=1.7	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-gplots=3.0.1,r-rcolorbrewer=1.1_2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bwa=0.7.15,samtools=1.3.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.10,bcftools=1.10,gawk=5.0.1,htslib=1.10	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+lastz=1.0.4,bzip2=1.0.6	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-rmysql=0.10.11,bioconductor-diffbind=2.6.5,r-getopt=1.20.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bamtools=2.4.0,samtools=1.3.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bcftools=1.9,samtools=1.9,htslib=1.9,gawk=5.0.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+openbabel=2.4.1,python=3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+pandas=0.24.2,scipy=1.2.1,numpy=1.16.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-rjson=0.2.15,bioconductor-diffbind=2.6.6,r-getopt=1.20.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bedtools=2.27.1,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bowtie2=2.2.8,tophat=2.1.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.11,subread=2.0.1,coreutils=8.31	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-deseq2=1.14.1,r-getopt=1.20.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-batch=1.1_5,unzip=6.0,bioconductor-xcms=3.12.0,r-rcolorbrewer=1.1_2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.6,stringtie=1.3.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+lofreq=2.1.3.1,samtools=1.9	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+biopython=1.76	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3.6.5	quay.io/bioconda/base-glibc-busybox-bash:latest	2
+openjdk=11.0.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3.8.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+perl=5.26	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+sed=4.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+python=3.5	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+mordred=1.2.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+tn93=1.0.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bzip2=1.0.8	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+requests=2.19.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+rdkit=2020.03.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+padel=2.21	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=0.1.16	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+chembl_structure_pipeline=1.0.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+matplotlib=3.1.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+gawk=5.1.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+chembl_webresource_client=0.10.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+unzip=6.0	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+openbabel=3.1.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+rpy2=2.9.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+mdtraj=1.9.4	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+samtools=1.2	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bx-python=0.7.1	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-raceid=0.2.3	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-dada2=1.14	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-dada2=1.16	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-dada2=1.12	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+bioconductor-dada2=1.18	quay.io/bioconda/base-glibc-busybox-bash:latest	1
+r-optparse=1.7.5,r-data.table=1.17.8
+r-poolfstat=3.0.0,r-optparse=1.7.5,r-data.table=1.17.8
+bioconductor-rsamtools=2.22.0,r-optparse=1.7.5,r-data.table=1.17.8
+r-rmarkdown=2.29,r-yaml=2.3.10,r-tidyr=1.3.1,r-data.table=1.17.8,r-knitr=1.50,r-plotly=4.11.0,r-dt=0.33,r-stringr=1.5.1,r-purrr=1.1.0,r-paletteer=1.6.0,r-htmltools=0.5.8.1,r-ggplot2=3.5.2,r-forcats=1.0.0,r-scales=1.4.0,r-jsonlite=2.0.0
+bioconductor-resolve=1.8.0,bioconductor-bsgenome.hsapiens.ucsc.hg38=1.4.5,r-patchwork=1.3.1
+gawk=5.0.1,snpeff=5.2	quay.io/bioconda/base-glibc-busybox-bash:latest	2
+r-base=4.3.3,bioconductor-rtracklayer=1.62.0,r-optparse=1.7.4,r-dplyr=1.1.4,r-stringr=1.5.1,r-plyr=1.8.9,r-data.table=1.15.2,coreutils=9.5,r-argparse=2.2.2,r-tidyverse=2.0.0
+unzip=6.0,tar=1.34,findutils=4.10.0
+bwa=0.7.19,samtools=1.22
+montreal-forced-aligner=3.3.8
+samtools=1.17,bam-readcount=1.0.1
+libcarna-python=0.2.0,numpy=1.26.4,ffmpeg=4.3.2,giatools=0.7.3,ome-zarr=0.12.2,pandas=2.3.3	quay.io/bioconda/base-glibc-debian-bash:latest	0

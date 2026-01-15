@@ -1,2 +1,2 @@
 #targets	base_image	image_build
-sambamba=1.0=h98b6b92_0,samtools=1.17=hd87286a_1,pysam=0.21.0=py310h41dec4a_1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
+samtools=1.17=hd87286a_1,pysam=0.21.0=py310h41dec4a_1,sambamba=1.0=h98b6b92_0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
