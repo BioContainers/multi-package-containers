@@ -934,3 +934,4 @@ samtools=1.17,bam-readcount=1.0.1
 libcarna-python=0.2.0,numpy=1.26.4,ffmpeg=4.3.2,giatools=0.7.3,ome-zarr=0.12.2,pandas=2.3.3	quay.io/bioconda/base-glibc-debian-bash:latest	0
 stanfordcorenlp=3.9.1.1
 htslib=1.19,polars=0.18.15,pysam=0.22.1,samtools=1.18,python=3.10
+htslib=1.22,polars=1.9.0,pysam=0.22.1,samtools=1.18,python=3.10.15
