@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+prank=170427,clustalo=1.2.4,panaroo=1.6.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
