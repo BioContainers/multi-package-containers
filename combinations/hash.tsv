@@ -86,6 +86,7 @@ scipy=1.4.1,pandas=1.0.1,file=5.37	bgruening/busybox-bash:0.1	0
 bx-python=0.7.1,galaxy-ops=1.0.0	bgruening/busybox-bash:0.1	1
 r-seurat=3.1.5,r-rmarkdown=2.2	bioconda/extended-base-image:latest	0
 biopython=1.76
+biopython:1.65
 cutadapt=1.8,perl
 singularity=3.5.3
 bioconductor-biocgenerics=0.30.0,bioconductor-summarizedexperiment=1.14.0,metaphlan2=2.9.21,python=3.7.3,pyyaml=5.1.2,r-argparse=2.0.1,r-base=3.6.1,r-basejump=0.11.18,r-bcbiobase=0.6.10,r-bcbiornaseq=0.3.28,r-brio=0.3.11,r-deseqanalysis=0.2.10,r-goalie=0.3.10,sambamba=0.7.0
