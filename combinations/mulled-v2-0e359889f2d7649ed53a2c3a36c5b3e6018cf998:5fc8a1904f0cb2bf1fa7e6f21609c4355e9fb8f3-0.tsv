@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+frogs=5.1.0,bioconductor-dada2=1.22.0,mafft=7.525,r-base=4.1.2,blast=2.16.0,cutadapt=2.10,r-optparse=1.6.6,vsearch=2.29.1,itsx=1.1.2,emboss=6.6.0,fasttree=2.1.9,r-phangorn=2.7.0,flash=1.2.11,r-essentials=4.1,swarm=3.1.4	quay.io/bioconda/base-glibc-busybox-bash:latest	0
