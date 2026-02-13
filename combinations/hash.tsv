@@ -929,6 +929,7 @@ gawk=5.0.1,snpeff=5.2	quay.io/bioconda/base-glibc-busybox-bash:latest	2
 r-base=4.3.3,bioconductor-rtracklayer=1.62.0,r-optparse=1.7.4,r-dplyr=1.1.4,r-stringr=1.5.1,r-plyr=1.8.9,r-data.table=1.15.2,coreutils=9.5,r-argparse=2.2.2,r-tidyverse=2.0.0
 unzip=6.0,tar=1.34,findutils=4.10.0
 bwa=0.7.19,samtools=1.22
+r-galaxyr=0.1.0
 montreal-forced-aligner=3.3.8
 samtools=1.17,bam-readcount=1.0.1
 libcarna-python=0.2.0,numpy=1.26.4,ffmpeg=4.3.2,giatools=0.7.3,ome-zarr=0.12.2,pandas=2.3.3	quay.io/bioconda/base-glibc-debian-bash:latest	0
