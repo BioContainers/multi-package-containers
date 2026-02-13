@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+qiime=1.9.1,r-optparse=1.3.2,r-vegan=2.3_4,r-base=3.3	bioconda/extended-base-image:latest	0
