@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+antismash=2.0.2	bgruening/busybox-bash:0.1	0
