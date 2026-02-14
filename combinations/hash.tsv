@@ -84,6 +84,7 @@ bioconductor-dropletutils=1.6.1,openblas=0.3.9,r-matrix=1.2,r-ggplot2=3.2.1,r-op
 scipy=1.4.1,pandas=1.0.1	bgruening/busybox-bash:0.1	0
 scipy=1.4.1,pandas=1.0.1,file=5.37	bgruening/busybox-bash:0.1	0
 bx-python=0.7.1,galaxy-ops=1.0.0	bgruening/busybox-bash:0.1	1
+r-spocc=0.9.0	bgruening/busybox-bash:0.1	1
 r-seurat=3.1.5,r-rmarkdown=2.2	bioconda/extended-base-image:latest	0
 biopython=1.76
 cutadapt=1.8,perl
