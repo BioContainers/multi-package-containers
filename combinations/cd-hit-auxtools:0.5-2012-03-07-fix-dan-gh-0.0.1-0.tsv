@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+cd-hit-auxtools=0.5-2012-03-07-fix-dan-gh-0.0.1	bgruening/busybox-bash:0.1	0
