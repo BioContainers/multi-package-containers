@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+gatk=3.8--hdfd78af_11,samtools=1.17,picard=2.19.0	quay.io/bioconda/base-glibc-debian-bash:latest	0
