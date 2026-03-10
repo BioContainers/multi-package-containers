@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+mlst=2.32.2,staramr=0.12.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
