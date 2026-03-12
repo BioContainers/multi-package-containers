@@ -2,6 +2,7 @@ name: Build image
 on: [push, pull_request]
 env:
   MULLED_NAMESPACE: biocontainers
+  MULLED_TOOL_UTIL_SOURCE: git+https://github.com/bgruening/galaxy.git@mulled_quay_enhancements#subdirectory=packages/tool_util
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -10,21 +11,16 @@ jobs:
       matrix:
         python-version: [3.12]
     steps:
-    - uses: actions/checkout@v6
-    - uses: actions/setup-python@v6
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install python dependencies
-      run: |
-        #python -m pip install git+https://git@github.com/galaxyproject/galaxy.git@dev#subdirectory=packages/util
-        #python -m pip install git+https://git@github.com/galaxyproject/galaxy.git@dev#subdirectory=packages/tool_util
-        python -m pip install "git+https://github.com/bgruening/galaxy.git@mulled_quay_enhancements#subdirectory=packages/tool_util"
-        #python -m pip install galaxy-tool-util
+    - uses: astral-sh/setup-uv@v7
     - run: docker --version
     - run: docker info
     - name: Build images
       run: |
-        mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations --verbose
+        uvx --from "$MULLED_TOOL_UTIL_SOURCE" mulled-build-files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations --verbose
     - name: Upload images (if pushed to master branch)
       if: github.ref == 'refs/heads/master' && github.repository_owner == 'BioContainers'
       env:
@@ -35,6 +31,6 @@ jobs:
          ssh-keyscan -t rsa depot.galaxyproject.org >> ~/.ssh/known_hosts
          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
          ssh-add - <<< "${{ secrets.ORVAL_KEY }}"
-         mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token ${{ secrets.QUAY_OAUTH_TOKEN }} push ./combinations
+         uvx --from "$MULLED_TOOL_UTIL_SOURCE" mulled-build-files --check-published --namespace $MULLED_NAMESPACE --oauth-token ${{ secrets.QUAY_OAUTH_TOKEN }} push ./combinations
          ls -l singularity_import
          [ "$(ls -A singularity_import)" ] && echo 'uploading Singularity images' && scp singularity_import/*:* singularity@depot.galaxyproject.org:/srv/nginx/depot.galaxyproject.org/root/singularity/
