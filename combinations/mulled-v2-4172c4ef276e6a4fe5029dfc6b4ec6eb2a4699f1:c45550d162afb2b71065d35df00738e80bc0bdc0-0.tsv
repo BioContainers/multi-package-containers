@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+spatialdata-io=0.6.0,anndata=0.12.10,zip=3.0,rioxarray=0.20.0,pandas=2.3.3,spatialdata=0.7.2,spatialdata-plot=0.2.14,ome-zarr=0.13.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
