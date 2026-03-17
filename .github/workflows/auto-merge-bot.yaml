@@ -1,52 +1,14 @@
 name: Auto-merge bot PRs
 
 on:
-  workflow_run:
-    workflows:
-      - "Build image"
-    types:
-      - completed
-
-permissions:
-  contents: write
-  pull-requests: write
+  pull_request_target:
+    types: [opened, synchronize, reopened]
 
 jobs:
-  auto-merge:
-    if: >
-      github.event.workflow_run.conclusion == 'success' &&
-      github.event.workflow_run.event == 'pull_request'
+  automerge:
     runs-on: ubuntu-latest
     steps:
-      - name: Find and merge bot PR
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO: ${{ github.repository }}
-          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
-        run: |
-          PR_NUMBER=$(gh pr list \
-            --repo "$REPO" \
-            --state open \
-            --json number,headRefOid \
-            --jq ".[] | select(.headRefOid == \"$HEAD_SHA\") | .number")
-
-          if [ -z "$PR_NUMBER" ]; then
-            echo "No open PR found for sha $HEAD_SHA — skipping."
-            exit 0
-          fi
-
-          AUTHOR=$(gh pr view "$PR_NUMBER" \
-            --repo "$REPO" \
-            --json author \
-            --jq '.author.login')
-
-          if [ "$AUTHOR" != "dockerhub-toolshed" ]; then
-            echo "PR #$PR_NUMBER author is '$AUTHOR', not 'dockerhub-toolshed' — skipping."
-            exit 0
-          fi
-
-          echo "Merging PR #$PR_NUMBER from $AUTHOR"
-          gh pr merge "$PR_NUMBER" \
-            --repo "$REPO" \
-            --merge \
-            --delete-branch
+      - uses: daneden/enable-automerge-action@v1
+        with:
+          github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          allowed-author: "dockerhub-toolshed"
