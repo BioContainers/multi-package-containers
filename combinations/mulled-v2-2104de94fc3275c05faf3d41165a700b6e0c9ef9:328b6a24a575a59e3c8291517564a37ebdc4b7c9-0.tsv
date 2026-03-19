@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+snpeff=5.4,biopython=1.84	quay.io/bioconda/base-glibc-busybox-bash:latest	0
