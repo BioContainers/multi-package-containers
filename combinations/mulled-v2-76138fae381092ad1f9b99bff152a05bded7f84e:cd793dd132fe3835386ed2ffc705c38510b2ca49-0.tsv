@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+perl=5.26,snpsift=5.4.0c,coreutils=8.25	quay.io/bioconda/base-glibc-busybox-bash:latest	0
