@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+ms2deepscore=2.0.0,onnx=1.16.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+leidenalg=0.10.2,mofapy2=0.7.2,muon=0.1.7,louvain=0.8.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0

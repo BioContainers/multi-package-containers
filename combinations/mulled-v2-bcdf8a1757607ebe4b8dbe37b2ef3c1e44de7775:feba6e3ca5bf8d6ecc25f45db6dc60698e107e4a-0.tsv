@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-pgxrpi=1.2.0,bioconductor-genomicranges=1.58.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

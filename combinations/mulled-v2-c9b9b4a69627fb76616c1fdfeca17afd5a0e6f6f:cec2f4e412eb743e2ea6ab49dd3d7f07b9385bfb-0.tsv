@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-edger=4.0.2,bedtools=2.23.0,bowtie=1.0.0,samtools=1.19.2,bioconductor-limma=3.58.1,r-getopt=1.20.4,biopython=1.83,r-rjson=0.2.21	quay.io/bioconda/base-glibc-busybox-bash:latest	0

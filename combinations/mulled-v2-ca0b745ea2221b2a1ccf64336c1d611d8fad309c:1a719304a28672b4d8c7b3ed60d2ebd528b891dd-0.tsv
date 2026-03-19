@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bedtools=2.29.2,ucsc-bedgraphtobigwig=377,coreutils=8.25	bgruening/busybox-bash:0.1	0

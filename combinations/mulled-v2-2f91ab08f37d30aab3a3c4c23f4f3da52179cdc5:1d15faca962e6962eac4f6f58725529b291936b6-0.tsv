@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-canyonb=0.9.3,r-logger=0.4.0,r-r.utils=2.13.0,r-base=4.3.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0

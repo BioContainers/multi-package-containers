@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+util-linux=2.36,orthofinder=2.5.4	quay.io/bioconda/base-glibc-busybox-bash:latest	0

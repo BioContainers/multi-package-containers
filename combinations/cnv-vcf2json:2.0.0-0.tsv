@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+cnv-vcf2json=2.0.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

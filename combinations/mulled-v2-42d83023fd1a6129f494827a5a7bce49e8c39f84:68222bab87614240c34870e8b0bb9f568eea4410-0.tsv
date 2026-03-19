@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pyarrow,pandasql,pytables,python=3.7,pandas,click	quay.io/bioconda/base-glibc-busybox-bash:latest	0

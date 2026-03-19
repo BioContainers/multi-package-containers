@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-ggplot2=3.2.1=r36h6115d3f_0,pysam=0.15.3=py37hbcae180_3,r-optparse=1.6.4=r36h6115d3f_0,samtools=1.10=h9402c20_2,numpy=1.17.3=py37h95a1406_0,bedtools=2.29.2=hc088bd4_0	bgruening/busybox-bash:0.1	0

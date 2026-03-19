@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pandas=2.0.3,plotly=5.15.0,python=3.10,click=8.1.4,kmd_hmdb_api_client=1.0.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-latticeextra=0.6_29=r40hc72bb7e_1,sambamba=0.8.1=h41abebc_0,pysam=0.17.0=py37h45aed0b_0,r-gridextra=2.3=r40hc72bb7e_1003,r-optparse=1.7.1=r40hc72bb7e_0,r-reshape2=1.4.4=r40h03ef668_1,icu=68.1=h58526e2_0,numpy=1.21.3=py37h31617e3_0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

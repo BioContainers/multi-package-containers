@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+ucsc-gtftogenepred=447,picard=3.1.1,ucsc-gff3togenepred=447	quay.io/bioconda/base-glibc-busybox-bash:latest	0

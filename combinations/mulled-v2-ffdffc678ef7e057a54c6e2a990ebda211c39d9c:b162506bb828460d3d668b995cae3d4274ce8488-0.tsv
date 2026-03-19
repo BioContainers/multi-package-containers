@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+python=3.8,requests=2.24.0	bgruening/busybox-bash:0.1	0

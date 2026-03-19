@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-optparse=1.7.5,bioconductor-phyloseq=1.50.0,r-tidyverse=2.0.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

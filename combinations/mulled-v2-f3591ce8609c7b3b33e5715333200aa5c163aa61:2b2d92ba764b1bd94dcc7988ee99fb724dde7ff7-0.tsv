@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pretextmap=0.1.6,samtools=1.12	bgruening/busybox-bash:0.1	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+cojac=0.9.3,viramp-hub=0.1.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

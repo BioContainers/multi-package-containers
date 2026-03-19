@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+picrust2=2.5.1,ete3=3.1.2,frogs=4.1.0,dendropy=4.5.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+spec2vec=0.8.0,matchms=0.20.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

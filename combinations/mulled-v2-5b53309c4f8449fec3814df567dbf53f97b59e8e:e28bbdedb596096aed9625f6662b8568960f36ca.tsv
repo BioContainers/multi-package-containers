@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+trinotate=3.2.2,gnu-wget=1.18	quay.io/bioconda/base-glibc-busybox-bash:latest	0

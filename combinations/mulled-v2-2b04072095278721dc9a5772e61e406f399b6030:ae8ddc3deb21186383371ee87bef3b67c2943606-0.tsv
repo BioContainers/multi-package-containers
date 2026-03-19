@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+sra-tools=3.0.3,pigz=2.6,samtools=1.16.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0

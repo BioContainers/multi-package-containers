@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+blast=2.16.0,ucsc-blat=481,proteinortho=6.3.6,diamond=2.1.12,last=1639,mmseqs2=17.b804f	quay.io/bioconda/base-glibc-busybox-bash:latest	0

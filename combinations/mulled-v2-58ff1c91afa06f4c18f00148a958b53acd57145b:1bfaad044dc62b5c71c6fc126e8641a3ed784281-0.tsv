@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+chewbbaca=3.3.10,blast=2.15.0,fasttree=2.1.11,zip=3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

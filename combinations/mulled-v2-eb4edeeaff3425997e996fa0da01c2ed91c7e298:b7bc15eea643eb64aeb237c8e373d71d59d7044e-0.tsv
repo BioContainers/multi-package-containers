@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+msproteomicstools=0.11.0,rpy2=2.8.6	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+interproscan=5.59-91.0,hmmer=3.1b2,requests=2.26.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

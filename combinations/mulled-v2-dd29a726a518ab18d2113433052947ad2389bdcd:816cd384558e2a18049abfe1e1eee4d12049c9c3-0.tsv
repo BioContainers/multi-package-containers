@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+scorpio=0.3.19,gofasta=1.2.3,ucsc-fatovcf=482,usher=0.6.6,constellations=0.1.12,pangolin-data=1.37,minimap2=2.30,csvtk=0.36.0,pangolin=4.3.4,grep=3.12	quay.io/bioconda/base-glibc-debian-bash:latest	0

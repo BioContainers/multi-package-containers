@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+fiji=20240614,gawk=5.3.1,omero-py=5.19.4	quay.io/bioconda/base-glibc-busybox-bash:latest	0

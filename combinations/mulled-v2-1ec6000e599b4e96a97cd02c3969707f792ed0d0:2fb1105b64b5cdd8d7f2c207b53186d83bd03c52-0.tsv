@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pyyaml=6.0.2,python=3.12,openai=1.100.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+cooler=0.9.3,htslib=1.18	quay.io/bioconda/base-glibc-busybox-bash:latest	0

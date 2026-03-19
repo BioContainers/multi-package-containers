@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-batch=1.1_5,r-mass=7.3_53,r-reshape=0.8.8	bgruening/busybox-bash:0.1	0

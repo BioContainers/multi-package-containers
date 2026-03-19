@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-tximport=1.30.0,bioconductor-genomicfeatures=1.54.1,r-getopt=1.20.4	quay.io/bioconda/base-glibc-busybox-bash:latest	0

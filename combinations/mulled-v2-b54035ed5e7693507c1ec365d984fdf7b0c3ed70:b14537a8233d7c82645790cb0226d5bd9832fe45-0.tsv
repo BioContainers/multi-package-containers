@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-ggfortify=0.4.14,r-svglite=2.1.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pilon=1.24,racon=1.4.20,samtools=1.9,openjdk=11.0.9.1,which=2.21,tgsgapcloser=1.0.3	quay.io/bioconda/base-glibc-busybox-bash:latest	0

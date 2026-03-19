@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+abyss=2.3.6,bwa=0.7.17	quay.io/bioconda/base-glibc-debian-bash:latest	0

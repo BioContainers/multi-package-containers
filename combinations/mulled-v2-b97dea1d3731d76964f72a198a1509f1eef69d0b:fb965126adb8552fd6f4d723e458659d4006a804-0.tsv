@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+phantomjs=2.1.1,r-base=4.3.3,libxslt=1.1.39,pandoc=3.5,r-mapview=2.11.2,r-xslt=1.4.6,r-xml2=1.3.6,r-dplyr=1.1.4	quay.io/bioconda/base-glibc-busybox-bash:latest	0

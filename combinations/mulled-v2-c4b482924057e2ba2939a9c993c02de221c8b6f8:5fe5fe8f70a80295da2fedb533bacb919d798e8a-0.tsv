@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+cite-seq-count=1.4.4,python-levenshtein=0.20.7,multiprocess=0.70.14,scipy=1.7.3,python=3.7.12,numpy=1.21.6,levenshtein=0.20.7,pandas=0.25.3,pysam=0.16,umi_tools=1.0.0,expat=2.5.0,bzip2=1.0.8	quay.io/bioconda/base-glibc-busybox-bash:latest	0

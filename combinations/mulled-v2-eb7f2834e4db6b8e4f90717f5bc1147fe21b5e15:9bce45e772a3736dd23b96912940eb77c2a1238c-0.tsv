@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+scikit-image=0.18.1,imagecodecs=2024.12.30,superdsm=0.2.0,ray-core=1.6.0,mkl=2020.0,numpy=1.20.3,protobuf=4.25.3,cvxpy=1.1.13,giatools=0.1.1,blas=1.0=mkl,cvxopt=1.2.6,scipy=1.6.3	quay.io/bioconda/base-glibc-busybox-bash:latest	0

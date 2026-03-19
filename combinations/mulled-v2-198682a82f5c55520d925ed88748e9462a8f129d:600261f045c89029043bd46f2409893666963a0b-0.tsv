@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+naltorfs=0.1.2,ucsc-fatotwobit=377	quay.io/bioconda/base-glibc-busybox-bash:latest	0

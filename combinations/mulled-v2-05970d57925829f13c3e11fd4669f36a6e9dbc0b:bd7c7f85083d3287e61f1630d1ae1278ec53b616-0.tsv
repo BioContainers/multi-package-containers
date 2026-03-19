@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+apollo=4.2.13,rsync=3.2.7	quay.io/bioconda/base-glibc-busybox-bash:latest	0

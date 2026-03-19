@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-kernsmooth=2.23_20,r-scales=1.1.1,r-rcolorbrewer=1.1_2,r-ggplot2=3.3.5,bioconductor-cardinal=2.10.0,r-gridextra=2.3,r-pheatmap=1.0.12	quay.io/bioconda/base-glibc-busybox-bash:latest	0

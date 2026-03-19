@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-org.at.tair.db=3.17.0,bioconductor-org.gg.eg.db=3.17.0,bioconductor-org.mm.eg.db=3.17.0,bioconductor-org.rn.eg.db=3.17.0,bioconductor-org.hs.eg.db=3.17.0,bioconductor-org.dr.eg.db=3.17.0,bioconductor-org.bt.eg.db=3.17.0,bioconductor-org.dm.eg.db=3.17.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

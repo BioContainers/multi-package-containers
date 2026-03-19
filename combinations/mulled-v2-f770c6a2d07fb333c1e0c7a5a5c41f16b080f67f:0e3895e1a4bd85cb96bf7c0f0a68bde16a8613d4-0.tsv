@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+html5lib=1.0.1,beautifulsoup4=4.9.0,openpyxl=3.0.3,pillow=7.1.2=py38h9776b28_0,pandas=1.0.3	bgruening/busybox-bash:0.1	0

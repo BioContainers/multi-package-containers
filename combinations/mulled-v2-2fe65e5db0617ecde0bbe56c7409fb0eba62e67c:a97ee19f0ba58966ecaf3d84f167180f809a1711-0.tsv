@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pymuonsuite=0.3.0,dftbplus=21.2,zip=3.0,numpy=1.22.4	quay.io/bioconda/base-glibc-busybox-bash:latest	0

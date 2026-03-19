@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+samtools,vcfanno=0.3.2,tabix	bgruening/busybox-bash:0.1	0

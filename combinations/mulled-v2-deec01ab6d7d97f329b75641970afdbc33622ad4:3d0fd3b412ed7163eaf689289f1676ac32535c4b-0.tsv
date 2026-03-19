@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-maaslin2=1.16.0,zip=3.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

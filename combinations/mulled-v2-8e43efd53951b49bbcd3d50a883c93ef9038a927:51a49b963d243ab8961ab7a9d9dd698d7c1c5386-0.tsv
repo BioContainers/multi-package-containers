@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-metams=1.8.0,bioconductor-xcms=1.46.0,r-batch=1.1_4,r-base=3.4.1,libgfortran=3.0.0,libgfortran4=7.5.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

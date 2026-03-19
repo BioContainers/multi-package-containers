@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-argparse=2.2.1,bioconductor-isoformswitchanalyzer=1.20.0,r-dplyr=1.0.10	quay.io/bioconda/base-glibc-busybox-bash:latest	0

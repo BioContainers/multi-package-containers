@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+seqtk=1.3,metaphlan=4.0.5	quay.io/bioconda/base-glibc-busybox-bash:latest	0

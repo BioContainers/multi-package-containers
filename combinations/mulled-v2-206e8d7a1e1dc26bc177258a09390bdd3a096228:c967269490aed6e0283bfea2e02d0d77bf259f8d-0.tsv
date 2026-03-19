@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+seaborn=0.10.0,h5py=2.10.0,mdanalysis=1.0.0,jinja2=2.11.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0

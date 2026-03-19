@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+delly=0.8.7,bcftools=1.10.2	bgruening/busybox-bash:0.1	0

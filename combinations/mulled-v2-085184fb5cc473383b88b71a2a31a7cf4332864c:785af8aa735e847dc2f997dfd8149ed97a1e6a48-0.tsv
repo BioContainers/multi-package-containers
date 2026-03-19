@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+scikit-image=0.24.0,pillow=11.0.0,numpy=2.1.2,tifffile=2024.9.20,scikit-learn=1.5.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0

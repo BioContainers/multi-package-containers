@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+hifiasm=0.25.0,findutils=4.10.0,yak=0.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0

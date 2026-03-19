@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-rtsne=0.15=r351he1b5a44_0,r-ggfortify=0.4.7=r351h6115d3f_0,r-factoextra=1.0.5,r-optparse=1.6.2=r35h6115d3f_0,r-clusterr=1.1.9=r351h0357c0b_0,r-polychrome=1.2.5=r35h6115d3f_0,r-factominer=1.42=r35h6115d3f_0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

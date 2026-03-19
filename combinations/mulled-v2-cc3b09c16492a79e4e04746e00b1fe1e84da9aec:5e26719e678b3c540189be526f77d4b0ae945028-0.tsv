@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-argparse=2.0.3,r-rcurl=1.98_1.2,r-stringi=1.5.3,r-stringr=1.4.0	bgruening/busybox-bash:0.1	0

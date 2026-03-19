@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pangolin=4.3,ucsc-fatovcf=448,constellations=0.1.12,gofasta=1.2.1,pangolin-data=1.26,grep=3.11,scorpio=0.3.19,usher=0.6.3,minimap2=2.27,csvtk=0.30.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

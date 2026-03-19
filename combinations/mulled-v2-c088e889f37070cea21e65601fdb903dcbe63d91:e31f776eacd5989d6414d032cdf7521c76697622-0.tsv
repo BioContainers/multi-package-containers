@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+xgboost=3.0.0,datasets=3.6.0,cleanlab=2.7.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0

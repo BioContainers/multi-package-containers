@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+biopython=1.70,tn93=1.0.6	bgruening/busybox-bash:0.1	0

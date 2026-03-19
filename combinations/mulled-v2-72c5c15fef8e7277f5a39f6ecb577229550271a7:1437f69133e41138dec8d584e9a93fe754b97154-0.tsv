@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-ggplot2=3.3.5,r-base=4.1.1,r-reshape2=1.4.4,r-svglite=2.0.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+ffmpeg=5.1.2,fiji=20220414	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+biopython=1.76,pyyaml=5.3	bgruening/busybox-bash:0.1	0

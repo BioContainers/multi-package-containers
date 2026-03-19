@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-argparse=2.0.3,r-easypubmed=2.13	bgruening/busybox-bash:0.1	0

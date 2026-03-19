@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+numpy=1.9,rpy2=2.8.5	bgruening/busybox-bash:0.1	0

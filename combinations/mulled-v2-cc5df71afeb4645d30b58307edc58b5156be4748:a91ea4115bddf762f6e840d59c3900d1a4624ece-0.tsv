@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+netcdf4=1.5.6,geopandas=0.9.0,python=3,shapely=1.7.1,xarray=0.18.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+boto3=1.41.0,botocore=1.41.0,bash=5.2.37,python=3.14.0,copernicusmarine=2.0,jq=1.8.1,netcdf4=1.7.3	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+mmseqs2=17-b804f	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+findutils=4.6.0,stacks=2.55,python=3.7	bgruening/busybox-bash:0.1	0

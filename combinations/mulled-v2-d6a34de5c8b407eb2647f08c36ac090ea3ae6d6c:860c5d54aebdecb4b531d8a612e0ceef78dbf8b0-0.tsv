@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+safetensors=0.5.3,python=3.10.18,biapy=3.6.5,openexr=3.3.3,opencv=4.10.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

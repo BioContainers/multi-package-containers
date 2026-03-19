@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pysam=0.19.1,biopython=1.79,pandas=1.4.2,openpyxl=3.0.9	quay.io/bioconda/base-glibc-busybox-bash:latest	0

@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+graphicsmagick=1.3.26,r-snow=0.4_3,bioconductor-multtest=2.48.0,zip=3.0,bioconductor-camera=1.48.0,r-batch=1.1_5,bioconductor-genomeinfodbdata=1.2.6	quay.io/bioconda/base-glibc-busybox-bash:latest	0

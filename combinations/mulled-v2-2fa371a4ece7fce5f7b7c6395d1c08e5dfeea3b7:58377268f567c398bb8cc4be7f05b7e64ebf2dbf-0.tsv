@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-snowballc=0.7.0,r-pubmedwordcloud=0.3.6,r-stringi=1.5.3,r-textclean=0.9.3,r-stringr=1.4.0,r-semnetcleaner=1.2.0,r-argparse=2.0.3	bgruening/busybox-bash:0.1	0

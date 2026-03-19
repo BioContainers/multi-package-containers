@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+vcfanno=0.3.5,samtools=1.19.2,tabix=1.11	quay.io/bioconda/base-glibc-busybox-bash:latest	0

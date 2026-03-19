@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+python=3.13,coreutils=9.5,primer3-py=2.2,seqfold=0.9,varvamp=1.3	quay.io/bioconda/base-glibc-busybox-bash:latest	0

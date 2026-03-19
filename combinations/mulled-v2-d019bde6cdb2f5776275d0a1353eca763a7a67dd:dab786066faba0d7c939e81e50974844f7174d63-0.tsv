@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+wget=1.21.4,virsorter=2.2.4,pulp=2.7.0	quay.io/bioconda/base-glibc-debian-bash:latest	0

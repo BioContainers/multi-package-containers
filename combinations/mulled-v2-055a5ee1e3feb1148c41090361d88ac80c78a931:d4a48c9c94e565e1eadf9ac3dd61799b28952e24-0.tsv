@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-recetox-aplcms=0.10.1,pymzml=2.5.2	quay.io/bioconda/base-glibc-debian-bash:latest	0
