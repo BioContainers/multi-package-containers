@@ -16,6 +16,6 @@ jobs:
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
 
       - name: Enable Pull Request Automerge
-        run: gh pr merge --merge --auto "${{ github.event.pull_request.number }}"
+        run: gh pr merge --merge --auto --repo "${{ github.repository }}" "${{ github.event.pull_request.number }}"
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
