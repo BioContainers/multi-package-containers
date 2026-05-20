@@ -945,3 +945,5 @@ r-base=4.2.3,r-tidyverse=2.0.0,bioconductor-genomicranges=1.50.0,bioconductor-pl
 python=3.9,pandas=1.5.3,openpyxl=3.0.9,numpy=1.21.0
 r-susier=0.14.2,r-data.table=1.17.8
 samtools=1.21,star=2.7.3a
+gcta=1.94.1,tabix=1.11
+manc_cojo=1.1.0,tabix=1.11
