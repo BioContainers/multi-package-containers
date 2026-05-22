@@ -947,3 +947,5 @@ r-susier=0.14.2,r-data.table=1.17.8
 samtools=1.21,star=2.7.3a
 gcta=1.94.1,tabix=1.11
 manc_cojo=1.1.0,tabix=1.11
+r-base=4.3.3,bioconductor-deseq2=1.42.0
+python=3.11,scipy=1.12.0
