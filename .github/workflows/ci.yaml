@@ -1,7 +1,7 @@
 name: Build image
 on: [push, pull_request]
 env:
-  MULLED_NAMESPACE: biocontainers
+  MULLED_NAMESPACE: alejandrogzi
   MULLED_TOOL_UTIL_SOURCE: git+https://github.com/bgruening/galaxy.git@mulled_quay_enhancements#subdirectory=packages/tool_util
 jobs:
   build-and-test:
