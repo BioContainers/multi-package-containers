@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-recount=1.36.0,bioconductor-recount3=1.20.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
