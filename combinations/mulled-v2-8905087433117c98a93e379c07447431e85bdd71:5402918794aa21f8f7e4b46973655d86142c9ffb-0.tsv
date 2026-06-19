@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+opentsne=1.0.0,h5py=3.9.0,numpy=1.25.0,pandas=2.0.2,kpal=2.1.1,perl-bioperl=1.7.8	quay.io/bioconda/base-glibc-busybox-bash:latest	0
