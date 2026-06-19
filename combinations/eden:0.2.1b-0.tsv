@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+eden=0.2.1b	bgruening/busybox-bash:0.1	0
