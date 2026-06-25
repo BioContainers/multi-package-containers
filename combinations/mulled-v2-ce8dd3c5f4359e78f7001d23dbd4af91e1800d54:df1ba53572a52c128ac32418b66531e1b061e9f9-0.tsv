@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+frogs=4.1.0,blast=2.10	quay.io/bioconda/base-glibc-busybox-bash:latest	0
