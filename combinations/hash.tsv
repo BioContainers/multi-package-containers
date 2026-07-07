@@ -949,3 +949,4 @@ gcta=1.94.1,tabix=1.11
 manc_cojo=1.1.0,tabix=1.11
 lastz=1.0.4,python=3.9
 aoptk=0.5.0,pyyaml=6.0.3
+r-wgcna=1.74,r-igraph=2.3.1
