@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-gridextra=2.3=r36h6115d3f_1002,icu=64.2=he1b5a44_1,samtools=1.9=h10a08f8_12,sambamba=0.6.6,numpy=1.11.2=py27_0,r-reshape2=1.4.3=r36h29659fb_0,r-latticeextra=0.6_28=r36h6115d3f_1002,r-optparse=1.6.4=r36h6115d3f_0,pysam=0.15.3=py27hda2845c_1	bgruening/busybox-bash:0.1	0
