@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+augustus=3.5.0--pl5321h700735d_3,tantan=40	quay.io/bioconda/base-glibc-busybox-bash:latest	0
