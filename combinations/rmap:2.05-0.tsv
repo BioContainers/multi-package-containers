@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+rmap=2.05	bgruening/busybox-bash:0.1	0
