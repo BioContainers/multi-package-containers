@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+six=1.10,curl=7.49.0,urllib3=1.12,xmltramp2=3.1.1	bgruening/busybox-bash:0.1	0
