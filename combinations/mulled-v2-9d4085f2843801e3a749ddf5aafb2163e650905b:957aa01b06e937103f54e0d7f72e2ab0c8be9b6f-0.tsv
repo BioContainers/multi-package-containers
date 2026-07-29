@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+markdown=3.4.3,pymdown-extensions=10.0.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
