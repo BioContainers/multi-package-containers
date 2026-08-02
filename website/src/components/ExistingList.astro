@@ -1,0 +1,174 @@
+---
+---
+
+<section class="rounded-xl border border-slate-200 bg-white p-5">
+  <div class="mb-4 flex flex-wrap items-center gap-3">
+    <h2 class="text-lg font-semibold">Existing combinations</h2>
+    <span
+      id="mcb-existing-count"
+      class="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">…</span
+    >
+    <input
+      id="mcb-existing-search"
+      type="search"
+      placeholder="Filter by package name…  (e.g. samtools bwa)"
+      class="ml-auto w-full max-w-xs rounded-lg border border-slate-300 px-3 py-1.5 text-sm focus:border-slate-400 focus:outline-none"
+    />
+  </div>
+
+  <div class="overflow-x-auto">
+    <table class="w-full text-left text-sm">
+      <thead class="border-b border-slate-200 text-xs uppercase tracking-wide text-slate-500">
+        <tr>
+          <th class="py-2 pr-4 font-medium">Targets</th>
+          <th class="py-2 pr-4 font-medium">Image name</th>
+          <th class="py-2 font-medium">Source</th>
+        </tr>
+      </thead>
+      <tbody id="mcb-existing-body" class="divide-y divide-slate-100"></tbody>
+    </table>
+  </div>
+
+  <div id="mcb-existing-loading" class="py-6 text-center text-sm text-slate-400">
+    Loading existing combinations…
+  </div>
+
+  <div class="mt-4 flex items-center justify-between text-sm text-slate-500">
+    <span id="mcb-existing-shown"></span>
+    <button
+      id="mcb-existing-more"
+      type="button"
+      class="rounded-lg border border-slate-300 px-3 py-1.5 text-slate-700 hover:bg-slate-50 disabled:opacity-50"
+      disabled
+    >
+      Load more
+    </button>
+  </div>
+</section>
+
+<script>
+  import { mulledV2ImageName } from "../scripts/mulled-hash";
+
+  type Entry = { targets: string; base_image: string; image_build: string; file: string };
+  const PAGE_SIZE = 50;
+
+  const bodyEl = document.getElementById("mcb-existing-body") as HTMLTableSectionElement | null;
+  const loadingEl = document.getElementById("mcb-existing-loading")!;
+  const shownEl = document.getElementById("mcb-existing-shown")!;
+  const moreBtn = document.getElementById("mcb-existing-more") as HTMLButtonElement;
+  const searchEl = document.getElementById("mcb-existing-search") as HTMLInputElement;
+  const countEl = document.getElementById("mcb-existing-count")!;
+
+  const base = `${import.meta.env.BASE_URL}/`.replace(/\/+$/, "/");
+  const repoFileUrl = (file: string) =>
+    `https://github.com/BioContainers/multi-package-containers/blob/master/combinations/${encodeURIComponent(file)}`;
+  const esc = (s: string) =>
+    s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+  let all: Entry[] = [];
+  let filtered: Entry[] = [];
+  let shown = 0;
+  let loaded = false;
+
+  // Build a hover tooltip string with base_image and build info
+  function detailsTitle(e: Entry): string {
+    const parts: string[] = [];
+    parts.push(`Base image: ${e.base_image || "default"}`);
+    parts.push(`Build: ${e.image_build === "1" ? "force rebuild" : "normal"}`);
+    return parts.join("\n");
+  }
+
+  // Cache: "targets|image_build" → image name (avoids recomputing on re-render)
+  const hashCache = new Map<string, string>();
+
+  async function computeHash(targets: string, imageBuild: string): Promise<string> {
+    const key = `${targets}|${imageBuild}`;
+    if (hashCache.has(key)) return hashCache.get(key)!;
+    const name = await mulledV2ImageName(targets, imageBuild);
+    hashCache.set(key, name);
+    return name;
+  }
+
+  // After rendering rows, fill in the image name cells asynchronously
+  async function fillImageNames() {
+    const cells = bodyEl!.querySelectorAll<HTMLElement>("[data-img-targets]");
+    for (const cell of cells) {
+      if (cell.dataset.filled === "true") continue;
+      const targets = cell.dataset.imgTargets!;
+      const imageBuild = cell.dataset.imgBuild || "0";
+      const name = await computeHash(targets, imageBuild);
+      if (cell.dataset.filled === "true") continue;
+      cell.dataset.filled = "true";
+      const maxLen = 40;
+      const display = name.length > maxLen ? name.slice(0, maxLen - 1) + "…" : name;
+      cell.textContent = display;
+      cell.title = name;
+    }
+  }
+
+  function render() {
+    const slice = filtered.slice(0, shown);
+    bodyEl!.innerHTML = slice
+      .map((e) => {
+        const details = detailsTitle(e);
+        return `
+        <tr title="${esc(details)}">
+          <td class="py-2 pr-4"><code class="text-slate-800">${esc(e.targets)}</code></td>
+          <td class="py-2 pr-4"><code class="text-xs text-slate-500" data-img-targets="${esc(e.targets)}" data-img-build="${esc(e.image_build || "0")}" data-filled="false">…</code></td>
+          <td class="py-2"><a href="${repoFileUrl(e.file)}" target="_blank" rel="noopener" class="text-slate-500 underline hover:text-slate-800">${esc(e.file)}</a></td>
+        </tr>`;
+      })
+      .join("");
+    shownEl.textContent = `showing ${slice.length} of ${filtered.length}`;
+    moreBtn.disabled = shown >= filtered.length;
+    // Async fill image names for the newly rendered rows
+    fillImageNames();
+  }
+
+  function applyFilter() {
+    const q = searchEl.value.trim().toLowerCase();
+    if (!q) {
+      filtered = all;
+    } else {
+      const terms = q.split(/\s+/);
+      filtered = all.filter((e) => {
+        const t = e.targets.toLowerCase();
+        return terms.every((term) => t.includes(term));
+      });
+    }
+    countEl.textContent = String(filtered.length);
+    shown = Math.min(PAGE_SIZE, filtered.length);
+    render();
+  }
+
+  async function load() {
+    if (loaded) return;
+    loaded = true;
+    try {
+      const res = await fetch(`${base}data/combinations.json`);
+      all = (await res.json()) as Entry[];
+      loadingEl.style.display = "none";
+      applyFilter();
+    } catch (err) {
+      loadingEl.textContent = "Failed to load combinations. Run `just build` first.";
+      console.error(err);
+    }
+  }
+
+  moreBtn.addEventListener("click", () => {
+    shown = Math.min(shown + PAGE_SIZE, filtered.length);
+    render();
+  });
+  searchEl.addEventListener("input", applyFilter);
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (entries.some((e) => e.isIntersecting)) {
+        load();
+        observer.disconnect();
+      }
+    },
+    { rootMargin: "200px" },
+  );
+  observer.observe(loadingEl);
+</script>

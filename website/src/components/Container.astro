@@ -1,0 +1,400 @@
+---
+---
+
+<section class="rounded-xl border border-slate-200 bg-white p-5">
+  <div class="mb-4 flex items-center gap-3">
+    <h2 class="text-lg font-semibold">Container</h2>
+    <span
+      id="mcb-container-count"
+      class="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">0</span
+    >
+    <button
+      id="mcb-container-clear"
+      type="button"
+      class="ml-auto rounded-lg border border-slate-300 px-2.5 py-1 text-xs text-slate-600 hover:bg-slate-50"
+      disabled
+    >
+      Clear
+    </button>
+  </div>
+
+  <div
+    id="mcb-container-empty"
+    class="rounded-lg border border-dashed border-slate-200 px-4 py-8 text-center text-sm text-slate-400"
+  >
+    No packages selected yet.<br />
+    Search on the left and click <span class="font-medium">Add</span> to compose your container.
+  </div>
+
+  <ul id="mcb-container-list" class="hidden space-y-2"></ul>
+
+  <!-- Targets preview -->
+  <div id="mcb-container-preview" class="mt-4 hidden">
+    <label class="mb-1 block text-xs font-medium uppercase tracking-wide text-slate-500"
+      >Targets</label
+    >
+    <code
+      id="mcb-container-targets"
+      class="block break-all rounded-lg bg-slate-900 px-3 py-2 text-xs text-slate-100"
+    ></code>
+    <p class="mt-2 text-xs text-slate-400">
+      These <code class="text-slate-600">name=version</code> pairs define the contents of your
+      multi-package container. A new <code class="text-slate-600">.tsv</code> file will be created
+      in <code class="text-slate-600">combinations/</code> when you submit a PR.
+    </p>
+  </div>
+
+  <!-- Image name + copy button -->
+  <div id="mcb-image-name" class="mt-4 hidden">
+    <label class="mb-1 block text-xs font-medium uppercase tracking-wide text-slate-500">
+      Container image name
+    </label>
+    <div class="flex items-center gap-2">
+      <code
+        id="mcb-image-name-text"
+        class="min-w-0 flex-1 overflow-hidden text-ellipsis whitespace-nowrap rounded-lg bg-slate-900 px-3 py-2 text-xs text-slate-100"
+        title=""
+      ></code>
+      <button
+        id="mcb-image-copy"
+        type="button"
+        class="shrink-0 rounded-lg border border-slate-300 p-2 text-slate-600 hover:bg-slate-50"
+        title="Copy image name"
+        aria-label="Copy image name"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+      </button>
+    </div>
+    <div class="mt-2 space-y-1 text-xs text-slate-400">
+      <div class="flex items-center gap-2">
+        <span class="shrink-0">Docker:</span>
+        <code id="mcb-docker-url" class="min-w-0 flex-1 overflow-hidden text-ellipsis whitespace-nowrap text-slate-500"></code>
+        <button
+          id="mcb-docker-copy"
+          type="button"
+          class="mcb-url-copy shrink-0 rounded p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+          title="Copy docker pull command"
+          aria-label="Copy docker pull command"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </button>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="shrink-0">Singularity:</span>
+        <code id="mcb-singularity-url" class="min-w-0 flex-1 overflow-hidden text-ellipsis whitespace-nowrap text-slate-500"></code>
+        <button
+          id="mcb-singularity-copy"
+          type="button"
+          class="mcb-url-copy shrink-0 rounded p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-600"
+          title="Copy singularity command"
+          aria-label="Copy singularity command"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Warnings -->
+  <div id="mcb-warning-size" class="mt-4 hidden rounded-lg bg-amber-50 border border-amber-200 px-4 py-3 text-sm text-amber-800">
+    <strong>Containers should be as small as possible.</strong>
+    You have more than 4 packages — please consider reusing smaller containers and composing a
+    workflow out of them instead of bundling everything into one image.
+  </div>
+
+  <div id="mcb-warning-exists" class="mt-4 hidden rounded-lg bg-rose-50 border border-rose-200 px-4 py-3 text-sm text-rose-800">
+    <strong>This container already exists.</strong>
+    <span id="mcb-existing-targets"></span>
+    <div class="mt-2 space-y-1">
+      <span class="text-xs text-slate-500">Pull it from:</span>
+      <div class="flex items-center gap-2">
+        <a id="mcb-existing-quay" class="min-w-0 flex-1 overflow-hidden text-ellipsis whitespace-nowrap text-xs font-medium underline" target="_blank" rel="noopener" title=""></a>
+        <button
+          id="mcb-existing-quay-copy"
+          type="button"
+          class="mcb-url-copy shrink-0 rounded p-1 text-rose-400 hover:bg-rose-100 hover:text-rose-600"
+          title="Copy quay.io URL"
+          aria-label="Copy quay.io URL"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </button>
+      </div>
+      <div class="flex items-center gap-2">
+        <a id="mcb-existing-depot" class="min-w-0 flex-1 overflow-hidden text-ellipsis whitespace-nowrap text-xs font-medium underline" target="_blank" rel="noopener" title=""></a>
+        <button
+          id="mcb-existing-depot-copy"
+          type="button"
+          class="mcb-url-copy shrink-0 rounded p-1 text-rose-400 hover:bg-rose-100 hover:text-rose-600"
+          title="Copy depot URL"
+          aria-label="Copy depot URL"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { mulledV2ImageName } from "../scripts/mulled-hash";
+
+  type Item = { name: string; version: string };
+
+  const STORAGE_KEY = "mcb-container";
+  const listEl = document.getElementById("mcb-container-list") as HTMLUListElement;
+  const emptyEl = document.getElementById("mcb-container-empty")!;
+  const countEl = document.getElementById("mcb-container-count")!;
+  const clearBtn = document.getElementById("mcb-container-clear") as HTMLButtonElement;
+  const previewEl = document.getElementById("mcb-container-preview")!;
+  const targetsEl = document.getElementById("mcb-container-targets")!;
+  const imageNameEl = document.getElementById("mcb-image-name")!;
+  const imageNameText = document.getElementById("mcb-image-name-text") as HTMLElement;
+  const imageCopyBtn = document.getElementById("mcb-image-copy") as HTMLButtonElement;
+  const dockerUrl = document.getElementById("mcb-docker-url")!;
+  const singularityUrl = document.getElementById("mcb-singularity-url")!;
+  const warningSize = document.getElementById("mcb-warning-size")!;
+  const warningExists = document.getElementById("mcb-warning-exists")!;
+  const existingTargetsEl = document.getElementById("mcb-existing-targets")!;
+  const existingQuay = document.getElementById("mcb-existing-quay") as HTMLAnchorElement;
+  const existingDepot = document.getElementById("mcb-existing-depot") as HTMLAnchorElement;
+
+  const esc = (s: string) =>
+    s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+  // Load existing combinations for duplicate check
+  const base = `${import.meta.env.BASE_URL}/`.replace(/\/+$/, "/");
+  let existingCombinations: { targets: string; file: string; image_build: string }[] | null = null;
+
+  async function loadExisting() {
+    if (existingCombinations !== null) return;
+    try {
+      const res = await fetch(`${base}data/combinations.json`);
+      existingCombinations = await res.json();
+    } catch {
+      existingCombinations = [];
+    }
+  }
+
+  // Normalize a targets string for comparison: split, strip builds, sort by name
+  function normalizeTargets(targetsStr: string): string {
+    return targetsStr
+      .split(",")
+      .map((p) => {
+        const part = p.trim();
+        if (part.includes("=")) {
+          const [name, rest] = part.split("=", 2);
+          let version = rest;
+          if (version.includes("=")) version = version.split("=")[0];
+          else if (version.includes("--")) version = version.split("--")[0];
+          return `${name}=${version}`;
+        }
+        return part;
+      })
+      .sort()
+      .join(",");
+  }
+
+  function load(): Item[] {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? (JSON.parse(raw) as Item[]) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  let items: Item[] = load();
+  let currentImageName = "";
+  let containerExists = false;
+
+  function save() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    } catch {
+      /* ignore quota / disabled */
+    }
+  }
+
+  function targetsString(): string {
+    return items
+      .slice()
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map((i) => `${i.name}=${i.version}`)
+      .join(",");
+  }
+
+  async function updateImageAndWarnings() {
+    // Reset
+    warningSize.classList.add("hidden");
+    warningExists.classList.add("hidden");
+    containerExists = false;
+
+    const targets = targetsString();
+    if (!targets) {
+      imageNameEl.classList.add("hidden");
+      return;
+    }
+
+    // Size warning
+    if (items.length > 4) {
+      warningSize.classList.remove("hidden");
+    }
+
+    // Duplicate check
+    await loadExisting();
+    const normalized = normalizeTargets(targets);
+    const existing = existingCombinations!.find(
+      (c) => normalizeTargets(c.targets) === normalized,
+    );
+    if (existing) {
+      containerExists = true;
+      warningExists.classList.remove("hidden");
+      existingTargetsEl.textContent = ` Targets "${existing.targets}" already in ${existing.file}.`;
+      // Build hash from existing targets for links
+      const existImageName = await mulledV2ImageName(existing.targets, existing.image_build || "0");
+      const quayUrl = `https://quay.io/biocontainers/${existImageName}`;
+      const depotUrl = `https://depot.galaxyproject.org/singularity/${existImageName}`;
+      existingQuay.href = quayUrl;
+      existingQuay.textContent = quayUrl;
+      existingQuay.title = quayUrl;
+      existingDepot.href = depotUrl;
+      existingDepot.textContent = depotUrl;
+      existingDepot.title = depotUrl;
+    }
+
+    // Image name preview — CSS truncates the display, full name in title
+    // Default image_build is "0" (matches what the PR creates)
+    currentImageName = await mulledV2ImageName(targets, "0");
+    imageNameEl.classList.remove("hidden");
+    imageNameText.textContent = currentImageName;
+    imageNameText.title = currentImageName;
+    dockerUrl.textContent = `docker pull quay.io/biocontainers/${currentImageName}`;
+    singularityUrl.textContent = `wget https://depot.galaxyproject.org/singularity/${currentImageName}`;
+  }
+
+  function render() {
+    countEl.textContent = String(items.length);
+    clearBtn.disabled = items.length === 0;
+    if (items.length === 0) {
+      listEl.classList.add("hidden");
+      emptyEl.classList.remove("hidden");
+      previewEl.classList.add("hidden");
+      imageNameEl.classList.add("hidden");
+      warningSize.classList.add("hidden");
+      warningExists.classList.add("hidden");
+      listEl.innerHTML = "";
+      // Dispatch change with empty state
+      window.dispatchEvent(
+        new CustomEvent("mcb-container-change", {
+          detail: { targets: "", items: [], exists: false },
+        }),
+      );
+      return;
+    }
+    emptyEl.classList.add("hidden");
+    listEl.classList.remove("hidden");
+    previewEl.classList.remove("hidden");
+    listEl.innerHTML = items
+      .map(
+        (it, i) => `
+      <li class="flex items-center gap-2 rounded-lg border border-slate-200 px-3 py-2" data-i="${i}">
+        <span class="text-slate-400">≡</span>
+        <code class="flex-1 text-sm text-slate-800"><span class="font-medium">${esc(it.name)}</span>=<span class="text-slate-500">${esc(it.version)}</span></code>
+        <button type="button" class="mcb-container-remove rounded px-2 py-0.5 text-slate-400 hover:bg-rose-50 hover:text-rose-600" data-i="${i}" title="Remove">✕</button>
+      </li>`,
+      )
+      .join("");
+    targetsEl.textContent = targetsString();
+    // Update image name + warnings asynchronously
+    updateImageAndWarnings().then(() => {
+      window.dispatchEvent(
+        new CustomEvent("mcb-container-change", {
+          detail: { targets: targetsString(), items: items.slice(), exists: containerExists },
+        }),
+      );
+    });
+  }
+
+  function add(name: string, version: string) {
+    if (!name || !version) return;
+    const existing = items.find((i) => i.name === name);
+    if (existing) {
+      if (existing.version === version) return;
+      existing.version = version;
+    } else {
+      items.push({ name, version });
+    }
+    save();
+    render();
+  }
+
+  function remove(i: number) {
+    items.splice(i, 1);
+    save();
+    render();
+  }
+
+  window.addEventListener("mcb-container-add", (ev) => {
+    const detail = (ev as CustomEvent).detail as { name: string; version: string };
+    add(detail.name, detail.version);
+  });
+
+  listEl.addEventListener("click", (ev) => {
+    const btn = (ev.target as HTMLElement).closest(".mcb-container-remove") as HTMLButtonElement | null;
+    if (!btn) return;
+    remove(parseInt(btn.dataset.i || "0", 10));
+  });
+
+  clearBtn.addEventListener("click", () => {
+    if (!confirm("Clear all packages from the container?")) return;
+    items = [];
+    save();
+    render();
+  });
+
+  const COPY_ICON = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+  const CHECK_ICON = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+
+  function flashCopied(btn: HTMLButtonElement) {
+    const iconSize = btn.querySelector("svg")?.getAttribute("width") || "16";
+    const checkSvg = CHECK_ICON.replace('width="16"', `width="${iconSize}"`).replace('height="16"', `height="${iconSize}"`);
+    const copySvg = COPY_ICON.replace('width="16"', `width="${iconSize}"`).replace('height="16"', `height="${iconSize}"`);
+    btn.innerHTML = checkSvg;
+    btn.classList.add("text-emerald-600");
+    setTimeout(() => {
+      btn.innerHTML = copySvg;
+      btn.classList.remove("text-emerald-600");
+    }, 1500);
+  }
+
+  async function copyText(text: string, btn: HTMLButtonElement) {
+    if (!text) return;
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    }
+    flashCopied(btn);
+  }
+
+  imageCopyBtn.addEventListener("click", () => copyText(currentImageName, imageCopyBtn));
+
+  // Docker / Singularity URL copy buttons
+  const dockerCopyBtn = document.getElementById("mcb-docker-copy") as HTMLButtonElement;
+  const singularityCopyBtn = document.getElementById("mcb-singularity-copy") as HTMLButtonElement;
+  dockerCopyBtn.addEventListener("click", () => copyText(dockerUrl.textContent || "", dockerCopyBtn));
+  singularityCopyBtn.addEventListener("click", () => copyText(singularityUrl.textContent || "", singularityCopyBtn));
+
+  // Existing-image URL copy buttons (in the duplicate warning)
+  const existingQuayCopyBtn = document.getElementById("mcb-existing-quay-copy") as HTMLButtonElement;
+  const existingDepotCopyBtn = document.getElementById("mcb-existing-depot-copy") as HTMLButtonElement;
+  existingQuayCopyBtn.addEventListener("click", () => copyText(existingQuay.href, existingQuayCopyBtn));
+  existingDepotCopyBtn.addEventListener("click", () => copyText(existingDepot.href, existingDepotCopyBtn));
+
+  render();
+</script>
