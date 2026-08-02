@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+ucsc-bedgraphtobigwig=482,pytrf=1.5.0,python=3.12.3,pyfastx=2.3.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0

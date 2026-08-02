@@ -1,0 +1,40 @@
+name: Build and deploy website
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "website/**"
+      - "Justfile"
+      - ".github/workflows/website.yml"
+  schedule:
+    # Rebuild daily at 03:00 UTC to pick up latest conda packages
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: extractions/setup-just@v3
+
+      - name: Install dependencies
+        run: just install
+
+      - name: Build website (fetches latest conda repodata)
+        run: just build
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: website/dist
+          publish_branch: gh-pages
+          force_orphan: true

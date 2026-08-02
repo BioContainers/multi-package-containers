@@ -1,0 +1,174 @@
+---
+---
+
+<section class="rounded-xl border border-slate-200 bg-white p-5">
+  <div class="mb-4 flex flex-wrap items-center gap-3">
+    <h2 class="text-lg font-semibold">Search packages</h2>
+    <label class="ml-auto flex items-center gap-2 text-sm">
+      <span class="text-slate-500">Channel</span>
+      <select
+        id="mcb-channel"
+        class="rounded-lg border border-slate-300 px-2 py-1 text-sm focus:border-slate-400 focus:outline-none"
+      >
+        <option value="both">both</option>
+        <option value="bioconda">bioconda</option>
+        <option value="conda-forge">conda-forge</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="relative">
+    <input
+      id="mcb-search"
+      type="search"
+      placeholder="Search packages by name…  (e.g. samtools, bwa mem, python)"
+      autocomplete="off"
+      class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-slate-400 focus:outline-none"
+    />
+    <div id="mcb-search-hint" class="mt-1 text-xs text-slate-400"></div>
+  </div>
+
+  <div
+    id="mcb-results"
+    class="mt-3 max-h-96 overflow-y-auto divide-y divide-slate-100 rounded-lg border border-slate-100"
+  ></div>
+</section>
+
+<script>
+  type Channel = "bioconda" | "conda-forge";
+  type PackageEntry = { name: string; versions: string[] };
+
+  const searchEl = document.getElementById("mcb-search") as HTMLInputElement;
+  const channelEl = document.getElementById("mcb-channel") as HTMLSelectElement;
+  const resultsEl = document.getElementById("mcb-results")!;
+  const hintEl = document.getElementById("mcb-search-hint")!;
+
+  const base = `${import.meta.env.BASE_URL}/`.replace(/\/+$/, "/");
+  const MAX_RESULTS = 100;
+
+  const esc = (s: string) =>
+    s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+  let data: Record<Channel, PackageEntry[]> | null = null;
+  let usedNames: Set<string> = new Set();
+  let ready = false;
+
+  async function load() {
+    if (ready) return;
+    ready = true;
+    try {
+      const [pkgsRes, usedRes] = await Promise.all([
+        fetch(`${base}data/packages.json`),
+        fetch(`${base}data/used-names.json`),
+      ]);
+      data = (await pkgsRes.json()) as Record<Channel, PackageEntry[]>;
+      usedNames = new Set(await usedRes.json());
+    } catch (err) {
+      hintEl.textContent = "Failed to load package index. Run `just build` first.";
+      console.error(err);
+      return;
+    }
+    run();
+  }
+
+  function activeList(): PackageEntry[] {
+    if (!data) return [];
+    const ch = channelEl.value;
+    if (ch === "both") return [...data["bioconda"], ...data["conda-forge"]];
+    return data[ch as Channel];
+  }
+
+  const cmpVer = (a: string, b: string) => {
+    const ax = a.split(/[._\-+]/);
+    const bx = b.split(/[._\-+]/);
+    for (let i = 0; i < Math.max(ax.length, bx.length); i++) {
+      const ai = ax[i] ?? "";
+      const bi = bx[i] ?? "";
+      const an = /^\d+$/.test(ai) ? parseInt(ai, 10) : NaN;
+      const bn = /^\d+$/.test(bi) ? parseInt(bi, 10) : NaN;
+      if (!isNaN(an) && !isNaN(bn)) {
+        if (an !== bn) return bn - an;
+      } else {
+        if (ai < bi) return 1;
+        if (ai > bi) return -1;
+      }
+    }
+    return 0;
+  };
+
+  let debounce: number | undefined;
+  let renderToken = 0;
+
+  function run() {
+    if (!data) {
+      load();
+      return;
+    }
+    const q = searchEl.value.trim().toLowerCase();
+    if (!q) {
+      resultsEl.innerHTML = "";
+      hintEl.textContent = "";
+      return;
+    }
+    // Space-separated multi-term search: all terms must match (substring).
+    // e.g. "samtools bwa" matches "bwa" and "samtools" but not "bowtie2".
+    const terms = q.split(/\s+/);
+    const list = activeList();
+    const matches: PackageEntry[] = [];
+    for (const p of list) {
+      const name = p.name.toLowerCase();
+      if (terms.every((t) => name.includes(t))) matches.push(p);
+      if (matches.length >= MAX_RESULTS) break;
+    }
+    hintEl.textContent = `${matches.length}${matches.length >= MAX_RESULTS ? "+" : ""} match${matches.length === 1 ? "" : "es"}`;
+
+    const token = ++renderToken;
+    const rows = matches
+      .map((p) => {
+        const versions = p.versions.slice().sort(cmpVer);
+        const opts = versions
+          .map((v, i) => `<option value="${esc(v)}"${i === 0 ? " selected" : ""}>${esc(v)}</option>`)
+          .join("");
+        const used = usedNames.has(p.name);
+        return `
+        <div class="flex items-center gap-3 px-3 py-2" data-pkg-name="${esc(p.name)}">
+          <div class="min-w-0 flex-1">
+            <div class="flex items-center gap-2">
+              <code class="truncate text-sm font-medium text-slate-800">${esc(p.name)}</code>
+              ${used ? '<span class="rounded bg-emerald-100 px-1.5 py-0.5 text-[10px] font-medium text-emerald-800">in use</span>' : ""}
+              <span class="text-[10px] text-slate-400">${versions.length} version${versions.length === 1 ? "" : "s"}</span>
+            </div>
+          </div>
+          <select class="mcb-ver-select rounded border border-slate-300 px-2 py-1 text-xs focus:border-slate-400 focus:outline-none">${opts}</select>
+          <button type="button" class="mcb-add-btn shrink-0 rounded-lg bg-slate-900 px-3 py-1 text-xs font-medium text-white hover:bg-slate-700">Add</button>
+        </div>`;
+      })
+      .join("");
+    if (token !== renderToken) return;
+    resultsEl.innerHTML = rows;
+  }
+
+  searchEl.addEventListener("input", () => {
+    window.clearTimeout(debounce);
+    debounce = window.setTimeout(run, 120);
+  });
+  searchEl.addEventListener("focus", load);
+  channelEl.addEventListener("change", run);
+
+  resultsEl.addEventListener("click", (ev) => {
+    const btn = (ev.target as HTMLElement).closest(".mcb-add-btn") as HTMLButtonElement | null;
+    if (!btn) return;
+    const row = btn.closest('[data-pkg-name]') as HTMLElement;
+    const name = row.dataset.pkgName!;
+    const select = row.querySelector(".mcb-ver-select") as HTMLSelectElement;
+    const version = select.value;
+    window.dispatchEvent(new CustomEvent("mcb-container-add", { detail: { name, version } }));
+  });
+
+  searchEl.addEventListener("keydown", (ev) => {
+    if (ev.key !== "Enter") return;
+    ev.preventDefault();
+    const first = resultsEl.querySelector(".mcb-add-btn") as HTMLButtonElement | null;
+    first?.click();
+  });
+</script>

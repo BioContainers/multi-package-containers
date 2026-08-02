@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+tesseract=5.5.3,poppler=26.07.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

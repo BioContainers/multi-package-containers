@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bioconductor-limma=3.62.1,numpy=2.3.5,bioconductor-batchelor=1.22.0,r-harmony=1.2.4,r-seurat=5.4.0,bioconductor-deseq2=1.46.0,r-svglite=2.2.2,leidenalg=0.11.0,pandas=2.3.3,bioconductor-mast=1.32.0,bioconductor-glmgampoi=1.18.0,umap-learn=0.5.8,r-metap=1.1,fit-sne=1.2.1,r-arrow=23.0.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0

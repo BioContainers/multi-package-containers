@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+telescope=1.0.4.1,samtools=1.9	quay.io/bioconda/base-glibc-debian-bash:latest	0

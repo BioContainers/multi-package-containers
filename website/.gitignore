@@ -1,0 +1,14 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# generated data
+public/data/
+
+# Playwright artifacts
+test-results/
+playwright-report/
+playwright/.cache/

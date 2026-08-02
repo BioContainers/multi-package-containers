@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+bedtools=2.17.0,openssl=1.1.1w,tectonic=0.12.0,libcurl=7.87.0,r-base=4.2.2,perl-number-format=1.76,samtools=0.1.18	quay.io/bioconda/base-glibc-busybox-bash:latest	0
