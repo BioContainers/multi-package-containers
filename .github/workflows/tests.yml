@@ -6,10 +6,12 @@ on:
     paths:
       - "website/**"
       - "Justfile"
+      - ".github/workflows/tests.yml"
   pull_request:
     paths:
       - "website/**"
       - "Justfile"
+      - ".github/workflows/tests.yml"
 
 jobs:
   test:
@@ -18,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       - uses: extractions/setup-just@v3
       - run: just install
       - run: cd website && npx playwright install --with-deps chromium
