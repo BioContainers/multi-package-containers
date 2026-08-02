@@ -30,8 +30,10 @@ jobs:
         # Capture every image tagged into the build namespace (these are the ones
         # freshly built by mulled; already-published images are skipped thanks to
         # --check-published, so this is typically just the new/changed containers).
-        docker images --filter reference="${MULLED_NAMESPACE}/*" \
-          --format '{{.Repository}}:{{.Tag}}' | sort -u > images/built-images.txt
+        # mulled tags images as "quay.io/<namespace>/<image>:<tag>", so we grep
+        # the full repository name for the namespace segment.
+        docker images --format '{{.Repository}}:{{.Tag}}' \
+          | grep "/${MULLED_NAMESPACE}/" | sort -u > images/built-images.txt
         echo "::notice::Found $(wc -l < images/built-images.txt) image(s) to export"
         while IFS= read -r img; do
           [ -z "$img" ] && continue
