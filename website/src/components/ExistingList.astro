@@ -113,7 +113,7 @@
         const details = detailsTitle(e);
         return `
         <tr title="${esc(details)}">
-          <td class="py-2 pr-4"><code class="text-slate-800">${esc(e.targets)}</code></td>
+          <td class="max-w-xs truncate py-2 pr-4" title="${esc(e.targets)}"><code class="text-slate-800">${esc(e.targets)}</code></td>
           <td class="py-2 pr-4"><code class="text-xs text-slate-500" data-img-targets="${esc(e.targets)}" data-img-build="${esc(e.image_build || "0")}" data-filled="false">…</code></td>
           <td class="py-2"><a href="${repoFileUrl(e.file)}" target="_blank" rel="noopener" class="text-slate-500 underline hover:text-slate-800">${esc(e.file)}</a></td>
         </tr>`;
