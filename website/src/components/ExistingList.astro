@@ -135,6 +135,24 @@
         const t = e.targets.toLowerCase();
         return terms.every((term) => t.includes(term));
       });
+      // Sort: for single-term queries, rows where a package name exactly
+      // matches come first, then prefix matches, then substring matches.
+      // Within each tier, alphabetical by targets.
+      const singleTerm = terms.length === 1 ? terms[0] : null;
+      if (singleTerm) {
+        const pkgNames = (e: string) =>
+          e.split(",").map((p) => p.split("=")[0].trim().toLowerCase());
+        filtered.sort((a, b) => {
+          const an = pkgNames(a.targets);
+          const bn = pkgNames(b.targets);
+          const aTier = Math.min(...an.map((n) => (n === singleTerm ? 0 : n.startsWith(singleTerm) ? 1 : 2)));
+          const bTier = Math.min(...bn.map((n) => (n === singleTerm ? 0 : n.startsWith(singleTerm) ? 1 : 2)));
+          if (aTier !== bTier) return aTier - bTier;
+          return a.targets.localeCompare(b.targets);
+        });
+      } else {
+        filtered.sort((a, b) => a.targets.localeCompare(b.targets));
+      }
     }
     countEl.textContent = String(filtered.length);
     shown = Math.min(PAGE_SIZE, filtered.length);
