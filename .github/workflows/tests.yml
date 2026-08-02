@@ -21,4 +21,5 @@ jobs:
           node-version: 20
       - uses: extractions/setup-just@v3
       - run: just install
+      - run: cd website && npx playwright install --with-deps chromium
       - run: just test
