@@ -118,12 +118,25 @@
     for (const p of list) {
       const name = p.name.toLowerCase();
       if (terms.every((t) => name.includes(t))) matches.push(p);
-      if (matches.length >= MAX_RESULTS) break;
     }
+    // Sort: exact matches first, then prefix matches, then substring matches.
+    // Within each tier, alphabetical by name.
+    const singleTerm = terms.length === 1 ? terms[0] : null;
+    matches.sort((a, b) => {
+      if (singleTerm) {
+        const an = a.name.toLowerCase();
+        const bn = b.name.toLowerCase();
+        const aExact = an === singleTerm ? 0 : an.startsWith(singleTerm) ? 1 : 2;
+        const bExact = bn === singleTerm ? 0 : bn.startsWith(singleTerm) ? 1 : 2;
+        if (aExact !== bExact) return aExact - bExact;
+      }
+      return a.name.localeCompare(b.name);
+    });
+    const capped = matches.slice(0, MAX_RESULTS);
     hintEl.textContent = `${matches.length}${matches.length >= MAX_RESULTS ? "+" : ""} match${matches.length === 1 ? "" : "es"}`;
 
     const token = ++renderToken;
-    const rows = matches
+    const rows = capped
       .map((p) => {
         const versions = p.versions.slice().sort(cmpVer);
         const opts = versions

@@ -42,7 +42,11 @@ jobs:
         # Include any Singularity images produced by the --singularity build
         if [ -d singularity_import ] && [ "$(ls -A singularity_import 2>/dev/null)" ]; then
           mkdir -p images/singularity
-          cp singularity_import/* images/singularity/ 2>/dev/null || true
+          for f in singularity_import/*; do
+            [ -e "$f" ] || continue
+            safe=$(basename "$f" | tr ':/' '__')
+            cp "$f" "images/singularity/${safe}"
+          done
         fi
 
     - name: Upload container images (pull requests only)
