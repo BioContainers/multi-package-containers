@@ -67,7 +67,10 @@ jobs:
         script: |
           const fs = require('fs');
           const prNumber = context.payload.pull_request.number;
-          const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+          const runId = context.runId;
+          const owner = context.repo.owner;
+          const repo = context.repo.repo;
+          const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${runId}`;
           const artifactName = `container-images-pr-${prNumber}`;
           let built = [];
           try {
@@ -77,12 +80,37 @@ jobs:
             // build failed before artifacts were saved
           }
 
+          // Fetch the artifact ID so we can link directly to it.
+          let artifactUrl = runUrl;
+          try {
+            const { data: artifacts } = await github.rest.actions.listWorkflowRunArtifacts({
+              owner, repo, run_id: runId,
+            });
+            const art = artifacts.artifacts.find(a => a.name === artifactName);
+            if (art) {
+              artifactUrl = `https://github.com/${owner}/${repo}/actions/runs/${runId}/artifacts/${art.id}`;
+            }
+          } catch (e) {}
+
           const marker = '<!-- container-artifacts-comment -->';
           const buildOk = built.length > 0;
 
           let body;
           if (buildOk) {
             const list = built.map(i => `- \`${i}\``).join('\n');
+            // Build a per-image code block with load + run commands.
+            const imageBlocks = built.map(img => {
+              const safe = img.replace(/[:/]/g, '_');
+              return [
+                '```bash',
+                `# Download, load, and run ${img}`,
+                `curl -L -o ${safe}.zip "${artifactUrl}"`,
+                `unzip ${safe}.zip && docker load -i ${safe}.tar`,
+                `docker run --rm ${img}`,
+                '```',
+              ].join('\n');
+            }).join('\n\n');
+
             body = [
               '## 🐳 Container images built on this PR',
               '',
@@ -90,23 +118,14 @@ jobs:
               '',
               list,
               '',
-              '### How to use a container from the artifacts',
+              '### How to use a container',
               '',
-              `1. Download the \`${artifactName}\` artifact from the [workflow run](${runUrl}).`,
-              '2. Unzip the downloaded archive.',
-              '3. Load the image into Docker:',
+              `1. Download the \`${artifactName}\` artifact directly: [${artifactName}.zip](${artifactUrl}).`,
+              '2. Unzip and load the image, then run it:',
               '',
-              '```bash',
-              'unzip container-images-pr-' + prNumber + '.zip',
-              'docker load -i <image-name>.tar',
-              '```',
-              '4. Run the container:',
+              imageBlocks,
               '',
-              '```bash',
-              'docker run --rm ' + built[0].split('/')[0] + '/<name>:<tag>',
-              '```',
-              '',
-              '> The artifact is retained for 14 days. Once the PR is merged to `master`, the images are pushed to quay.io/biocontainers.',
+              `> The artifact is retained for 7 days. Once the PR is merged to \`master\`, the images are pushed to quay.io/biocontainers.`,
               '',
               marker
             ].join('\n');
