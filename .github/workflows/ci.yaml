@@ -105,8 +105,9 @@ jobs:
                 '```bash',
                 `# Download, load, and run ${img}`,
                 `curl -L -o ${safe}.zip "${artifactUrl}"`,
-                `unzip ${safe}.zip && docker load -i ${safe}.tar`,
-                `docker run --rm ${img}`,
+                `unzip ${safe}.zip`,
+                `docker load -i ${safe}.tar`,
+                `docker run -i -t --rm ${img}`,
                 '```',
               ].join('\n');
             }).join('\n\n');
