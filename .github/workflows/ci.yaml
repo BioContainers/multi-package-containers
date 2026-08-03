@@ -98,14 +98,15 @@ jobs:
           let body;
           if (buildOk) {
             const list = built.map(i => `- \`${i}\``).join('\n');
-            // Build a per-image code block with load + run commands.
-            const imageBlocks = built.map(img => {
-              const safe = img.replace(/[:/]/g, '_');
+            // Per-image load + run commands. The artifact is a single zip
+            // containing all built image tarballs, so download once.
+            const safeNames = built.map(img => img.replace(/[:/]/g, '_'));
+            const imageBlocks = built.map((img, i) => {
+              const safe = safeNames[i];
               return [
                 '```bash',
-                `# Download, load, and run ${img}`,
-                `curl -L -o ${safe}.zip "${artifactUrl}"`,
-                `unzip ${safe}.zip`,
+                `# Load and run ${img}`,
+                `unzip ${artifactName}.zip`,
                 `docker load -i ${safe}.tar`,
                 `docker run -i -t --rm ${img}`,
                 '```',
@@ -121,7 +122,8 @@ jobs:
               '',
               '### How to use a container',
               '',
-              `1. Download the \`${artifactName}\` artifact directly: [${artifactName}.zip](${artifactUrl}).`,
+              `1. Download the \`${artifactName}\` artifact: [${artifactName}.zip](${artifactUrl})`,
+              `   (or via CLI: \`gh run download ${runId} --repo ${owner}/${repo} -n ${artifactName}\`)`,
               '2. Unzip and load the image, then run it:',
               '',
               imageBlocks,
