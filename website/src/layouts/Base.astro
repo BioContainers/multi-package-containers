@@ -42,17 +42,17 @@ const base = `${import.meta.env.BASE_URL}/`.replace(/\/+$/, "/");
 
     <footer class="mt-16 border-t border-slate-200 bg-white">
       <div class="mx-auto max-w-6xl px-6 py-6 text-sm text-slate-500">
-        Built containers are published to
+        Built containers are published to{" "}
         <a
           href="https://quay.io/organization/biocontainers"
           class="text-slate-700 underline">quay.io/biocontainers</a
         >
-        (Docker) and
+        {" "}(Docker) and{" "}
         <a
           href="https://depot.galaxyproject.org/singularity/"
           class="text-slate-700 underline">depot.galaxyproject.org/singularity</a
         >
-        (Singularity, mirrored via CVMFS). Powered by
+        {" "}(Singularity, mirrored via CVMFS). Powered by{" "}
         <a
           href="https://github.com/galaxyproject/galaxy/tree/dev/lib/galaxy/tool_util/deps/mulled"
           class="text-slate-700 underline">mulled</a>.
