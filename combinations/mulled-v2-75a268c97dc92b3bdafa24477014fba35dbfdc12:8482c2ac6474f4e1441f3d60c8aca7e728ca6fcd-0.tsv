@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+mummer=3.23,gnuplot=5.2.8	quay.io/bioconda/base-glibc-busybox-bash:latest	0
