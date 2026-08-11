@@ -1,0 +1,32 @@
+---
+import Base from "../layouts/Base.astro";
+import ExistingList from "../components/ExistingList.astro";
+import Search from "../components/Search.astro";
+import Container from "../components/Container.astro";
+import BuildPanel from "../components/BuildPanel.astro";
+---
+
+<Base>
+  <section class="mb-8">
+    <h1 class="text-3xl font-bold tracking-tight">Build a multi-package container</h1>
+    <p class="mt-2 max-w-2xl text-slate-600">
+      Compose a Docker and Singularity image from{" "}
+      <a href="https://bioconda.github.io/" class="underline">bioconda</a> and{" "}
+      <a href="https://conda-forge.org/" class="underline">conda-forge</a> packages. Search for the
+      tools you need, add them to your container, and submit a pull request — the existing CI takes
+      care of building and publishing to{" "}
+      <a href="https://quay.io/organization/biocontainers" class="underline">quay.io/biocontainers</a>{" "}
+      and{" "}
+      <a href="https://depot.galaxyproject.org/singularity/" class="underline">depot.galaxyproject.org</a>.
+    </p>
+  </section>
+
+  <div class="grid gap-6 lg:grid-cols-3">
+    <div class="lg:col-span-2"><Search /></div>
+    <div class="space-y-6"><Container /><BuildPanel /></div>
+  </div>
+
+  <section class="mt-6">
+    <ExistingList />
+  </section>
+</Base>

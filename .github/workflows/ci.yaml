@@ -21,6 +21,152 @@ jobs:
     - name: Build images
       run: |
         uv run --with "$MULLED_TOOL_UTIL_SOURCE" python -m galaxy.tool_util.deps.mulled.mulled_build_files --check-published --singularity --namespace $MULLED_NAMESPACE build-and-test ./combinations --verbose
+
+    - name: Save built images as artifacts (pull requests only)
+      if: github.event_name == 'pull_request' && github.event.pull_request.user.login != 'dockerhub-toolshed'
+      run: |
+        set -e
+        mkdir -p images
+        # Capture every image tagged into the build namespace (these are the ones
+        # freshly built by mulled; already-published images are skipped thanks to
+        # --check-published, so this is typically just the new/changed containers).
+        # mulled tags images as "quay.io/<namespace>/<image>:<tag>", so we grep
+        # the full repository name for the namespace segment.
+        docker images --format '{{.Repository}}:{{.Tag}}' \
+          | grep "/${MULLED_NAMESPACE}/" | sort -u > images/built-images.txt
+        echo "::notice::Found $(wc -l < images/built-images.txt) image(s) to export"
+        while IFS= read -r img; do
+          [ -z "$img" ] && continue
+          safe=$(echo "$img" | tr '/:' '__')
+          echo "Saving $img -> images/${safe}.tar"
+          docker save "$img" -o "images/${safe}.tar"
+        done < images/built-images.txt
+        # Include any Singularity images produced by the --singularity build
+        if [ -d singularity_import ] && [ "$(ls -A singularity_import 2>/dev/null)" ]; then
+          mkdir -p images/singularity
+          for f in singularity_import/*; do
+            [ -e "$f" ] || continue
+            safe=$(basename "$f" | tr ':/' '__')
+            cp "$f" "images/singularity/${safe}"
+          done
+        fi
+
+    - name: Upload container images (pull requests only)
+      if: github.event_name == 'pull_request' && github.event.pull_request.user.login != 'dockerhub-toolshed'
+      uses: actions/upload-artifact@v4
+      with:
+        name: container-images-pr-${{ github.event.pull_request.number }}
+        path: images/
+        retention-days: 7
+        if-no-files-found: warn
+
+    - name: Comment PR with container usage instructions
+      if: always() && github.event_name == 'pull_request' && github.event.pull_request.user.login != 'dockerhub-toolshed'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const prNumber = context.payload.pull_request.number;
+          const runId = context.runId;
+          const owner = context.repo.owner;
+          const repo = context.repo.repo;
+          const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${runId}`;
+          const artifactName = `container-images-pr-${prNumber}`;
+          let built = [];
+          try {
+            built = fs.readFileSync('images/built-images.txt', 'utf8')
+              .split('\n').map(s => s.trim()).filter(Boolean);
+          } catch (e) {
+            // build failed before artifacts were saved
+          }
+
+          // Fetch the artifact ID so we can link directly to it.
+          let artifactUrl = runUrl;
+          try {
+            const { data: artifacts } = await github.rest.actions.listWorkflowRunArtifacts({
+              owner, repo, run_id: runId,
+            });
+            const art = artifacts.artifacts.find(a => a.name === artifactName);
+            if (art) {
+              artifactUrl = `https://github.com/${owner}/${repo}/actions/runs/${runId}/artifacts/${art.id}`;
+            }
+          } catch (e) {}
+
+          const marker = '<!-- container-artifacts-comment -->';
+          const buildOk = built.length > 0;
+
+          let body;
+          if (buildOk) {
+            const list = built.map(i => `- \`${i}\``).join('\n');
+            // Per-image load + run commands. The artifact is a single zip
+            // containing all built image tarballs, so download once.
+            const safeNames = built.map(img => img.replace(/[:/]/g, '_'));
+            const imageBlocks = built.map((img, i) => {
+              const safe = safeNames[i];
+              return [
+                '```bash',
+                `# Load and run ${img}`,
+                `unzip ${artifactName}.zip`,
+                `docker load -i ${safe}.tar`,
+                `docker run -i -t --rm ${img}`,
+                '```',
+              ].join('\n');
+            }).join('\n\n');
+
+            body = [
+              '## 🐳 Container images built on this PR',
+              '',
+              'The following container image(s) were built successfully for testing:',
+              '',
+              list,
+              '',
+              '### How to use a container',
+              '',
+              `1. Download the \`${artifactName}\` artifact: [${artifactName}.zip](${artifactUrl})`,
+              `   (or via CLI: \`gh run download ${runId} --repo ${owner}/${repo} -n ${artifactName}\`)`,
+              '2. Unzip and load the image, then run it:',
+              '',
+              imageBlocks,
+              '',
+              `> The artifact is retained for 7 days. Once the PR is merged to \`master\`, the images are pushed to quay.io/biocontainers.`,
+              '',
+              marker
+            ].join('\n');
+          } else {
+            body = [
+              '## 🐳 Container images built on this PR',
+              '',
+              'No new container images were built for this PR (either the build failed, or all images were already published and skipped by `--check-published`).',
+              '',
+              `See the [workflow run](${runUrl}) for details.`,
+              '',
+              marker
+            ].join('\n');
+          }
+
+          // Find an existing comment with our marker to update, else create a new one.
+          const { data: comments } = await github.rest.issues.listComments({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: prNumber,
+          });
+          const existing = comments.find(c => c.body && c.body.includes(marker));
+          if (existing) {
+            await github.rest.issues.updateComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: existing.id,
+              body,
+            });
+          } else {
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body,
+            });
+          }
+
     - name: Upload images (if pushed to master branch)
       if: github.ref == 'refs/heads/master' && github.repository_owner == 'BioContainers'
       env:

@@ -1,0 +1,27 @@
+name: Tests
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "website/**"
+      - "Justfile"
+      - ".github/workflows/tests.yml"
+  pull_request:
+    paths:
+      - "website/**"
+      - "Justfile"
+      - ".github/workflows/tests.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: extractions/setup-just@v3
+      - run: just install
+      - run: cd website && npx playwright install --with-deps chromium
+      - run: just test

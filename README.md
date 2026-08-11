@@ -1,4 +1,5 @@
 [![Build image](https://github.com/BioContainers/multi-package-containers/workflows/Build%20image/badge.svg)](https://github.com/BioContainers/multi-package-containers/actions?query=workflow%3A%22Build+image%22)
+[![Tests](https://github.com/BioContainers/multi-package-containers/workflows/Tests/badge.svg)](https://github.com/BioContainers/multi-package-containers/actions?query=workflow%3ATests)
 
 ## Building multiple package Containers
 
@@ -8,6 +9,9 @@ Creating containers is easy! All you need to do is add a combination of packages
 To assemble the required string of package combinations you can use the little
 [helper service](https://biocontainers.pro/#/multipackage) 
 which we provide for you. This service will also tell you the name of the container that will be created.
+Alternatively, you can use the **[Mulled Container Builder](https://biocontainers.github.io/multi-package-containers/)** —
+an interactive website hosted in this repository that lets you browse bioconda and conda-forge packages,
+assemble a basket, and open a pull request with a single click.
 
 Currently, this will create you Docker and rkt containers hosted at https://quay.io/organization/biocontainers and 
 Singularity images hosted at https://depot.galaxyproject.org/singularity/ (Hosting sponsors and mirrors welcome!).
@@ -102,6 +106,11 @@ The CVMFS distribution model parallels the accessibility of [quay.io/biocontaine
 
 ![grafik](https://github.com/user-attachments/assets/d784c33f-aa92-47fa-a8fb-564f0cf69035)
 
+---
 
+## Mulled Container Builder Website
 
-
+This repository includes a static website (`website/`) that lets users browse
+bioconda and conda-forge packages, assemble a basket of `name=version` pairs,
+and open a pull request against `combinations/hash.tsv` with a single click.
+See [`website/README.md`](website/README.md) for documentation.

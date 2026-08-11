@@ -1,0 +1,111 @@
+---
+---
+
+<section class="rounded-xl border border-slate-200 bg-white p-5">
+  <h2 class="mb-3 text-lg font-semibold">Submit pull request</h2>
+
+  <p class="mb-4 text-sm text-slate-500">
+    Clicking the button opens GitHub's editor with a new combination file pre-filled.
+    Review the content and click <em>Propose changes</em> — GitHub creates the branch and
+    pull request for you. No token needed, just make sure you're signed in to GitHub.
+  </p>
+
+  <!-- Target repo -->
+  <div class="mb-4 grid gap-3 sm:grid-cols-2">
+    <div>
+      <label for="mcb-owner" class="mb-1 block text-xs font-medium uppercase tracking-wide text-slate-500">
+        Owner
+      </label>
+      <input
+        id="mcb-owner"
+        type="text"
+        value="BioContainers"
+        class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-slate-400 focus:outline-none"
+      />
+    </div>
+    <div>
+      <label for="mcb-repo" class="mb-1 block text-xs font-medium uppercase tracking-wide text-slate-500">
+        Repository
+      </label>
+      <input
+        id="mcb-repo"
+        type="text"
+        value="multi-package-containers"
+        class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-slate-400 focus:outline-none"
+      />
+    </div>
+  </div>
+
+  <!-- Action -->
+  <div class="space-y-3 border-t border-slate-100 pt-4">
+    <a
+      id="mcb-build-link"
+      href="#"
+      target="_blank"
+      rel="noopener"
+      class="inline-block rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50 pointer-events-none"
+    >
+      Build container
+    </a>
+    <p id="mcb-build-hint" class="text-sm text-slate-400">
+      Add packages to your container first.
+    </p>
+  </div>
+</section>
+
+<script>
+  const ownerEl = document.getElementById("mcb-owner") as HTMLInputElement;
+  const repoEl = document.getElementById("mcb-repo") as HTMLInputElement;
+  const buildLink = document.getElementById("mcb-build-link") as HTMLAnchorElement;
+  const buildHint = document.getElementById("mcb-build-hint")!;
+
+  let containerTargets = "";
+  let containerExists = false;
+
+  function updateLink() {
+    if (!containerTargets) {
+      buildLink.classList.add("pointer-events-none", "opacity-50");
+      buildHint.textContent = "Add packages to your container first.";
+      buildHint.classList.remove("text-slate-600", "text-rose-600");
+      buildHint.classList.add("text-slate-400");
+      return;
+    }
+
+    if (containerExists) {
+      buildLink.classList.add("pointer-events-none", "opacity-50");
+      buildHint.textContent = "This container already exists — no PR needed.";
+      buildHint.classList.remove("text-slate-400", "text-slate-600");
+      buildHint.classList.add("text-rose-600");
+      return;
+    }
+
+    const owner = ownerEl.value.trim() || "BioContainers";
+    const repo = repoEl.value.trim() || "multi-package-containers";
+
+    const slug = containerTargets
+      .replace(/[^a-zA-Z0-9]+/g, "-")
+      .replace(/^-|-$/g, "")
+      .slice(0, 60);
+    const filename = `combinations/${slug}.tsv`;
+    const value = `#targets\tbase_image\timage_build\n${containerTargets}\t\t0\n`;
+    const url = `https://github.com/${owner}/${repo}/new/master?filename=${encodeURIComponent(filename)}&value=${encodeURIComponent(value)}`;
+
+    buildLink.href = url;
+    buildLink.classList.remove("pointer-events-none", "opacity-50");
+    buildHint.textContent = `Opens GitHub in a new tab — click "Propose changes" to create the PR.`;
+    buildHint.classList.remove("text-slate-400", "text-rose-600");
+    buildHint.classList.add("text-slate-600");
+  }
+
+  ownerEl.addEventListener("input", updateLink);
+  repoEl.addEventListener("input", updateLink);
+
+  window.addEventListener("mcb-container-change", (ev) => {
+    const detail = (ev as CustomEvent).detail;
+    containerTargets = detail.targets ?? "";
+    containerExists = detail.exists ?? false;
+    updateLink();
+  });
+
+  updateLink();
+</script>
