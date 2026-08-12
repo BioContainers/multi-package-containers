@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+hap.py=0.3.15,rtg-tools=3.13	quay.io/bioconda/base-glibc-busybox-bash:latest	0
