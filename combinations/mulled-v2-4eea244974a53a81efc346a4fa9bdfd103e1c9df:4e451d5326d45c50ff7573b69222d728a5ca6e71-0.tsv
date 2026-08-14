@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+sepp=4.5.5,augustus=3.5.0,tar=1.34,fonts-conda-ecosystem=1,busco=6.1.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
