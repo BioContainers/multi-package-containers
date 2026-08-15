@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+rename=1.601,pretextsnapshot=0.0.9	quay.io/bioconda/base-glibc-busybox-bash:latest	0
