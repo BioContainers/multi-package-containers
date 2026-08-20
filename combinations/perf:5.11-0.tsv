@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+perf=5.11	bgruening/busybox-bash:0.1	0
