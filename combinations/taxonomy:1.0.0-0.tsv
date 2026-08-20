@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+taxonomy=1.0.0	bgruening/busybox-bash:0.1	0
