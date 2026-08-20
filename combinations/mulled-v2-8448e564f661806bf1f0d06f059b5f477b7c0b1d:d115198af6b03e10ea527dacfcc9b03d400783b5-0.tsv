@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-optparse=1.6.1=r351h6115d3f_0,pysam=0.11.2.1=py27_0,numpy=1.11.2=py27_0,r-latticeextra=0.6_28=r351h6115d3f_0,r-gridextra=2.3=r351h6115d3f_0	bgruening/busybox-bash:0.1	0
