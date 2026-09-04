@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+spacy=3.8.14,nltk=3.10.1,nltk_data=2026.07.01,spacy-model-en_core_web_sm=3.8.0,langchain-text-splitters=1.1.2,python-gil=3.12.13,tiktoken=0.13.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
