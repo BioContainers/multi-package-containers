@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+apptainer=1.4.1,openjdk=23.0.2,nextflow=26.04.2,samtools=1.21	quay.io/bioconda/base-glibc-busybox-bash:latest	0
