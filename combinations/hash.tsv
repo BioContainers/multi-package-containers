@@ -950,3 +950,10 @@ manc_cojo=1.1.0,tabix=1.11
 lastz=1.0.4,python=3.9
 aoptk=0.5.0,pyyaml=6.0.3
 multiqc=1.35,oncoanalyser::oncoanalyser-multiqc-plugin=0.1.0
+gffread=0.12.7,python=3.12
+blast=2.17.0,python=3.12
+tantan=51,python=3.12
+fastan=0.8,fastga=1.5.20260729
+python=3.12,pyfaidx=0.9.0.4
+multiz=11.2,python=3.12
+python=3.12,ucsc-bedtobigbed=469
