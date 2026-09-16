@@ -38,22 +38,24 @@ async function fetchJson(url) {
 }
 
 async function fetchChannel(channel) {
-  const url = `https://conda.anaconda.org/${channel}/${arch}/repodata.json`;
-  console.log(`fetching ${url}`);
-  const data = await fetchJson(url);
-  const packages = data.packages ?? {};
   const byName = new Map();
-  for (const fn of Object.keys(packages)) {
-    const pkg = packages[fn];
-    if (pkg.subdir && pkg.subdir !== arch) continue;
-    const name = pkg.name;
-    if (!name) continue;
-    let entry = byName.get(name);
-    if (!entry) {
-      entry = { name, versions: new Set() };
-      byName.set(name, entry);
+  for (const subdir of new Set([arch, "noarch"])) {
+    const url = `https://conda.anaconda.org/${channel}/${subdir}/repodata.json`;
+    console.log(`fetching ${url}`);
+    const data = await fetchJson(url);
+    for (const packages of [data.packages, data["packages.conda"]]) {
+      for (const pkg of Object.values(packages ?? {})) {
+        if (pkg.subdir && pkg.subdir !== subdir) continue;
+        const name = pkg.name;
+        if (!name) continue;
+        let entry = byName.get(name);
+        if (!entry) {
+          entry = { name, versions: new Set() };
+          byName.set(name, entry);
+        }
+        entry.versions.add(pkg.version);
+      }
     }
-    entry.versions.add(pkg.version);
   }
   const list = [...byName.values()]
     .map(({ name, versions }) => ({ name, versions: [...versions] }))
