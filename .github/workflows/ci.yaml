@@ -6,6 +6,8 @@ env:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     strategy:
       fail-fast: true
       matrix:
@@ -61,6 +63,7 @@ jobs:
         if-no-files-found: warn
 
     - name: Comment PR with container usage instructions
+      continue-on-error: true
       if: always() && github.event_name == 'pull_request' && github.event.pull_request.user.login != 'dockerhub-toolshed'
       uses: actions/github-script@v7
       with:
