@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+tensorboard=2.20.0,kraken-ocr=7.1.1,yq=4.1.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0
