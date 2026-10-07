@@ -958,3 +958,4 @@ fastan=0.8,fastga=1.5.20260729
 python=3.12,pyfaidx=0.9.0.4
 multiz=11.2,python=3.12
 python=3.12,ucsc-bedtobigbed=469
+minibwa=0.7,pigz=2.8
