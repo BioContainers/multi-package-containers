@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+ucsc-bigbedinfo=482,python=3.12,ucsc-bedtobigbed=482	quay.io/bioconda/base-glibc-busybox-bash:latest	0
