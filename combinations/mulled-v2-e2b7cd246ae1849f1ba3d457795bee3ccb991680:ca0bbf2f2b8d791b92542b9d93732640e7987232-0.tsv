@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+gdcm=3.2.4,giatools=0.5.2,pydicom=3.0.2,pylibjpeg=2.1.0,highdicom=0.28.2,pyyaml=6.0.3	quay.io/bioconda/base-glibc-busybox-bash:latest	0
