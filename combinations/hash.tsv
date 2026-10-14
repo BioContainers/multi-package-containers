@@ -961,3 +961,4 @@ python=3.12,ucsc-bedtobigbed=469
 minimap2=2.31,samtools=1.24
 minibwa=0.7,pigz=2.8
 minibwa=0.7,pigz=2.8,samblaster=0.1.26,samtools=1.24
+r-base=4.5.3,r-patchwork=1.3.2,r-tidyverse=2.0.0
