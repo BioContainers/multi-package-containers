@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+galaxy-ml=0.11.0,graphviz=14.1.2,python=3.12,pydot=4.0.1	quay.io/bioconda/base-glibc-busybox-bash:latest	0
