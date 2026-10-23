@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+grep=3.12,multiqc=1.35,python=3.13	quay.io/bioconda/base-glibc-debian-bash:latest	0
