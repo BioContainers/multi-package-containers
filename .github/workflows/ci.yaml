@@ -5,7 +5,7 @@ env:
   MULLED_TOOL_UTIL_SOURCE: git+https://github.com/bgruening/galaxy.git@mulled_quay_enhancements#subdirectory=packages/tool_util
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       pull-requests: write
     strategy:
