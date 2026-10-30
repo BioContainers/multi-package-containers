@@ -966,3 +966,4 @@ kraken-ocr=7.1.1,tensorboard=2.21.0
 plotly=5.24.1,python=3.12
 mykrobe=0.13.0,python=3.12,setuptools=80.10.2
 blast=2.17.0,mykrobe=0.13.0,python=3.12,setuptools=80.10.2,shigapass=1.5.0
+blast=2.16.0,python=3.12
