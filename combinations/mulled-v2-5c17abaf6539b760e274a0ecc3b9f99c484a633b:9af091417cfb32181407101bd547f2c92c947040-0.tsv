@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pandas=3.1.1,cosg=1.2.1,scanpy=1.12.5,seaborn=0.13.2,matplotlib=3.11.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0
