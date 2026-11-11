@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+setuptools=80.10.2,samtools=1.25,six=1.17.0,mirtop=0.4.30	quay.io/bioconda/base-glibc-busybox-bash:latest	0
