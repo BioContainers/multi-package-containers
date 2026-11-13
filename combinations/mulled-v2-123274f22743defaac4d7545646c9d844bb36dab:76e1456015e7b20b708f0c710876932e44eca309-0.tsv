@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+legacy-cgi=2.6.4,python=3.14,grapetree=3.0.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

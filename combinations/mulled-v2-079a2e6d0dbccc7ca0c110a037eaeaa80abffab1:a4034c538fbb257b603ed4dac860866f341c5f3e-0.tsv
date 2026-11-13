@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+montreal-forced-aligner=3.4.2,python=3.13,zip=3.0,unzip=6.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

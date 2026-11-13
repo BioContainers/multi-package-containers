@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+ncbi-datasets-cli=18.39.0,ca-certificates=2026.10.18	quay.io/bioconda/base-glibc-busybox-bash:latest	0
