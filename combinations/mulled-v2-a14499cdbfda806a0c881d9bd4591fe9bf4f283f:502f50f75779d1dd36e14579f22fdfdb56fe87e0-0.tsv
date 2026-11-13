@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+scanpy=1.12.5,harmonypy=2.1.0,anndata=0.13.4,scanorama=1.7.4,bbknn=1.6.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
