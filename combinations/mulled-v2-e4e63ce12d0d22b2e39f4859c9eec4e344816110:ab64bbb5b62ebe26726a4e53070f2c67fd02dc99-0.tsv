@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+safetensors=0.8.0,mmseqs2=16.747c6,semibin=2.6.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
