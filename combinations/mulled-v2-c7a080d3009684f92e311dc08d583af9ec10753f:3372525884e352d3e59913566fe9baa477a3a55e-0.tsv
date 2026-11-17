@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+omero-py=5.22.1,openjdk=21.0.2,tifffile=2026.9.20	quay.io/bioconda/base-glibc-busybox-bash:latest	0
