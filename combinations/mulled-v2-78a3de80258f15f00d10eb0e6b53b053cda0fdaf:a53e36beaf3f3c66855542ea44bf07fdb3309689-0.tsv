@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+fastp=0.20.1,mccortex=1.0,r-magicaxis=2.2.14,r-rcolorbrewer=1.1_3	quay.io/bioconda/base-glibc-busybox-bash:latest	0
