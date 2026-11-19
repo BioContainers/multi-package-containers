@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+mafft=7.407,fasttree=2.1.9,r-essentials=4.1,r-base=4.1.2,frogs=4.1.0,r-phangorn=2.7.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0
