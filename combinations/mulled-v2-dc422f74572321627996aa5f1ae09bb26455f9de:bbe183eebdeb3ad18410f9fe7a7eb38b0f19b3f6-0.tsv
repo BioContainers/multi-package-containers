@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+samtools=0.1.18,freebayes=0.9.4_9696d0ce8a962f7bb61c4791be5ce44312b81cf8	bgruening/busybox-bash:0.1	0
