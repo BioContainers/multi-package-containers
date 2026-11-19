@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+last=1418,blat=36,diamond=2.0.15,blast=2.13.0,proteinortho=6.1.2	quay.io/bioconda/base-glibc-debian-bash:latest	0
