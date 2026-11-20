@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+transformers=5.23.0,faiss-cpu=1.14.3,sentence-transformers=6.3.0,pytorch-cpu=2.14.1,pillow=13.0.0,numpy=2.5.5,python=3.12,huggingface_hub=2.4.0,torchvision=0.29.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0
