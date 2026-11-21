@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+pytorch=2.6.0,transformers=4.57.6,openpyxl=3.1.5,numpy=2.2.6,accelerate=1.13.0,scikit-learn=1.7.2,pandas=2.3.3,omegaconf=2.3.0,einops=0.8.2,plotly=6.9.0,peft=0.19.1,bertviz=1.4.1,flash-attn=2.7.4,evaluate=0.4.6	quay.io/bioconda/base-glibc-busybox-bash:latest	0
