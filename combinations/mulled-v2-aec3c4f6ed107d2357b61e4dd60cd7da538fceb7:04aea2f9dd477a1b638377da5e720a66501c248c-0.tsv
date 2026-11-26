@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+gwyddionpy=0.1.1,pynxtools-spm=0.5.1,gwyconvert=0.1.1,pynxtools=0.16.0	quay.io/bioconda/base-glibc-busybox-bash:latest	0

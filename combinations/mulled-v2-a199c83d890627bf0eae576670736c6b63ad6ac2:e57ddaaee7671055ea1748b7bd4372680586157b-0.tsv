@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+zenodo_get=3.1.0,poppler=24.02.0,python=3.12	quay.io/bioconda/base-glibc-busybox-bash:latest	0
