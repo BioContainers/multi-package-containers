@@ -1,0 +1,2 @@
+#targets	base_image	image_build
+r-ggupset=0.4.1,r-optparse=1.8.2,bioconductor-chipseeker=1.46.1,bioconductor-txdbmaker=1.6.2	quay.io/bioconda/base-glibc-busybox-bash:latest	0
